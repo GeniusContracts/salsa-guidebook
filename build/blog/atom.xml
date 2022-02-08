@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.spicyswap.xyz/blog</id>
+    <title>SpicySwap Docs Blog</title>
+    <updated>2019-05-30T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.spicyswap.xyz/blog"/>
+    <subtitle>SpicySwap Docs Blog</subtitle>
+    <icon>https://docs.spicyswap.xyz/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to SpicySwap News]]></title>
+        <id>welcome</id>
+        <link href="https://docs.spicyswap.xyz/blog/welcome"/>
+        <updated>2019-05-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Welcome to the SpicySwap News section. This is where we will put lighter SpicySwap-related news that doesn't require a larger article.]]></summary>
+    </entry>
+</feed>

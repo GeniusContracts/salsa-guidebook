@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>SpicySwap Docs Blog</title>
+        <link>https://docs.spicyswap.xyz/blog</link>
+        <description>SpicySwap Docs Blog</description>
+        <lastBuildDate>Thu, 30 May 2019 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Welcome to SpicySwap News]]></title>
+            <link>https://docs.spicyswap.xyz/blog/welcome</link>
+            <guid>welcome</guid>
+            <pubDate>Thu, 30 May 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome to the SpicySwap News section. This is where we will put lighter SpicySwap-related news that doesn't require a larger article.]]></description>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,6140 @@
+schema {
+  query: query_root
+  mutation: mutation_root
+  subscription: subscription_root
+}
+
+"""whether this query should be cached (Hasura Cloud only)"""
+directive @cached(
+  """measured in seconds"""
+  ttl: Int! = 60
+
+  """refresh the cache entry"""
+  refresh: Boolean! = false
+) on QUERY
+
+"""
+Boolean expression to compare columns of type "Int". All fields are combined with logical 'AND'.
+"""
+input Int_comparison_exp {
+  _eq: Int
+  _gt: Int
+  _gte: Int
+  _in: [Int!]
+  _is_null: Boolean
+  _lt: Int
+  _lte: Int
+  _neq: Int
+  _nin: [Int!]
+}
+
+"""
+Boolean expression to compare columns of type "String". All fields are combined with logical 'AND'.
+"""
+input String_comparison_exp {
+  _eq: String
+  _gt: String
+  _gte: String
+
+  """does the column match the given case-insensitive pattern"""
+  _ilike: String
+  _in: [String!]
+
+  """
+  does the column match the given POSIX regular expression, case insensitive
+  """
+  _iregex: String
+  _is_null: Boolean
+
+  """does the column match the given pattern"""
+  _like: String
+  _lt: String
+  _lte: String
+  _neq: String
+
+  """does the column NOT match the given case-insensitive pattern"""
+  _nilike: String
+  _nin: [String!]
+
+  """
+  does the column NOT match the given POSIX regular expression, case insensitive
+  """
+  _niregex: String
+
+  """does the column NOT match the given pattern"""
+  _nlike: String
+
+  """
+  does the column NOT match the given POSIX regular expression, case sensitive
+  """
+  _nregex: String
+
+  """does the column NOT match the given SQL regular expression"""
+  _nsimilar: String
+
+  """
+  does the column match the given POSIX regular expression, case sensitive
+  """
+  _regex: String
+
+  """does the column match the given SQL regular expression"""
+  _similar: String
+}
+
+scalar bigint
+
+"""
+Boolean expression to compare columns of type "bigint". All fields are combined with logical 'AND'.
+"""
+input bigint_comparison_exp {
+  _eq: bigint
+  _gt: bigint
+  _gte: bigint
+  _in: [bigint!]
+  _is_null: Boolean
+  _lt: bigint
+  _lte: bigint
+  _neq: bigint
+  _nin: [bigint!]
+}
+
+scalar date
+
+"""
+Boolean expression to compare columns of type "date". All fields are combined with logical 'AND'.
+"""
+input date_comparison_exp {
+  _eq: date
+  _gt: date
+  _gte: date
+  _in: [date!]
+  _is_null: Boolean
+  _lt: date
+  _lte: date
+  _neq: date
+  _nin: [date!]
+}
+
+"""mutation root"""
+type mutation_root {
+  """
+  delete data from the table: "ss.actions"
+  """
+  delete_ss_actions(
+    """filter the rows which have to be deleted"""
+    where: ss_actions_bool_exp!
+  ): ss_actions_mutation_response
+
+  """
+  delete single row from the table: "ss.actions"
+  """
+  delete_ss_actions_by_pk(id: Int!): ss_actions
+
+  """
+  delete data from the table: "ss.dipdup_state"
+  """
+  delete_ss_dipdup_state(
+    """filter the rows which have to be deleted"""
+    where: ss_dipdup_state_bool_exp!
+  ): ss_dipdup_state_mutation_response
+
+  """
+  delete single row from the table: "ss.dipdup_state"
+  """
+  delete_ss_dipdup_state_by_pk(index_name: String!): ss_dipdup_state
+
+  """
+  delete data from the table: "ss.farm_account"
+  """
+  delete_ss_farm_account(
+    """filter the rows which have to be deleted"""
+    where: ss_farm_account_bool_exp!
+  ): ss_farm_account_mutation_response
+
+  """
+  delete single row from the table: "ss.farm_account"
+  """
+  delete_ss_farm_account_by_pk(id: Int!): ss_farm_account
+
+  """
+  delete data from the table: "ss.farm_info"
+  """
+  delete_ss_farm_info(
+    """filter the rows which have to be deleted"""
+    where: ss_farm_info_bool_exp!
+  ): ss_farm_info_mutation_response
+
+  """
+  delete single row from the table: "ss.farm_info"
+  """
+  delete_ss_farm_info_by_pk(id: Int!): ss_farm_info
+
+  """
+  delete data from the table: "ss.liquidity"
+  """
+  delete_ss_liquidity(
+    """filter the rows which have to be deleted"""
+    where: ss_liquidity_bool_exp!
+  ): ss_liquidity_mutation_response
+
+  """
+  delete single row from the table: "ss.liquidity"
+  """
+  delete_ss_liquidity_by_pk(id: Int!): ss_liquidity
+
+  """
+  delete data from the table: "ss.pair_day_data"
+  """
+  delete_ss_pair_day_data(
+    """filter the rows which have to be deleted"""
+    where: ss_pair_day_data_bool_exp!
+  ): ss_pair_day_data_mutation_response
+
+  """
+  delete single row from the table: "ss.pair_day_data"
+  """
+  delete_ss_pair_day_data_by_pk(id: Int!): ss_pair_day_data
+
+  """
+  delete data from the table: "ss.pair_hour_data"
+  """
+  delete_ss_pair_hour_data(
+    """filter the rows which have to be deleted"""
+    where: ss_pair_hour_data_bool_exp!
+  ): ss_pair_hour_data_mutation_response
+
+  """
+  delete single row from the table: "ss.pair_hour_data"
+  """
+  delete_ss_pair_hour_data_by_pk(id: Int!): ss_pair_hour_data
+
+  """
+  delete data from the table: "ss.pair_info"
+  """
+  delete_ss_pair_info(
+    """filter the rows which have to be deleted"""
+    where: ss_pair_info_bool_exp!
+  ): ss_pair_info_mutation_response
+
+  """
+  delete single row from the table: "ss.pair_info"
+  """
+  delete_ss_pair_info_by_pk(id: Int!): ss_pair_info
+
+  """
+  delete data from the table: "ss.spicy"
+  """
+  delete_ss_spicy(
+    """filter the rows which have to be deleted"""
+    where: ss_spicy_bool_exp!
+  ): ss_spicy_mutation_response
+
+  """
+  delete single row from the table: "ss.spicy"
+  """
+  delete_ss_spicy_by_pk(id: Int!): ss_spicy
+
+  """
+  delete data from the table: "ss.spicy_day_data"
+  """
+  delete_ss_spicy_day_data(
+    """filter the rows which have to be deleted"""
+    where: ss_spicy_day_data_bool_exp!
+  ): ss_spicy_day_data_mutation_response
+
+  """
+  delete single row from the table: "ss.spicy_day_data"
+  """
+  delete_ss_spicy_day_data_by_pk(id: Int!): ss_spicy_day_data
+
+  """
+  delete data from the table: "ss.token_day_data"
+  """
+  delete_ss_token_day_data(
+    """filter the rows which have to be deleted"""
+    where: ss_token_day_data_bool_exp!
+  ): ss_token_day_data_mutation_response
+
+  """
+  delete single row from the table: "ss.token_day_data"
+  """
+  delete_ss_token_day_data_by_pk(id: Int!): ss_token_day_data
+
+  """
+  delete data from the table: "ss.token_metadata"
+  """
+  delete_ss_token_metadata(
+    """filter the rows which have to be deleted"""
+    where: ss_token_metadata_bool_exp!
+  ): ss_token_metadata_mutation_response
+
+  """
+  delete single row from the table: "ss.token_metadata"
+  """
+  delete_ss_token_metadata_by_pk(tag: String!): ss_token_metadata
+
+  """
+  delete data from the table: "ss.tokens"
+  """
+  delete_ss_tokens(
+    """filter the rows which have to be deleted"""
+    where: ss_tokens_bool_exp!
+  ): ss_tokens_mutation_response
+
+  """
+  delete single row from the table: "ss.tokens"
+  """
+  delete_ss_tokens_by_pk(id: Int!): ss_tokens
+
+  """
+  delete data from the table: "ss.total_supply"
+  """
+  delete_ss_total_supply(
+    """filter the rows which have to be deleted"""
+    where: ss_total_supply_bool_exp!
+  ): ss_total_supply_mutation_response
+
+  """
+  delete single row from the table: "ss.total_supply"
+  """
+  delete_ss_total_supply_by_pk(id: Int!): ss_total_supply
+
+  """
+  delete data from the table: "ss.usd"
+  """
+  delete_ss_usd(
+    """filter the rows which have to be deleted"""
+    where: ss_usd_bool_exp!
+  ): ss_usd_mutation_response
+
+  """
+  delete single row from the table: "ss.usd"
+  """
+  delete_ss_usd_by_pk(id: Int!): ss_usd
+
+  """
+  insert data into the table: "ss.actions"
+  """
+  insert_ss_actions(
+    """the rows to be inserted"""
+    objects: [ss_actions_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_actions_on_conflict
+  ): ss_actions_mutation_response
+
+  """
+  insert a single row into the table: "ss.actions"
+  """
+  insert_ss_actions_one(
+    """the row to be inserted"""
+    object: ss_actions_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_actions_on_conflict
+  ): ss_actions
+
+  """
+  insert data into the table: "ss.dipdup_state"
+  """
+  insert_ss_dipdup_state(
+    """the rows to be inserted"""
+    objects: [ss_dipdup_state_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_dipdup_state_on_conflict
+  ): ss_dipdup_state_mutation_response
+
+  """
+  insert a single row into the table: "ss.dipdup_state"
+  """
+  insert_ss_dipdup_state_one(
+    """the row to be inserted"""
+    object: ss_dipdup_state_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_dipdup_state_on_conflict
+  ): ss_dipdup_state
+
+  """
+  insert data into the table: "ss.farm_account"
+  """
+  insert_ss_farm_account(
+    """the rows to be inserted"""
+    objects: [ss_farm_account_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_farm_account_on_conflict
+  ): ss_farm_account_mutation_response
+
+  """
+  insert a single row into the table: "ss.farm_account"
+  """
+  insert_ss_farm_account_one(
+    """the row to be inserted"""
+    object: ss_farm_account_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_farm_account_on_conflict
+  ): ss_farm_account
+
+  """
+  insert data into the table: "ss.farm_info"
+  """
+  insert_ss_farm_info(
+    """the rows to be inserted"""
+    objects: [ss_farm_info_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_farm_info_on_conflict
+  ): ss_farm_info_mutation_response
+
+  """
+  insert a single row into the table: "ss.farm_info"
+  """
+  insert_ss_farm_info_one(
+    """the row to be inserted"""
+    object: ss_farm_info_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_farm_info_on_conflict
+  ): ss_farm_info
+
+  """
+  insert data into the table: "ss.liquidity"
+  """
+  insert_ss_liquidity(
+    """the rows to be inserted"""
+    objects: [ss_liquidity_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_liquidity_on_conflict
+  ): ss_liquidity_mutation_response
+
+  """
+  insert a single row into the table: "ss.liquidity"
+  """
+  insert_ss_liquidity_one(
+    """the row to be inserted"""
+    object: ss_liquidity_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_liquidity_on_conflict
+  ): ss_liquidity
+
+  """
+  insert data into the table: "ss.pair_day_data"
+  """
+  insert_ss_pair_day_data(
+    """the rows to be inserted"""
+    objects: [ss_pair_day_data_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_pair_day_data_on_conflict
+  ): ss_pair_day_data_mutation_response
+
+  """
+  insert a single row into the table: "ss.pair_day_data"
+  """
+  insert_ss_pair_day_data_one(
+    """the row to be inserted"""
+    object: ss_pair_day_data_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_pair_day_data_on_conflict
+  ): ss_pair_day_data
+
+  """
+  insert data into the table: "ss.pair_hour_data"
+  """
+  insert_ss_pair_hour_data(
+    """the rows to be inserted"""
+    objects: [ss_pair_hour_data_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_pair_hour_data_on_conflict
+  ): ss_pair_hour_data_mutation_response
+
+  """
+  insert a single row into the table: "ss.pair_hour_data"
+  """
+  insert_ss_pair_hour_data_one(
+    """the row to be inserted"""
+    object: ss_pair_hour_data_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_pair_hour_data_on_conflict
+  ): ss_pair_hour_data
+
+  """
+  insert data into the table: "ss.pair_info"
+  """
+  insert_ss_pair_info(
+    """the rows to be inserted"""
+    objects: [ss_pair_info_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_pair_info_on_conflict
+  ): ss_pair_info_mutation_response
+
+  """
+  insert a single row into the table: "ss.pair_info"
+  """
+  insert_ss_pair_info_one(
+    """the row to be inserted"""
+    object: ss_pair_info_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_pair_info_on_conflict
+  ): ss_pair_info
+
+  """
+  insert data into the table: "ss.spicy"
+  """
+  insert_ss_spicy(
+    """the rows to be inserted"""
+    objects: [ss_spicy_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_spicy_on_conflict
+  ): ss_spicy_mutation_response
+
+  """
+  insert data into the table: "ss.spicy_day_data"
+  """
+  insert_ss_spicy_day_data(
+    """the rows to be inserted"""
+    objects: [ss_spicy_day_data_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_spicy_day_data_on_conflict
+  ): ss_spicy_day_data_mutation_response
+
+  """
+  insert a single row into the table: "ss.spicy_day_data"
+  """
+  insert_ss_spicy_day_data_one(
+    """the row to be inserted"""
+    object: ss_spicy_day_data_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_spicy_day_data_on_conflict
+  ): ss_spicy_day_data
+
+  """
+  insert a single row into the table: "ss.spicy"
+  """
+  insert_ss_spicy_one(
+    """the row to be inserted"""
+    object: ss_spicy_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_spicy_on_conflict
+  ): ss_spicy
+
+  """
+  insert data into the table: "ss.token_day_data"
+  """
+  insert_ss_token_day_data(
+    """the rows to be inserted"""
+    objects: [ss_token_day_data_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_token_day_data_on_conflict
+  ): ss_token_day_data_mutation_response
+
+  """
+  insert a single row into the table: "ss.token_day_data"
+  """
+  insert_ss_token_day_data_one(
+    """the row to be inserted"""
+    object: ss_token_day_data_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_token_day_data_on_conflict
+  ): ss_token_day_data
+
+  """
+  insert data into the table: "ss.token_metadata"
+  """
+  insert_ss_token_metadata(
+    """the rows to be inserted"""
+    objects: [ss_token_metadata_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_token_metadata_on_conflict
+  ): ss_token_metadata_mutation_response
+
+  """
+  insert a single row into the table: "ss.token_metadata"
+  """
+  insert_ss_token_metadata_one(
+    """the row to be inserted"""
+    object: ss_token_metadata_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_token_metadata_on_conflict
+  ): ss_token_metadata
+
+  """
+  insert data into the table: "ss.tokens"
+  """
+  insert_ss_tokens(
+    """the rows to be inserted"""
+    objects: [ss_tokens_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_tokens_on_conflict
+  ): ss_tokens_mutation_response
+
+  """
+  insert a single row into the table: "ss.tokens"
+  """
+  insert_ss_tokens_one(
+    """the row to be inserted"""
+    object: ss_tokens_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_tokens_on_conflict
+  ): ss_tokens
+
+  """
+  insert data into the table: "ss.total_supply"
+  """
+  insert_ss_total_supply(
+    """the rows to be inserted"""
+    objects: [ss_total_supply_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_total_supply_on_conflict
+  ): ss_total_supply_mutation_response
+
+  """
+  insert a single row into the table: "ss.total_supply"
+  """
+  insert_ss_total_supply_one(
+    """the row to be inserted"""
+    object: ss_total_supply_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_total_supply_on_conflict
+  ): ss_total_supply
+
+  """
+  insert data into the table: "ss.usd"
+  """
+  insert_ss_usd(
+    """the rows to be inserted"""
+    objects: [ss_usd_insert_input!]!
+
+    """on conflict condition"""
+    on_conflict: ss_usd_on_conflict
+  ): ss_usd_mutation_response
+
+  """
+  insert a single row into the table: "ss.usd"
+  """
+  insert_ss_usd_one(
+    """the row to be inserted"""
+    object: ss_usd_insert_input!
+
+    """on conflict condition"""
+    on_conflict: ss_usd_on_conflict
+  ): ss_usd
+
+  """
+  update data of the table: "ss.actions"
+  """
+  update_ss_actions(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_actions_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_actions_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_actions_bool_exp!
+  ): ss_actions_mutation_response
+
+  """
+  update single row of the table: "ss.actions"
+  """
+  update_ss_actions_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_actions_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_actions_set_input
+    pk_columns: ss_actions_pk_columns_input!
+  ): ss_actions
+
+  """
+  update data of the table: "ss.dipdup_state"
+  """
+  update_ss_dipdup_state(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_dipdup_state_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_dipdup_state_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_dipdup_state_bool_exp!
+  ): ss_dipdup_state_mutation_response
+
+  """
+  update single row of the table: "ss.dipdup_state"
+  """
+  update_ss_dipdup_state_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_dipdup_state_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_dipdup_state_set_input
+    pk_columns: ss_dipdup_state_pk_columns_input!
+  ): ss_dipdup_state
+
+  """
+  update data of the table: "ss.farm_account"
+  """
+  update_ss_farm_account(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_farm_account_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_farm_account_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_farm_account_bool_exp!
+  ): ss_farm_account_mutation_response
+
+  """
+  update single row of the table: "ss.farm_account"
+  """
+  update_ss_farm_account_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_farm_account_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_farm_account_set_input
+    pk_columns: ss_farm_account_pk_columns_input!
+  ): ss_farm_account
+
+  """
+  update data of the table: "ss.farm_info"
+  """
+  update_ss_farm_info(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_farm_info_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_farm_info_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_farm_info_bool_exp!
+  ): ss_farm_info_mutation_response
+
+  """
+  update single row of the table: "ss.farm_info"
+  """
+  update_ss_farm_info_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_farm_info_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_farm_info_set_input
+    pk_columns: ss_farm_info_pk_columns_input!
+  ): ss_farm_info
+
+  """
+  update data of the table: "ss.liquidity"
+  """
+  update_ss_liquidity(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_liquidity_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_liquidity_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_liquidity_bool_exp!
+  ): ss_liquidity_mutation_response
+
+  """
+  update single row of the table: "ss.liquidity"
+  """
+  update_ss_liquidity_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_liquidity_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_liquidity_set_input
+    pk_columns: ss_liquidity_pk_columns_input!
+  ): ss_liquidity
+
+  """
+  update data of the table: "ss.pair_day_data"
+  """
+  update_ss_pair_day_data(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_pair_day_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_pair_day_data_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_pair_day_data_bool_exp!
+  ): ss_pair_day_data_mutation_response
+
+  """
+  update single row of the table: "ss.pair_day_data"
+  """
+  update_ss_pair_day_data_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_pair_day_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_pair_day_data_set_input
+    pk_columns: ss_pair_day_data_pk_columns_input!
+  ): ss_pair_day_data
+
+  """
+  update data of the table: "ss.pair_hour_data"
+  """
+  update_ss_pair_hour_data(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_pair_hour_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_pair_hour_data_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_pair_hour_data_bool_exp!
+  ): ss_pair_hour_data_mutation_response
+
+  """
+  update single row of the table: "ss.pair_hour_data"
+  """
+  update_ss_pair_hour_data_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_pair_hour_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_pair_hour_data_set_input
+    pk_columns: ss_pair_hour_data_pk_columns_input!
+  ): ss_pair_hour_data
+
+  """
+  update data of the table: "ss.pair_info"
+  """
+  update_ss_pair_info(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_pair_info_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_pair_info_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_pair_info_bool_exp!
+  ): ss_pair_info_mutation_response
+
+  """
+  update single row of the table: "ss.pair_info"
+  """
+  update_ss_pair_info_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_pair_info_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_pair_info_set_input
+    pk_columns: ss_pair_info_pk_columns_input!
+  ): ss_pair_info
+
+  """
+  update data of the table: "ss.spicy"
+  """
+  update_ss_spicy(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_spicy_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_spicy_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_spicy_bool_exp!
+  ): ss_spicy_mutation_response
+
+  """
+  update single row of the table: "ss.spicy"
+  """
+  update_ss_spicy_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_spicy_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_spicy_set_input
+    pk_columns: ss_spicy_pk_columns_input!
+  ): ss_spicy
+
+  """
+  update data of the table: "ss.spicy_day_data"
+  """
+  update_ss_spicy_day_data(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_spicy_day_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_spicy_day_data_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_spicy_day_data_bool_exp!
+  ): ss_spicy_day_data_mutation_response
+
+  """
+  update single row of the table: "ss.spicy_day_data"
+  """
+  update_ss_spicy_day_data_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_spicy_day_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_spicy_day_data_set_input
+    pk_columns: ss_spicy_day_data_pk_columns_input!
+  ): ss_spicy_day_data
+
+  """
+  update data of the table: "ss.token_day_data"
+  """
+  update_ss_token_day_data(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_token_day_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_token_day_data_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_token_day_data_bool_exp!
+  ): ss_token_day_data_mutation_response
+
+  """
+  update single row of the table: "ss.token_day_data"
+  """
+  update_ss_token_day_data_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_token_day_data_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_token_day_data_set_input
+    pk_columns: ss_token_day_data_pk_columns_input!
+  ): ss_token_day_data
+
+  """
+  update data of the table: "ss.token_metadata"
+  """
+  update_ss_token_metadata(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_token_metadata_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_token_metadata_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_token_metadata_bool_exp!
+  ): ss_token_metadata_mutation_response
+
+  """
+  update single row of the table: "ss.token_metadata"
+  """
+  update_ss_token_metadata_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_token_metadata_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_token_metadata_set_input
+    pk_columns: ss_token_metadata_pk_columns_input!
+  ): ss_token_metadata
+
+  """
+  update data of the table: "ss.tokens"
+  """
+  update_ss_tokens(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_tokens_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_tokens_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_tokens_bool_exp!
+  ): ss_tokens_mutation_response
+
+  """
+  update single row of the table: "ss.tokens"
+  """
+  update_ss_tokens_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_tokens_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_tokens_set_input
+    pk_columns: ss_tokens_pk_columns_input!
+  ): ss_tokens
+
+  """
+  update data of the table: "ss.total_supply"
+  """
+  update_ss_total_supply(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_total_supply_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_total_supply_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_total_supply_bool_exp!
+  ): ss_total_supply_mutation_response
+
+  """
+  update single row of the table: "ss.total_supply"
+  """
+  update_ss_total_supply_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_total_supply_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_total_supply_set_input
+    pk_columns: ss_total_supply_pk_columns_input!
+  ): ss_total_supply
+
+  """
+  update data of the table: "ss.usd"
+  """
+  update_ss_usd(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_usd_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_usd_set_input
+
+    """filter the rows which have to be updated"""
+    where: ss_usd_bool_exp!
+  ): ss_usd_mutation_response
+
+  """
+  update single row of the table: "ss.usd"
+  """
+  update_ss_usd_by_pk(
+    """increments the numeric columns with given value of the filtered values"""
+    _inc: ss_usd_inc_input
+
+    """sets the columns of the filtered rows to the given values"""
+    _set: ss_usd_set_input
+    pk_columns: ss_usd_pk_columns_input!
+  ): ss_usd
+}
+
+"""column ordering options"""
+enum order_by {
+  """in ascending order, nulls last"""
+  asc
+
+  """in ascending order, nulls first"""
+  asc_nulls_first
+
+  """in ascending order, nulls last"""
+  asc_nulls_last
+
+  """in descending order, nulls first"""
+  desc
+
+  """in descending order, nulls first"""
+  desc_nulls_first
+
+  """in descending order, nulls last"""
+  desc_nulls_last
+}
+
+type query_root {
+  """
+  fetch data from the table: "ss.actions"
+  """
+  ss_actions(
+    """distinct select on columns"""
+    distinct_on: [ss_actions_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_actions_order_by!]
+
+    """filter the rows returned"""
+    where: ss_actions_bool_exp
+  ): [ss_actions!]!
+
+  """
+  fetch aggregated fields from the table: "ss.actions"
+  """
+  ss_actions_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_actions_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_actions_order_by!]
+
+    """filter the rows returned"""
+    where: ss_actions_bool_exp
+  ): ss_actions_aggregate!
+
+  """fetch data from the table: "ss.actions" using primary key columns"""
+  ss_actions_by_pk(id: Int!): ss_actions
+
+  """
+  fetch data from the table: "ss.dipdup_state"
+  """
+  ss_dipdup_state(
+    """distinct select on columns"""
+    distinct_on: [ss_dipdup_state_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_dipdup_state_order_by!]
+
+    """filter the rows returned"""
+    where: ss_dipdup_state_bool_exp
+  ): [ss_dipdup_state!]!
+
+  """
+  fetch aggregated fields from the table: "ss.dipdup_state"
+  """
+  ss_dipdup_state_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_dipdup_state_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_dipdup_state_order_by!]
+
+    """filter the rows returned"""
+    where: ss_dipdup_state_bool_exp
+  ): ss_dipdup_state_aggregate!
+
+  """fetch data from the table: "ss.dipdup_state" using primary key columns"""
+  ss_dipdup_state_by_pk(index_name: String!): ss_dipdup_state
+
+  """
+  fetch data from the table: "ss.farm_account"
+  """
+  ss_farm_account(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_account_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_account_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_account_bool_exp
+  ): [ss_farm_account!]!
+
+  """
+  fetch aggregated fields from the table: "ss.farm_account"
+  """
+  ss_farm_account_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_account_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_account_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_account_bool_exp
+  ): ss_farm_account_aggregate!
+
+  """fetch data from the table: "ss.farm_account" using primary key columns"""
+  ss_farm_account_by_pk(id: Int!): ss_farm_account
+
+  """
+  fetch data from the table: "ss.farm_info"
+  """
+  ss_farm_info(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_info_bool_exp
+  ): [ss_farm_info!]!
+
+  """
+  fetch aggregated fields from the table: "ss.farm_info"
+  """
+  ss_farm_info_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_info_bool_exp
+  ): ss_farm_info_aggregate!
+
+  """fetch data from the table: "ss.farm_info" using primary key columns"""
+  ss_farm_info_by_pk(id: Int!): ss_farm_info
+
+  """
+  fetch data from the table: "ss.liquidity"
+  """
+  ss_liquidity(
+    """distinct select on columns"""
+    distinct_on: [ss_liquidity_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_liquidity_order_by!]
+
+    """filter the rows returned"""
+    where: ss_liquidity_bool_exp
+  ): [ss_liquidity!]!
+
+  """
+  fetch aggregated fields from the table: "ss.liquidity"
+  """
+  ss_liquidity_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_liquidity_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_liquidity_order_by!]
+
+    """filter the rows returned"""
+    where: ss_liquidity_bool_exp
+  ): ss_liquidity_aggregate!
+
+  """fetch data from the table: "ss.liquidity" using primary key columns"""
+  ss_liquidity_by_pk(id: Int!): ss_liquidity
+
+  """
+  fetch data from the table: "ss.pair_day_data"
+  """
+  ss_pair_day_data(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_day_data_bool_exp
+  ): [ss_pair_day_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.pair_day_data"
+  """
+  ss_pair_day_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_day_data_bool_exp
+  ): ss_pair_day_data_aggregate!
+
+  """
+  fetch data from the table: "ss.pair_day_data" using primary key columns
+  """
+  ss_pair_day_data_by_pk(id: Int!): ss_pair_day_data
+
+  """
+  fetch data from the table: "ss.pair_hour_data"
+  """
+  ss_pair_hour_data(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_hour_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_hour_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_hour_data_bool_exp
+  ): [ss_pair_hour_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.pair_hour_data"
+  """
+  ss_pair_hour_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_hour_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_hour_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_hour_data_bool_exp
+  ): ss_pair_hour_data_aggregate!
+
+  """
+  fetch data from the table: "ss.pair_hour_data" using primary key columns
+  """
+  ss_pair_hour_data_by_pk(id: Int!): ss_pair_hour_data
+
+  """
+  fetch data from the table: "ss.pair_info"
+  """
+  ss_pair_info(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_info_bool_exp
+  ): [ss_pair_info!]!
+
+  """
+  fetch aggregated fields from the table: "ss.pair_info"
+  """
+  ss_pair_info_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_info_bool_exp
+  ): ss_pair_info_aggregate!
+
+  """fetch data from the table: "ss.pair_info" using primary key columns"""
+  ss_pair_info_by_pk(id: Int!): ss_pair_info
+
+  """
+  fetch data from the table: "ss.spicy"
+  """
+  ss_spicy(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_bool_exp
+  ): [ss_spicy!]!
+
+  """
+  fetch aggregated fields from the table: "ss.spicy"
+  """
+  ss_spicy_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_bool_exp
+  ): ss_spicy_aggregate!
+
+  """fetch data from the table: "ss.spicy" using primary key columns"""
+  ss_spicy_by_pk(id: Int!): ss_spicy
+
+  """
+  fetch data from the table: "ss.spicy_day_data"
+  """
+  ss_spicy_day_data(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_day_data_bool_exp
+  ): [ss_spicy_day_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.spicy_day_data"
+  """
+  ss_spicy_day_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_day_data_bool_exp
+  ): ss_spicy_day_data_aggregate!
+
+  """
+  fetch data from the table: "ss.spicy_day_data" using primary key columns
+  """
+  ss_spicy_day_data_by_pk(id: Int!): ss_spicy_day_data
+
+  """
+  fetch data from the table: "ss.token_day_data"
+  """
+  ss_token_day_data(
+    """distinct select on columns"""
+    distinct_on: [ss_token_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_day_data_bool_exp
+  ): [ss_token_day_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.token_day_data"
+  """
+  ss_token_day_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_token_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_day_data_bool_exp
+  ): ss_token_day_data_aggregate!
+
+  """
+  fetch data from the table: "ss.token_day_data" using primary key columns
+  """
+  ss_token_day_data_by_pk(id: Int!): ss_token_day_data
+
+  """
+  fetch data from the table: "ss.token_metadata"
+  """
+  ss_token_metadata(
+    """distinct select on columns"""
+    distinct_on: [ss_token_metadata_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_metadata_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_metadata_bool_exp
+  ): [ss_token_metadata!]!
+
+  """
+  fetch aggregated fields from the table: "ss.token_metadata"
+  """
+  ss_token_metadata_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_token_metadata_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_metadata_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_metadata_bool_exp
+  ): ss_token_metadata_aggregate!
+
+  """
+  fetch data from the table: "ss.token_metadata" using primary key columns
+  """
+  ss_token_metadata_by_pk(tag: String!): ss_token_metadata
+
+  """
+  fetch data from the table: "ss.tokens"
+  """
+  ss_tokens(
+    """distinct select on columns"""
+    distinct_on: [ss_tokens_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_tokens_order_by!]
+
+    """filter the rows returned"""
+    where: ss_tokens_bool_exp
+  ): [ss_tokens!]!
+
+  """
+  fetch aggregated fields from the table: "ss.tokens"
+  """
+  ss_tokens_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_tokens_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_tokens_order_by!]
+
+    """filter the rows returned"""
+    where: ss_tokens_bool_exp
+  ): ss_tokens_aggregate!
+
+  """fetch data from the table: "ss.tokens" using primary key columns"""
+  ss_tokens_by_pk(id: Int!): ss_tokens
+
+  """
+  fetch data from the table: "ss.total_supply"
+  """
+  ss_total_supply(
+    """distinct select on columns"""
+    distinct_on: [ss_total_supply_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_total_supply_order_by!]
+
+    """filter the rows returned"""
+    where: ss_total_supply_bool_exp
+  ): [ss_total_supply!]!
+
+  """
+  fetch aggregated fields from the table: "ss.total_supply"
+  """
+  ss_total_supply_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_total_supply_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_total_supply_order_by!]
+
+    """filter the rows returned"""
+    where: ss_total_supply_bool_exp
+  ): ss_total_supply_aggregate!
+
+  """fetch data from the table: "ss.total_supply" using primary key columns"""
+  ss_total_supply_by_pk(id: Int!): ss_total_supply
+
+  """
+  fetch data from the table: "ss.usd"
+  """
+  ss_usd(
+    """distinct select on columns"""
+    distinct_on: [ss_usd_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_usd_order_by!]
+
+    """filter the rows returned"""
+    where: ss_usd_bool_exp
+  ): [ss_usd!]!
+
+  """
+  fetch aggregated fields from the table: "ss.usd"
+  """
+  ss_usd_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_usd_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_usd_order_by!]
+
+    """filter the rows returned"""
+    where: ss_usd_bool_exp
+  ): ss_usd_aggregate!
+
+  """fetch data from the table: "ss.usd" using primary key columns"""
+  ss_usd_by_pk(id: Int!): ss_usd
+}
+
+"""
+columns and relationships of "ss.actions"
+"""
+type ss_actions {
+  finish: timestamptz
+  id: Int!
+  pair_id: bigint!
+  reserve0_end: String
+  reserve0_start: String!
+  reserve1_end: String
+  reserve1_start: String!
+  tokenIn: String
+  tokenInAmount: String
+  tokenOut: String
+  tokenOutAmount: String
+  tracking: String!
+  type: String!
+  user: String!
+}
+
+"""
+aggregated selection of "ss.actions"
+"""
+type ss_actions_aggregate {
+  aggregate: ss_actions_aggregate_fields
+  nodes: [ss_actions!]!
+}
+
+"""
+aggregate fields of "ss.actions"
+"""
+type ss_actions_aggregate_fields {
+  avg: ss_actions_avg_fields
+  count(columns: [ss_actions_select_column!], distinct: Boolean): Int!
+  max: ss_actions_max_fields
+  min: ss_actions_min_fields
+  stddev: ss_actions_stddev_fields
+  stddev_pop: ss_actions_stddev_pop_fields
+  stddev_samp: ss_actions_stddev_samp_fields
+  sum: ss_actions_sum_fields
+  var_pop: ss_actions_var_pop_fields
+  var_samp: ss_actions_var_samp_fields
+  variance: ss_actions_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_actions_avg_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.actions". All fields are combined with a logical 'AND'.
+"""
+input ss_actions_bool_exp {
+  _and: [ss_actions_bool_exp!]
+  _not: ss_actions_bool_exp
+  _or: [ss_actions_bool_exp!]
+  finish: timestamptz_comparison_exp
+  id: Int_comparison_exp
+  pair_id: bigint_comparison_exp
+  reserve0_end: String_comparison_exp
+  reserve0_start: String_comparison_exp
+  reserve1_end: String_comparison_exp
+  reserve1_start: String_comparison_exp
+  tokenIn: String_comparison_exp
+  tokenInAmount: String_comparison_exp
+  tokenOut: String_comparison_exp
+  tokenOutAmount: String_comparison_exp
+  tracking: String_comparison_exp
+  type: String_comparison_exp
+  user: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.actions"
+"""
+enum ss_actions_constraint {
+  """unique or primary key constraint"""
+  actions_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.actions"
+"""
+input ss_actions_inc_input {
+  id: Int
+  pair_id: bigint
+}
+
+"""
+input type for inserting data into table "ss.actions"
+"""
+input ss_actions_insert_input {
+  finish: timestamptz
+  id: Int
+  pair_id: bigint
+  reserve0_end: String
+  reserve0_start: String
+  reserve1_end: String
+  reserve1_start: String
+  tokenIn: String
+  tokenInAmount: String
+  tokenOut: String
+  tokenOutAmount: String
+  tracking: String
+  type: String
+  user: String
+}
+
+"""aggregate max on columns"""
+type ss_actions_max_fields {
+  finish: timestamptz
+  id: Int
+  pair_id: bigint
+  reserve0_end: String
+  reserve0_start: String
+  reserve1_end: String
+  reserve1_start: String
+  tokenIn: String
+  tokenInAmount: String
+  tokenOut: String
+  tokenOutAmount: String
+  tracking: String
+  type: String
+  user: String
+}
+
+"""aggregate min on columns"""
+type ss_actions_min_fields {
+  finish: timestamptz
+  id: Int
+  pair_id: bigint
+  reserve0_end: String
+  reserve0_start: String
+  reserve1_end: String
+  reserve1_start: String
+  tokenIn: String
+  tokenInAmount: String
+  tokenOut: String
+  tokenOutAmount: String
+  tracking: String
+  type: String
+  user: String
+}
+
+"""
+response of any mutation on the table "ss.actions"
+"""
+type ss_actions_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_actions!]!
+}
+
+"""
+on conflict condition type for table "ss.actions"
+"""
+input ss_actions_on_conflict {
+  constraint: ss_actions_constraint!
+  update_columns: [ss_actions_update_column!]! = []
+  where: ss_actions_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.actions"."""
+input ss_actions_order_by {
+  finish: order_by
+  id: order_by
+  pair_id: order_by
+  reserve0_end: order_by
+  reserve0_start: order_by
+  reserve1_end: order_by
+  reserve1_start: order_by
+  tokenIn: order_by
+  tokenInAmount: order_by
+  tokenOut: order_by
+  tokenOutAmount: order_by
+  tracking: order_by
+  type: order_by
+  user: order_by
+}
+
+"""primary key columns input for table: ss_actions"""
+input ss_actions_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.actions"
+"""
+enum ss_actions_select_column {
+  """column name"""
+  finish
+
+  """column name"""
+  id
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0_end
+
+  """column name"""
+  reserve0_start
+
+  """column name"""
+  reserve1_end
+
+  """column name"""
+  reserve1_start
+
+  """column name"""
+  tokenIn
+
+  """column name"""
+  tokenInAmount
+
+  """column name"""
+  tokenOut
+
+  """column name"""
+  tokenOutAmount
+
+  """column name"""
+  tracking
+
+  """column name"""
+  type
+
+  """column name"""
+  user
+}
+
+"""
+input type for updating data in table "ss.actions"
+"""
+input ss_actions_set_input {
+  finish: timestamptz
+  id: Int
+  pair_id: bigint
+  reserve0_end: String
+  reserve0_start: String
+  reserve1_end: String
+  reserve1_start: String
+  tokenIn: String
+  tokenInAmount: String
+  tokenOut: String
+  tokenOutAmount: String
+  tracking: String
+  type: String
+  user: String
+}
+
+"""aggregate stddev on columns"""
+type ss_actions_stddev_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_actions_stddev_pop_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_actions_stddev_samp_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_actions_sum_fields {
+  id: Int
+  pair_id: bigint
+}
+
+"""
+update columns of table "ss.actions"
+"""
+enum ss_actions_update_column {
+  """column name"""
+  finish
+
+  """column name"""
+  id
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0_end
+
+  """column name"""
+  reserve0_start
+
+  """column name"""
+  reserve1_end
+
+  """column name"""
+  reserve1_start
+
+  """column name"""
+  tokenIn
+
+  """column name"""
+  tokenInAmount
+
+  """column name"""
+  tokenOut
+
+  """column name"""
+  tokenOutAmount
+
+  """column name"""
+  tracking
+
+  """column name"""
+  type
+
+  """column name"""
+  user
+}
+
+"""aggregate var_pop on columns"""
+type ss_actions_var_pop_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_actions_var_samp_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_actions_variance_fields {
+  id: Float
+  pair_id: Float
+}
+
+"""
+Stores current level of index and hash of it's config
+
+
+columns and relationships of "ss.dipdup_state"
+
+"""
+type ss_dipdup_state {
+  hash: String
+  index_hash: String!
+  index_name: String!
+
+  """operation: operation\nbig_map: big_map\nblock: block\nschema: schema"""
+  index_type: String!
+  last_checked: Int!
+  level: Int!
+}
+
+"""
+aggregated selection of "ss.dipdup_state"
+"""
+type ss_dipdup_state_aggregate {
+  aggregate: ss_dipdup_state_aggregate_fields
+  nodes: [ss_dipdup_state!]!
+}
+
+"""
+aggregate fields of "ss.dipdup_state"
+"""
+type ss_dipdup_state_aggregate_fields {
+  avg: ss_dipdup_state_avg_fields
+  count(columns: [ss_dipdup_state_select_column!], distinct: Boolean): Int!
+  max: ss_dipdup_state_max_fields
+  min: ss_dipdup_state_min_fields
+  stddev: ss_dipdup_state_stddev_fields
+  stddev_pop: ss_dipdup_state_stddev_pop_fields
+  stddev_samp: ss_dipdup_state_stddev_samp_fields
+  sum: ss_dipdup_state_sum_fields
+  var_pop: ss_dipdup_state_var_pop_fields
+  var_samp: ss_dipdup_state_var_samp_fields
+  variance: ss_dipdup_state_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_dipdup_state_avg_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.dipdup_state". All fields are combined with a logical 'AND'.
+"""
+input ss_dipdup_state_bool_exp {
+  _and: [ss_dipdup_state_bool_exp!]
+  _not: ss_dipdup_state_bool_exp
+  _or: [ss_dipdup_state_bool_exp!]
+  hash: String_comparison_exp
+  index_hash: String_comparison_exp
+  index_name: String_comparison_exp
+  index_type: String_comparison_exp
+  last_checked: Int_comparison_exp
+  level: Int_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.dipdup_state"
+"""
+enum ss_dipdup_state_constraint {
+  """unique or primary key constraint"""
+  dipdup_state_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.dipdup_state"
+"""
+input ss_dipdup_state_inc_input {
+  last_checked: Int
+  level: Int
+}
+
+"""
+input type for inserting data into table "ss.dipdup_state"
+"""
+input ss_dipdup_state_insert_input {
+  hash: String
+  index_hash: String
+  index_name: String
+
+  """operation: operation\nbig_map: big_map\nblock: block\nschema: schema"""
+  index_type: String
+  last_checked: Int
+  level: Int
+}
+
+"""aggregate max on columns"""
+type ss_dipdup_state_max_fields {
+  hash: String
+  index_hash: String
+  index_name: String
+
+  """operation: operation\nbig_map: big_map\nblock: block\nschema: schema"""
+  index_type: String
+  last_checked: Int
+  level: Int
+}
+
+"""aggregate min on columns"""
+type ss_dipdup_state_min_fields {
+  hash: String
+  index_hash: String
+  index_name: String
+
+  """operation: operation\nbig_map: big_map\nblock: block\nschema: schema"""
+  index_type: String
+  last_checked: Int
+  level: Int
+}
+
+"""
+response of any mutation on the table "ss.dipdup_state"
+"""
+type ss_dipdup_state_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_dipdup_state!]!
+}
+
+"""
+on conflict condition type for table "ss.dipdup_state"
+"""
+input ss_dipdup_state_on_conflict {
+  constraint: ss_dipdup_state_constraint!
+  update_columns: [ss_dipdup_state_update_column!]! = []
+  where: ss_dipdup_state_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.dipdup_state"."""
+input ss_dipdup_state_order_by {
+  hash: order_by
+  index_hash: order_by
+  index_name: order_by
+  index_type: order_by
+  last_checked: order_by
+  level: order_by
+}
+
+"""primary key columns input for table: ss_dipdup_state"""
+input ss_dipdup_state_pk_columns_input {
+  index_name: String!
+}
+
+"""
+select columns of table "ss.dipdup_state"
+"""
+enum ss_dipdup_state_select_column {
+  """column name"""
+  hash
+
+  """column name"""
+  index_hash
+
+  """column name"""
+  index_name
+
+  """column name"""
+  index_type
+
+  """column name"""
+  last_checked
+
+  """column name"""
+  level
+}
+
+"""
+input type for updating data in table "ss.dipdup_state"
+"""
+input ss_dipdup_state_set_input {
+  hash: String
+  index_hash: String
+  index_name: String
+
+  """operation: operation\nbig_map: big_map\nblock: block\nschema: schema"""
+  index_type: String
+  last_checked: Int
+  level: Int
+}
+
+"""aggregate stddev on columns"""
+type ss_dipdup_state_stddev_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_dipdup_state_stddev_pop_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_dipdup_state_stddev_samp_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""aggregate sum on columns"""
+type ss_dipdup_state_sum_fields {
+  last_checked: Int
+  level: Int
+}
+
+"""
+update columns of table "ss.dipdup_state"
+"""
+enum ss_dipdup_state_update_column {
+  """column name"""
+  hash
+
+  """column name"""
+  index_hash
+
+  """column name"""
+  index_name
+
+  """column name"""
+  index_type
+
+  """column name"""
+  last_checked
+
+  """column name"""
+  level
+}
+
+"""aggregate var_pop on columns"""
+type ss_dipdup_state_var_pop_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_dipdup_state_var_samp_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""aggregate variance on columns"""
+type ss_dipdup_state_variance_fields {
+  last_checked: Float
+  level: Float
+}
+
+"""
+columns and relationships of "ss.farm_account"
+"""
+type ss_farm_account {
+  id: Int!
+  last_rps: String!
+  last_updated: String
+  pool_contract: String!
+  reward: String!
+  staked: String!
+  user: String!
+}
+
+"""
+aggregated selection of "ss.farm_account"
+"""
+type ss_farm_account_aggregate {
+  aggregate: ss_farm_account_aggregate_fields
+  nodes: [ss_farm_account!]!
+}
+
+"""
+aggregate fields of "ss.farm_account"
+"""
+type ss_farm_account_aggregate_fields {
+  avg: ss_farm_account_avg_fields
+  count(columns: [ss_farm_account_select_column!], distinct: Boolean): Int!
+  max: ss_farm_account_max_fields
+  min: ss_farm_account_min_fields
+  stddev: ss_farm_account_stddev_fields
+  stddev_pop: ss_farm_account_stddev_pop_fields
+  stddev_samp: ss_farm_account_stddev_samp_fields
+  sum: ss_farm_account_sum_fields
+  var_pop: ss_farm_account_var_pop_fields
+  var_samp: ss_farm_account_var_samp_fields
+  variance: ss_farm_account_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_farm_account_avg_fields {
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.farm_account". All fields are combined with a logical 'AND'.
+"""
+input ss_farm_account_bool_exp {
+  _and: [ss_farm_account_bool_exp!]
+  _not: ss_farm_account_bool_exp
+  _or: [ss_farm_account_bool_exp!]
+  id: Int_comparison_exp
+  last_rps: String_comparison_exp
+  last_updated: String_comparison_exp
+  pool_contract: String_comparison_exp
+  reward: String_comparison_exp
+  staked: String_comparison_exp
+  user: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.farm_account"
+"""
+enum ss_farm_account_constraint {
+  """unique or primary key constraint"""
+  farm_account_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.farm_account"
+"""
+input ss_farm_account_inc_input {
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.farm_account"
+"""
+input ss_farm_account_insert_input {
+  id: Int
+  last_rps: String
+  last_updated: String
+  pool_contract: String
+  reward: String
+  staked: String
+  user: String
+}
+
+"""aggregate max on columns"""
+type ss_farm_account_max_fields {
+  id: Int
+  last_rps: String
+  last_updated: String
+  pool_contract: String
+  reward: String
+  staked: String
+  user: String
+}
+
+"""aggregate min on columns"""
+type ss_farm_account_min_fields {
+  id: Int
+  last_rps: String
+  last_updated: String
+  pool_contract: String
+  reward: String
+  staked: String
+  user: String
+}
+
+"""
+response of any mutation on the table "ss.farm_account"
+"""
+type ss_farm_account_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_farm_account!]!
+}
+
+"""
+on conflict condition type for table "ss.farm_account"
+"""
+input ss_farm_account_on_conflict {
+  constraint: ss_farm_account_constraint!
+  update_columns: [ss_farm_account_update_column!]! = []
+  where: ss_farm_account_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.farm_account"."""
+input ss_farm_account_order_by {
+  id: order_by
+  last_rps: order_by
+  last_updated: order_by
+  pool_contract: order_by
+  reward: order_by
+  staked: order_by
+  user: order_by
+}
+
+"""primary key columns input for table: ss_farm_account"""
+input ss_farm_account_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.farm_account"
+"""
+enum ss_farm_account_select_column {
+  """column name"""
+  id
+
+  """column name"""
+  last_rps
+
+  """column name"""
+  last_updated
+
+  """column name"""
+  pool_contract
+
+  """column name"""
+  reward
+
+  """column name"""
+  staked
+
+  """column name"""
+  user
+}
+
+"""
+input type for updating data in table "ss.farm_account"
+"""
+input ss_farm_account_set_input {
+  id: Int
+  last_rps: String
+  last_updated: String
+  pool_contract: String
+  reward: String
+  staked: String
+  user: String
+}
+
+"""aggregate stddev on columns"""
+type ss_farm_account_stddev_fields {
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_farm_account_stddev_pop_fields {
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_farm_account_stddev_samp_fields {
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_farm_account_sum_fields {
+  id: Int
+}
+
+"""
+update columns of table "ss.farm_account"
+"""
+enum ss_farm_account_update_column {
+  """column name"""
+  id
+
+  """column name"""
+  last_rps
+
+  """column name"""
+  last_updated
+
+  """column name"""
+  pool_contract
+
+  """column name"""
+  reward
+
+  """column name"""
+  staked
+
+  """column name"""
+  user
+}
+
+"""aggregate var_pop on columns"""
+type ss_farm_account_var_pop_fields {
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_farm_account_var_samp_fields {
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_farm_account_variance_fields {
+  id: Float
+}
+
+"""
+columns and relationships of "ss.farm_info"
+"""
+type ss_farm_info {
+  id: Int!
+  last_updated: timestamptz
+  pool_contract: String!
+  reward_per_share: String!
+  total_staked: String!
+}
+
+"""
+aggregated selection of "ss.farm_info"
+"""
+type ss_farm_info_aggregate {
+  aggregate: ss_farm_info_aggregate_fields
+  nodes: [ss_farm_info!]!
+}
+
+"""
+aggregate fields of "ss.farm_info"
+"""
+type ss_farm_info_aggregate_fields {
+  avg: ss_farm_info_avg_fields
+  count(columns: [ss_farm_info_select_column!], distinct: Boolean): Int!
+  max: ss_farm_info_max_fields
+  min: ss_farm_info_min_fields
+  stddev: ss_farm_info_stddev_fields
+  stddev_pop: ss_farm_info_stddev_pop_fields
+  stddev_samp: ss_farm_info_stddev_samp_fields
+  sum: ss_farm_info_sum_fields
+  var_pop: ss_farm_info_var_pop_fields
+  var_samp: ss_farm_info_var_samp_fields
+  variance: ss_farm_info_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_farm_info_avg_fields {
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.farm_info". All fields are combined with a logical 'AND'.
+"""
+input ss_farm_info_bool_exp {
+  _and: [ss_farm_info_bool_exp!]
+  _not: ss_farm_info_bool_exp
+  _or: [ss_farm_info_bool_exp!]
+  id: Int_comparison_exp
+  last_updated: timestamptz_comparison_exp
+  pool_contract: String_comparison_exp
+  reward_per_share: String_comparison_exp
+  total_staked: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.farm_info"
+"""
+enum ss_farm_info_constraint {
+  """unique or primary key constraint"""
+  farm_info_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.farm_info"
+"""
+input ss_farm_info_inc_input {
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.farm_info"
+"""
+input ss_farm_info_insert_input {
+  id: Int
+  last_updated: timestamptz
+  pool_contract: String
+  reward_per_share: String
+  total_staked: String
+}
+
+"""aggregate max on columns"""
+type ss_farm_info_max_fields {
+  id: Int
+  last_updated: timestamptz
+  pool_contract: String
+  reward_per_share: String
+  total_staked: String
+}
+
+"""aggregate min on columns"""
+type ss_farm_info_min_fields {
+  id: Int
+  last_updated: timestamptz
+  pool_contract: String
+  reward_per_share: String
+  total_staked: String
+}
+
+"""
+response of any mutation on the table "ss.farm_info"
+"""
+type ss_farm_info_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_farm_info!]!
+}
+
+"""
+on conflict condition type for table "ss.farm_info"
+"""
+input ss_farm_info_on_conflict {
+  constraint: ss_farm_info_constraint!
+  update_columns: [ss_farm_info_update_column!]! = []
+  where: ss_farm_info_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.farm_info"."""
+input ss_farm_info_order_by {
+  id: order_by
+  last_updated: order_by
+  pool_contract: order_by
+  reward_per_share: order_by
+  total_staked: order_by
+}
+
+"""primary key columns input for table: ss_farm_info"""
+input ss_farm_info_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.farm_info"
+"""
+enum ss_farm_info_select_column {
+  """column name"""
+  id
+
+  """column name"""
+  last_updated
+
+  """column name"""
+  pool_contract
+
+  """column name"""
+  reward_per_share
+
+  """column name"""
+  total_staked
+}
+
+"""
+input type for updating data in table "ss.farm_info"
+"""
+input ss_farm_info_set_input {
+  id: Int
+  last_updated: timestamptz
+  pool_contract: String
+  reward_per_share: String
+  total_staked: String
+}
+
+"""aggregate stddev on columns"""
+type ss_farm_info_stddev_fields {
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_farm_info_stddev_pop_fields {
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_farm_info_stddev_samp_fields {
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_farm_info_sum_fields {
+  id: Int
+}
+
+"""
+update columns of table "ss.farm_info"
+"""
+enum ss_farm_info_update_column {
+  """column name"""
+  id
+
+  """column name"""
+  last_updated
+
+  """column name"""
+  pool_contract
+
+  """column name"""
+  reward_per_share
+
+  """column name"""
+  total_staked
+}
+
+"""aggregate var_pop on columns"""
+type ss_farm_info_var_pop_fields {
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_farm_info_var_samp_fields {
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_farm_info_variance_fields {
+  id: Float
+}
+
+"""
+columns and relationships of "ss.liquidity"
+"""
+type ss_liquidity {
+  balance: String!
+  contract: String!
+  id: Int!
+  user: String!
+}
+
+"""
+aggregated selection of "ss.liquidity"
+"""
+type ss_liquidity_aggregate {
+  aggregate: ss_liquidity_aggregate_fields
+  nodes: [ss_liquidity!]!
+}
+
+"""
+aggregate fields of "ss.liquidity"
+"""
+type ss_liquidity_aggregate_fields {
+  avg: ss_liquidity_avg_fields
+  count(columns: [ss_liquidity_select_column!], distinct: Boolean): Int!
+  max: ss_liquidity_max_fields
+  min: ss_liquidity_min_fields
+  stddev: ss_liquidity_stddev_fields
+  stddev_pop: ss_liquidity_stddev_pop_fields
+  stddev_samp: ss_liquidity_stddev_samp_fields
+  sum: ss_liquidity_sum_fields
+  var_pop: ss_liquidity_var_pop_fields
+  var_samp: ss_liquidity_var_samp_fields
+  variance: ss_liquidity_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_liquidity_avg_fields {
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.liquidity". All fields are combined with a logical 'AND'.
+"""
+input ss_liquidity_bool_exp {
+  _and: [ss_liquidity_bool_exp!]
+  _not: ss_liquidity_bool_exp
+  _or: [ss_liquidity_bool_exp!]
+  balance: String_comparison_exp
+  contract: String_comparison_exp
+  id: Int_comparison_exp
+  user: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.liquidity"
+"""
+enum ss_liquidity_constraint {
+  """unique or primary key constraint"""
+  liquidity_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.liquidity"
+"""
+input ss_liquidity_inc_input {
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.liquidity"
+"""
+input ss_liquidity_insert_input {
+  balance: String
+  contract: String
+  id: Int
+  user: String
+}
+
+"""aggregate max on columns"""
+type ss_liquidity_max_fields {
+  balance: String
+  contract: String
+  id: Int
+  user: String
+}
+
+"""aggregate min on columns"""
+type ss_liquidity_min_fields {
+  balance: String
+  contract: String
+  id: Int
+  user: String
+}
+
+"""
+response of any mutation on the table "ss.liquidity"
+"""
+type ss_liquidity_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_liquidity!]!
+}
+
+"""
+on conflict condition type for table "ss.liquidity"
+"""
+input ss_liquidity_on_conflict {
+  constraint: ss_liquidity_constraint!
+  update_columns: [ss_liquidity_update_column!]! = []
+  where: ss_liquidity_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.liquidity"."""
+input ss_liquidity_order_by {
+  balance: order_by
+  contract: order_by
+  id: order_by
+  user: order_by
+}
+
+"""primary key columns input for table: ss_liquidity"""
+input ss_liquidity_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.liquidity"
+"""
+enum ss_liquidity_select_column {
+  """column name"""
+  balance
+
+  """column name"""
+  contract
+
+  """column name"""
+  id
+
+  """column name"""
+  user
+}
+
+"""
+input type for updating data in table "ss.liquidity"
+"""
+input ss_liquidity_set_input {
+  balance: String
+  contract: String
+  id: Int
+  user: String
+}
+
+"""aggregate stddev on columns"""
+type ss_liquidity_stddev_fields {
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_liquidity_stddev_pop_fields {
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_liquidity_stddev_samp_fields {
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_liquidity_sum_fields {
+  id: Int
+}
+
+"""
+update columns of table "ss.liquidity"
+"""
+enum ss_liquidity_update_column {
+  """column name"""
+  balance
+
+  """column name"""
+  contract
+
+  """column name"""
+  id
+
+  """column name"""
+  user
+}
+
+"""aggregate var_pop on columns"""
+type ss_liquidity_var_pop_fields {
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_liquidity_var_samp_fields {
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_liquidity_variance_fields {
+  id: Float
+}
+
+"""
+columns and relationships of "ss.pair_day_data"
+"""
+type ss_pair_day_data {
+  dailyTx: bigint!
+  dailyVolumeToken0: String!
+  dailyVolumeToken1: String!
+  day: String!
+  id: Int!
+  pair_id: String!
+  reserve0: String!
+  reserve1: String!
+  totalSupply: String!
+}
+
+"""
+aggregated selection of "ss.pair_day_data"
+"""
+type ss_pair_day_data_aggregate {
+  aggregate: ss_pair_day_data_aggregate_fields
+  nodes: [ss_pair_day_data!]!
+}
+
+"""
+aggregate fields of "ss.pair_day_data"
+"""
+type ss_pair_day_data_aggregate_fields {
+  avg: ss_pair_day_data_avg_fields
+  count(columns: [ss_pair_day_data_select_column!], distinct: Boolean): Int!
+  max: ss_pair_day_data_max_fields
+  min: ss_pair_day_data_min_fields
+  stddev: ss_pair_day_data_stddev_fields
+  stddev_pop: ss_pair_day_data_stddev_pop_fields
+  stddev_samp: ss_pair_day_data_stddev_samp_fields
+  sum: ss_pair_day_data_sum_fields
+  var_pop: ss_pair_day_data_var_pop_fields
+  var_samp: ss_pair_day_data_var_samp_fields
+  variance: ss_pair_day_data_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_pair_day_data_avg_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.pair_day_data". All fields are combined with a logical 'AND'.
+"""
+input ss_pair_day_data_bool_exp {
+  _and: [ss_pair_day_data_bool_exp!]
+  _not: ss_pair_day_data_bool_exp
+  _or: [ss_pair_day_data_bool_exp!]
+  dailyTx: bigint_comparison_exp
+  dailyVolumeToken0: String_comparison_exp
+  dailyVolumeToken1: String_comparison_exp
+  day: String_comparison_exp
+  id: Int_comparison_exp
+  pair_id: String_comparison_exp
+  reserve0: String_comparison_exp
+  reserve1: String_comparison_exp
+  totalSupply: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.pair_day_data"
+"""
+enum ss_pair_day_data_constraint {
+  """unique or primary key constraint"""
+  pair_day_data_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.pair_day_data"
+"""
+input ss_pair_day_data_inc_input {
+  dailyTx: bigint
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.pair_day_data"
+"""
+input ss_pair_day_data_insert_input {
+  dailyTx: bigint
+  dailyVolumeToken0: String
+  dailyVolumeToken1: String
+  day: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""aggregate max on columns"""
+type ss_pair_day_data_max_fields {
+  dailyTx: bigint
+  dailyVolumeToken0: String
+  dailyVolumeToken1: String
+  day: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""aggregate min on columns"""
+type ss_pair_day_data_min_fields {
+  dailyTx: bigint
+  dailyVolumeToken0: String
+  dailyVolumeToken1: String
+  day: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""
+response of any mutation on the table "ss.pair_day_data"
+"""
+type ss_pair_day_data_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_pair_day_data!]!
+}
+
+"""
+on conflict condition type for table "ss.pair_day_data"
+"""
+input ss_pair_day_data_on_conflict {
+  constraint: ss_pair_day_data_constraint!
+  update_columns: [ss_pair_day_data_update_column!]! = []
+  where: ss_pair_day_data_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.pair_day_data"."""
+input ss_pair_day_data_order_by {
+  dailyTx: order_by
+  dailyVolumeToken0: order_by
+  dailyVolumeToken1: order_by
+  day: order_by
+  id: order_by
+  pair_id: order_by
+  reserve0: order_by
+  reserve1: order_by
+  totalSupply: order_by
+}
+
+"""primary key columns input for table: ss_pair_day_data"""
+input ss_pair_day_data_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.pair_day_data"
+"""
+enum ss_pair_day_data_select_column {
+  """column name"""
+  dailyTx
+
+  """column name"""
+  dailyVolumeToken0
+
+  """column name"""
+  dailyVolumeToken1
+
+  """column name"""
+  day
+
+  """column name"""
+  id
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0
+
+  """column name"""
+  reserve1
+
+  """column name"""
+  totalSupply
+}
+
+"""
+input type for updating data in table "ss.pair_day_data"
+"""
+input ss_pair_day_data_set_input {
+  dailyTx: bigint
+  dailyVolumeToken0: String
+  dailyVolumeToken1: String
+  day: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""aggregate stddev on columns"""
+type ss_pair_day_data_stddev_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_pair_day_data_stddev_pop_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_pair_day_data_stddev_samp_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_pair_day_data_sum_fields {
+  dailyTx: bigint
+  id: Int
+}
+
+"""
+update columns of table "ss.pair_day_data"
+"""
+enum ss_pair_day_data_update_column {
+  """column name"""
+  dailyTx
+
+  """column name"""
+  dailyVolumeToken0
+
+  """column name"""
+  dailyVolumeToken1
+
+  """column name"""
+  day
+
+  """column name"""
+  id
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0
+
+  """column name"""
+  reserve1
+
+  """column name"""
+  totalSupply
+}
+
+"""aggregate var_pop on columns"""
+type ss_pair_day_data_var_pop_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_pair_day_data_var_samp_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_pair_day_data_variance_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""
+columns and relationships of "ss.pair_hour_data"
+"""
+type ss_pair_hour_data {
+  hour: date!
+  hourlyTxns: bigint!
+  hourlyVolumeToken0: String!
+  hourlyVolumeToken1: String!
+  id: Int!
+  pair_id: String!
+  reserve0: String!
+  reserve1: String!
+  totalSupply: String!
+}
+
+"""
+aggregated selection of "ss.pair_hour_data"
+"""
+type ss_pair_hour_data_aggregate {
+  aggregate: ss_pair_hour_data_aggregate_fields
+  nodes: [ss_pair_hour_data!]!
+}
+
+"""
+aggregate fields of "ss.pair_hour_data"
+"""
+type ss_pair_hour_data_aggregate_fields {
+  avg: ss_pair_hour_data_avg_fields
+  count(columns: [ss_pair_hour_data_select_column!], distinct: Boolean): Int!
+  max: ss_pair_hour_data_max_fields
+  min: ss_pair_hour_data_min_fields
+  stddev: ss_pair_hour_data_stddev_fields
+  stddev_pop: ss_pair_hour_data_stddev_pop_fields
+  stddev_samp: ss_pair_hour_data_stddev_samp_fields
+  sum: ss_pair_hour_data_sum_fields
+  var_pop: ss_pair_hour_data_var_pop_fields
+  var_samp: ss_pair_hour_data_var_samp_fields
+  variance: ss_pair_hour_data_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_pair_hour_data_avg_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.pair_hour_data". All fields are combined with a logical 'AND'.
+"""
+input ss_pair_hour_data_bool_exp {
+  _and: [ss_pair_hour_data_bool_exp!]
+  _not: ss_pair_hour_data_bool_exp
+  _or: [ss_pair_hour_data_bool_exp!]
+  hour: date_comparison_exp
+  hourlyTxns: bigint_comparison_exp
+  hourlyVolumeToken0: String_comparison_exp
+  hourlyVolumeToken1: String_comparison_exp
+  id: Int_comparison_exp
+  pair_id: String_comparison_exp
+  reserve0: String_comparison_exp
+  reserve1: String_comparison_exp
+  totalSupply: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.pair_hour_data"
+"""
+enum ss_pair_hour_data_constraint {
+  """unique or primary key constraint"""
+  pair_hour_data_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.pair_hour_data"
+"""
+input ss_pair_hour_data_inc_input {
+  hourlyTxns: bigint
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.pair_hour_data"
+"""
+input ss_pair_hour_data_insert_input {
+  hour: date
+  hourlyTxns: bigint
+  hourlyVolumeToken0: String
+  hourlyVolumeToken1: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""aggregate max on columns"""
+type ss_pair_hour_data_max_fields {
+  hour: date
+  hourlyTxns: bigint
+  hourlyVolumeToken0: String
+  hourlyVolumeToken1: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""aggregate min on columns"""
+type ss_pair_hour_data_min_fields {
+  hour: date
+  hourlyTxns: bigint
+  hourlyVolumeToken0: String
+  hourlyVolumeToken1: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""
+response of any mutation on the table "ss.pair_hour_data"
+"""
+type ss_pair_hour_data_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_pair_hour_data!]!
+}
+
+"""
+on conflict condition type for table "ss.pair_hour_data"
+"""
+input ss_pair_hour_data_on_conflict {
+  constraint: ss_pair_hour_data_constraint!
+  update_columns: [ss_pair_hour_data_update_column!]! = []
+  where: ss_pair_hour_data_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.pair_hour_data"."""
+input ss_pair_hour_data_order_by {
+  hour: order_by
+  hourlyTxns: order_by
+  hourlyVolumeToken0: order_by
+  hourlyVolumeToken1: order_by
+  id: order_by
+  pair_id: order_by
+  reserve0: order_by
+  reserve1: order_by
+  totalSupply: order_by
+}
+
+"""primary key columns input for table: ss_pair_hour_data"""
+input ss_pair_hour_data_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.pair_hour_data"
+"""
+enum ss_pair_hour_data_select_column {
+  """column name"""
+  hour
+
+  """column name"""
+  hourlyTxns
+
+  """column name"""
+  hourlyVolumeToken0
+
+  """column name"""
+  hourlyVolumeToken1
+
+  """column name"""
+  id
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0
+
+  """column name"""
+  reserve1
+
+  """column name"""
+  totalSupply
+}
+
+"""
+input type for updating data in table "ss.pair_hour_data"
+"""
+input ss_pair_hour_data_set_input {
+  hour: date
+  hourlyTxns: bigint
+  hourlyVolumeToken0: String
+  hourlyVolumeToken1: String
+  id: Int
+  pair_id: String
+  reserve0: String
+  reserve1: String
+  totalSupply: String
+}
+
+"""aggregate stddev on columns"""
+type ss_pair_hour_data_stddev_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_pair_hour_data_stddev_pop_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_pair_hour_data_stddev_samp_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_pair_hour_data_sum_fields {
+  hourlyTxns: bigint
+  id: Int
+}
+
+"""
+update columns of table "ss.pair_hour_data"
+"""
+enum ss_pair_hour_data_update_column {
+  """column name"""
+  hour
+
+  """column name"""
+  hourlyTxns
+
+  """column name"""
+  hourlyVolumeToken0
+
+  """column name"""
+  hourlyVolumeToken1
+
+  """column name"""
+  id
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0
+
+  """column name"""
+  reserve1
+
+  """column name"""
+  totalSupply
+}
+
+"""aggregate var_pop on columns"""
+type ss_pair_hour_data_var_pop_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_pair_hour_data_var_samp_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_pair_hour_data_variance_fields {
+  hourlyTxns: Float
+  id: Float
+}
+
+"""
+columns and relationships of "ss.pair_info"
+"""
+type ss_pair_info {
+  contract: String!
+  id: Int!
+  last_updated: String
+  pair_id: bigint!
+  reserve0: String!
+  reserve1: String!
+  reserveXTZ: String!
+  token0: String!
+  token0Price: String!
+  token1: String!
+  token1Price: String!
+  txCount: bigint!
+  volumeToken0: String!
+  volumeToken1: String!
+  volumeUSD: String!
+}
+
+"""
+aggregated selection of "ss.pair_info"
+"""
+type ss_pair_info_aggregate {
+  aggregate: ss_pair_info_aggregate_fields
+  nodes: [ss_pair_info!]!
+}
+
+"""
+aggregate fields of "ss.pair_info"
+"""
+type ss_pair_info_aggregate_fields {
+  avg: ss_pair_info_avg_fields
+  count(columns: [ss_pair_info_select_column!], distinct: Boolean): Int!
+  max: ss_pair_info_max_fields
+  min: ss_pair_info_min_fields
+  stddev: ss_pair_info_stddev_fields
+  stddev_pop: ss_pair_info_stddev_pop_fields
+  stddev_samp: ss_pair_info_stddev_samp_fields
+  sum: ss_pair_info_sum_fields
+  var_pop: ss_pair_info_var_pop_fields
+  var_samp: ss_pair_info_var_samp_fields
+  variance: ss_pair_info_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_pair_info_avg_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.pair_info". All fields are combined with a logical 'AND'.
+"""
+input ss_pair_info_bool_exp {
+  _and: [ss_pair_info_bool_exp!]
+  _not: ss_pair_info_bool_exp
+  _or: [ss_pair_info_bool_exp!]
+  contract: String_comparison_exp
+  id: Int_comparison_exp
+  last_updated: String_comparison_exp
+  pair_id: bigint_comparison_exp
+  reserve0: String_comparison_exp
+  reserve1: String_comparison_exp
+  reserveXTZ: String_comparison_exp
+  token0: String_comparison_exp
+  token0Price: String_comparison_exp
+  token1: String_comparison_exp
+  token1Price: String_comparison_exp
+  txCount: bigint_comparison_exp
+  volumeToken0: String_comparison_exp
+  volumeToken1: String_comparison_exp
+  volumeUSD: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.pair_info"
+"""
+enum ss_pair_info_constraint {
+  """unique or primary key constraint"""
+  pair_info_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.pair_info"
+"""
+input ss_pair_info_inc_input {
+  id: Int
+  pair_id: bigint
+  txCount: bigint
+}
+
+"""
+input type for inserting data into table "ss.pair_info"
+"""
+input ss_pair_info_insert_input {
+  contract: String
+  id: Int
+  last_updated: String
+  pair_id: bigint
+  reserve0: String
+  reserve1: String
+  reserveXTZ: String
+  token0: String
+  token0Price: String
+  token1: String
+  token1Price: String
+  txCount: bigint
+  volumeToken0: String
+  volumeToken1: String
+  volumeUSD: String
+}
+
+"""aggregate max on columns"""
+type ss_pair_info_max_fields {
+  contract: String
+  id: Int
+  last_updated: String
+  pair_id: bigint
+  reserve0: String
+  reserve1: String
+  reserveXTZ: String
+  token0: String
+  token0Price: String
+  token1: String
+  token1Price: String
+  txCount: bigint
+  volumeToken0: String
+  volumeToken1: String
+  volumeUSD: String
+}
+
+"""aggregate min on columns"""
+type ss_pair_info_min_fields {
+  contract: String
+  id: Int
+  last_updated: String
+  pair_id: bigint
+  reserve0: String
+  reserve1: String
+  reserveXTZ: String
+  token0: String
+  token0Price: String
+  token1: String
+  token1Price: String
+  txCount: bigint
+  volumeToken0: String
+  volumeToken1: String
+  volumeUSD: String
+}
+
+"""
+response of any mutation on the table "ss.pair_info"
+"""
+type ss_pair_info_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_pair_info!]!
+}
+
+"""
+on conflict condition type for table "ss.pair_info"
+"""
+input ss_pair_info_on_conflict {
+  constraint: ss_pair_info_constraint!
+  update_columns: [ss_pair_info_update_column!]! = []
+  where: ss_pair_info_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.pair_info"."""
+input ss_pair_info_order_by {
+  contract: order_by
+  id: order_by
+  last_updated: order_by
+  pair_id: order_by
+  reserve0: order_by
+  reserve1: order_by
+  reserveXTZ: order_by
+  token0: order_by
+  token0Price: order_by
+  token1: order_by
+  token1Price: order_by
+  txCount: order_by
+  volumeToken0: order_by
+  volumeToken1: order_by
+  volumeUSD: order_by
+}
+
+"""primary key columns input for table: ss_pair_info"""
+input ss_pair_info_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.pair_info"
+"""
+enum ss_pair_info_select_column {
+  """column name"""
+  contract
+
+  """column name"""
+  id
+
+  """column name"""
+  last_updated
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0
+
+  """column name"""
+  reserve1
+
+  """column name"""
+  reserveXTZ
+
+  """column name"""
+  token0
+
+  """column name"""
+  token0Price
+
+  """column name"""
+  token1
+
+  """column name"""
+  token1Price
+
+  """column name"""
+  txCount
+
+  """column name"""
+  volumeToken0
+
+  """column name"""
+  volumeToken1
+
+  """column name"""
+  volumeUSD
+}
+
+"""
+input type for updating data in table "ss.pair_info"
+"""
+input ss_pair_info_set_input {
+  contract: String
+  id: Int
+  last_updated: String
+  pair_id: bigint
+  reserve0: String
+  reserve1: String
+  reserveXTZ: String
+  token0: String
+  token0Price: String
+  token1: String
+  token1Price: String
+  txCount: bigint
+  volumeToken0: String
+  volumeToken1: String
+  volumeUSD: String
+}
+
+"""aggregate stddev on columns"""
+type ss_pair_info_stddev_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_pair_info_stddev_pop_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_pair_info_stddev_samp_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""aggregate sum on columns"""
+type ss_pair_info_sum_fields {
+  id: Int
+  pair_id: bigint
+  txCount: bigint
+}
+
+"""
+update columns of table "ss.pair_info"
+"""
+enum ss_pair_info_update_column {
+  """column name"""
+  contract
+
+  """column name"""
+  id
+
+  """column name"""
+  last_updated
+
+  """column name"""
+  pair_id
+
+  """column name"""
+  reserve0
+
+  """column name"""
+  reserve1
+
+  """column name"""
+  reserveXTZ
+
+  """column name"""
+  token0
+
+  """column name"""
+  token0Price
+
+  """column name"""
+  token1
+
+  """column name"""
+  token1Price
+
+  """column name"""
+  txCount
+
+  """column name"""
+  volumeToken0
+
+  """column name"""
+  volumeToken1
+
+  """column name"""
+  volumeUSD
+}
+
+"""aggregate var_pop on columns"""
+type ss_pair_info_var_pop_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_pair_info_var_samp_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""aggregate variance on columns"""
+type ss_pair_info_variance_fields {
+  id: Float
+  pair_id: Float
+  txCount: Float
+}
+
+"""
+columns and relationships of "ss.spicy"
+"""
+type ss_spicy {
+  id: Int!
+  totalLiquidityXTZ: String!
+  totalVolumeXTZ: String!
+  txCount: bigint!
+}
+
+"""
+aggregated selection of "ss.spicy"
+"""
+type ss_spicy_aggregate {
+  aggregate: ss_spicy_aggregate_fields
+  nodes: [ss_spicy!]!
+}
+
+"""
+aggregate fields of "ss.spicy"
+"""
+type ss_spicy_aggregate_fields {
+  avg: ss_spicy_avg_fields
+  count(columns: [ss_spicy_select_column!], distinct: Boolean): Int!
+  max: ss_spicy_max_fields
+  min: ss_spicy_min_fields
+  stddev: ss_spicy_stddev_fields
+  stddev_pop: ss_spicy_stddev_pop_fields
+  stddev_samp: ss_spicy_stddev_samp_fields
+  sum: ss_spicy_sum_fields
+  var_pop: ss_spicy_var_pop_fields
+  var_samp: ss_spicy_var_samp_fields
+  variance: ss_spicy_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_spicy_avg_fields {
+  id: Float
+  txCount: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.spicy". All fields are combined with a logical 'AND'.
+"""
+input ss_spicy_bool_exp {
+  _and: [ss_spicy_bool_exp!]
+  _not: ss_spicy_bool_exp
+  _or: [ss_spicy_bool_exp!]
+  id: Int_comparison_exp
+  totalLiquidityXTZ: String_comparison_exp
+  totalVolumeXTZ: String_comparison_exp
+  txCount: bigint_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.spicy"
+"""
+enum ss_spicy_constraint {
+  """unique or primary key constraint"""
+  spicy_pkey
+}
+
+"""
+columns and relationships of "ss.spicy_day_data"
+"""
+type ss_spicy_day_data {
+  dailyVolumeXTZ: String!
+  day: String!
+  id: Int!
+  totalLiquidityXTZ: String!
+  totalVolumeXTZ: String!
+  txCount: bigint!
+}
+
+"""
+aggregated selection of "ss.spicy_day_data"
+"""
+type ss_spicy_day_data_aggregate {
+  aggregate: ss_spicy_day_data_aggregate_fields
+  nodes: [ss_spicy_day_data!]!
+}
+
+"""
+aggregate fields of "ss.spicy_day_data"
+"""
+type ss_spicy_day_data_aggregate_fields {
+  avg: ss_spicy_day_data_avg_fields
+  count(columns: [ss_spicy_day_data_select_column!], distinct: Boolean): Int!
+  max: ss_spicy_day_data_max_fields
+  min: ss_spicy_day_data_min_fields
+  stddev: ss_spicy_day_data_stddev_fields
+  stddev_pop: ss_spicy_day_data_stddev_pop_fields
+  stddev_samp: ss_spicy_day_data_stddev_samp_fields
+  sum: ss_spicy_day_data_sum_fields
+  var_pop: ss_spicy_day_data_var_pop_fields
+  var_samp: ss_spicy_day_data_var_samp_fields
+  variance: ss_spicy_day_data_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_spicy_day_data_avg_fields {
+  id: Float
+  txCount: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.spicy_day_data". All fields are combined with a logical 'AND'.
+"""
+input ss_spicy_day_data_bool_exp {
+  _and: [ss_spicy_day_data_bool_exp!]
+  _not: ss_spicy_day_data_bool_exp
+  _or: [ss_spicy_day_data_bool_exp!]
+  dailyVolumeXTZ: String_comparison_exp
+  day: String_comparison_exp
+  id: Int_comparison_exp
+  totalLiquidityXTZ: String_comparison_exp
+  totalVolumeXTZ: String_comparison_exp
+  txCount: bigint_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.spicy_day_data"
+"""
+enum ss_spicy_day_data_constraint {
+  """unique or primary key constraint"""
+  spicy_day_data_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.spicy_day_data"
+"""
+input ss_spicy_day_data_inc_input {
+  id: Int
+  txCount: bigint
+}
+
+"""
+input type for inserting data into table "ss.spicy_day_data"
+"""
+input ss_spicy_day_data_insert_input {
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""aggregate max on columns"""
+type ss_spicy_day_data_max_fields {
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""aggregate min on columns"""
+type ss_spicy_day_data_min_fields {
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""
+response of any mutation on the table "ss.spicy_day_data"
+"""
+type ss_spicy_day_data_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_spicy_day_data!]!
+}
+
+"""
+on conflict condition type for table "ss.spicy_day_data"
+"""
+input ss_spicy_day_data_on_conflict {
+  constraint: ss_spicy_day_data_constraint!
+  update_columns: [ss_spicy_day_data_update_column!]! = []
+  where: ss_spicy_day_data_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.spicy_day_data"."""
+input ss_spicy_day_data_order_by {
+  dailyVolumeXTZ: order_by
+  day: order_by
+  id: order_by
+  totalLiquidityXTZ: order_by
+  totalVolumeXTZ: order_by
+  txCount: order_by
+}
+
+"""primary key columns input for table: ss_spicy_day_data"""
+input ss_spicy_day_data_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.spicy_day_data"
+"""
+enum ss_spicy_day_data_select_column {
+  """column name"""
+  dailyVolumeXTZ
+
+  """column name"""
+  day
+
+  """column name"""
+  id
+
+  """column name"""
+  totalLiquidityXTZ
+
+  """column name"""
+  totalVolumeXTZ
+
+  """column name"""
+  txCount
+}
+
+"""
+input type for updating data in table "ss.spicy_day_data"
+"""
+input ss_spicy_day_data_set_input {
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""aggregate stddev on columns"""
+type ss_spicy_day_data_stddev_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_spicy_day_data_stddev_pop_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_spicy_day_data_stddev_samp_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate sum on columns"""
+type ss_spicy_day_data_sum_fields {
+  id: Int
+  txCount: bigint
+}
+
+"""
+update columns of table "ss.spicy_day_data"
+"""
+enum ss_spicy_day_data_update_column {
+  """column name"""
+  dailyVolumeXTZ
+
+  """column name"""
+  day
+
+  """column name"""
+  id
+
+  """column name"""
+  totalLiquidityXTZ
+
+  """column name"""
+  totalVolumeXTZ
+
+  """column name"""
+  txCount
+}
+
+"""aggregate var_pop on columns"""
+type ss_spicy_day_data_var_pop_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_spicy_day_data_var_samp_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate variance on columns"""
+type ss_spicy_day_data_variance_fields {
+  id: Float
+  txCount: Float
+}
+
+"""
+input type for incrementing numeric columns in table "ss.spicy"
+"""
+input ss_spicy_inc_input {
+  id: Int
+  txCount: bigint
+}
+
+"""
+input type for inserting data into table "ss.spicy"
+"""
+input ss_spicy_insert_input {
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""aggregate max on columns"""
+type ss_spicy_max_fields {
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""aggregate min on columns"""
+type ss_spicy_min_fields {
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""
+response of any mutation on the table "ss.spicy"
+"""
+type ss_spicy_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_spicy!]!
+}
+
+"""
+on conflict condition type for table "ss.spicy"
+"""
+input ss_spicy_on_conflict {
+  constraint: ss_spicy_constraint!
+  update_columns: [ss_spicy_update_column!]! = []
+  where: ss_spicy_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.spicy"."""
+input ss_spicy_order_by {
+  id: order_by
+  totalLiquidityXTZ: order_by
+  totalVolumeXTZ: order_by
+  txCount: order_by
+}
+
+"""primary key columns input for table: ss_spicy"""
+input ss_spicy_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.spicy"
+"""
+enum ss_spicy_select_column {
+  """column name"""
+  id
+
+  """column name"""
+  totalLiquidityXTZ
+
+  """column name"""
+  totalVolumeXTZ
+
+  """column name"""
+  txCount
+}
+
+"""
+input type for updating data in table "ss.spicy"
+"""
+input ss_spicy_set_input {
+  id: Int
+  totalLiquidityXTZ: String
+  totalVolumeXTZ: String
+  txCount: bigint
+}
+
+"""aggregate stddev on columns"""
+type ss_spicy_stddev_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_spicy_stddev_pop_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_spicy_stddev_samp_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate sum on columns"""
+type ss_spicy_sum_fields {
+  id: Int
+  txCount: bigint
+}
+
+"""
+update columns of table "ss.spicy"
+"""
+enum ss_spicy_update_column {
+  """column name"""
+  id
+
+  """column name"""
+  totalLiquidityXTZ
+
+  """column name"""
+  totalVolumeXTZ
+
+  """column name"""
+  txCount
+}
+
+"""aggregate var_pop on columns"""
+type ss_spicy_var_pop_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_spicy_var_samp_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate variance on columns"""
+type ss_spicy_variance_fields {
+  id: Float
+  txCount: Float
+}
+
+"""
+columns and relationships of "ss.token_day_data"
+"""
+type ss_token_day_data {
+  dailyTx: bigint!
+  dailyVolumeToken: String!
+  dailyVolumeXTZ: String!
+  day: String!
+  id: Int!
+  tag: String!
+  totalLiquidityToken: String!
+  totalLiquidityXTZ: String!
+}
+
+"""
+aggregated selection of "ss.token_day_data"
+"""
+type ss_token_day_data_aggregate {
+  aggregate: ss_token_day_data_aggregate_fields
+  nodes: [ss_token_day_data!]!
+}
+
+"""
+aggregate fields of "ss.token_day_data"
+"""
+type ss_token_day_data_aggregate_fields {
+  avg: ss_token_day_data_avg_fields
+  count(columns: [ss_token_day_data_select_column!], distinct: Boolean): Int!
+  max: ss_token_day_data_max_fields
+  min: ss_token_day_data_min_fields
+  stddev: ss_token_day_data_stddev_fields
+  stddev_pop: ss_token_day_data_stddev_pop_fields
+  stddev_samp: ss_token_day_data_stddev_samp_fields
+  sum: ss_token_day_data_sum_fields
+  var_pop: ss_token_day_data_var_pop_fields
+  var_samp: ss_token_day_data_var_samp_fields
+  variance: ss_token_day_data_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_token_day_data_avg_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.token_day_data". All fields are combined with a logical 'AND'.
+"""
+input ss_token_day_data_bool_exp {
+  _and: [ss_token_day_data_bool_exp!]
+  _not: ss_token_day_data_bool_exp
+  _or: [ss_token_day_data_bool_exp!]
+  dailyTx: bigint_comparison_exp
+  dailyVolumeToken: String_comparison_exp
+  dailyVolumeXTZ: String_comparison_exp
+  day: String_comparison_exp
+  id: Int_comparison_exp
+  tag: String_comparison_exp
+  totalLiquidityToken: String_comparison_exp
+  totalLiquidityXTZ: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.token_day_data"
+"""
+enum ss_token_day_data_constraint {
+  """unique or primary key constraint"""
+  token_day_data_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.token_day_data"
+"""
+input ss_token_day_data_inc_input {
+  dailyTx: bigint
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.token_day_data"
+"""
+input ss_token_day_data_insert_input {
+  dailyTx: bigint
+  dailyVolumeToken: String
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  tag: String
+  totalLiquidityToken: String
+  totalLiquidityXTZ: String
+}
+
+"""aggregate max on columns"""
+type ss_token_day_data_max_fields {
+  dailyTx: bigint
+  dailyVolumeToken: String
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  tag: String
+  totalLiquidityToken: String
+  totalLiquidityXTZ: String
+}
+
+"""aggregate min on columns"""
+type ss_token_day_data_min_fields {
+  dailyTx: bigint
+  dailyVolumeToken: String
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  tag: String
+  totalLiquidityToken: String
+  totalLiquidityXTZ: String
+}
+
+"""
+response of any mutation on the table "ss.token_day_data"
+"""
+type ss_token_day_data_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_token_day_data!]!
+}
+
+"""
+on conflict condition type for table "ss.token_day_data"
+"""
+input ss_token_day_data_on_conflict {
+  constraint: ss_token_day_data_constraint!
+  update_columns: [ss_token_day_data_update_column!]! = []
+  where: ss_token_day_data_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.token_day_data"."""
+input ss_token_day_data_order_by {
+  dailyTx: order_by
+  dailyVolumeToken: order_by
+  dailyVolumeXTZ: order_by
+  day: order_by
+  id: order_by
+  tag: order_by
+  totalLiquidityToken: order_by
+  totalLiquidityXTZ: order_by
+}
+
+"""primary key columns input for table: ss_token_day_data"""
+input ss_token_day_data_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.token_day_data"
+"""
+enum ss_token_day_data_select_column {
+  """column name"""
+  dailyTx
+
+  """column name"""
+  dailyVolumeToken
+
+  """column name"""
+  dailyVolumeXTZ
+
+  """column name"""
+  day
+
+  """column name"""
+  id
+
+  """column name"""
+  tag
+
+  """column name"""
+  totalLiquidityToken
+
+  """column name"""
+  totalLiquidityXTZ
+}
+
+"""
+input type for updating data in table "ss.token_day_data"
+"""
+input ss_token_day_data_set_input {
+  dailyTx: bigint
+  dailyVolumeToken: String
+  dailyVolumeXTZ: String
+  day: String
+  id: Int
+  tag: String
+  totalLiquidityToken: String
+  totalLiquidityXTZ: String
+}
+
+"""aggregate stddev on columns"""
+type ss_token_day_data_stddev_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_token_day_data_stddev_pop_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_token_day_data_stddev_samp_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_token_day_data_sum_fields {
+  dailyTx: bigint
+  id: Int
+}
+
+"""
+update columns of table "ss.token_day_data"
+"""
+enum ss_token_day_data_update_column {
+  """column name"""
+  dailyTx
+
+  """column name"""
+  dailyVolumeToken
+
+  """column name"""
+  dailyVolumeXTZ
+
+  """column name"""
+  day
+
+  """column name"""
+  id
+
+  """column name"""
+  tag
+
+  """column name"""
+  totalLiquidityToken
+
+  """column name"""
+  totalLiquidityXTZ
+}
+
+"""aggregate var_pop on columns"""
+type ss_token_day_data_var_pop_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_token_day_data_var_samp_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_token_day_data_variance_fields {
+  dailyTx: Float
+  id: Float
+}
+
+"""
+columns and relationships of "ss.token_metadata"
+"""
+type ss_token_metadata {
+  decimals: bigint
+  img: String
+  name: String
+  symbol: String
+  tag: String!
+}
+
+"""
+aggregated selection of "ss.token_metadata"
+"""
+type ss_token_metadata_aggregate {
+  aggregate: ss_token_metadata_aggregate_fields
+  nodes: [ss_token_metadata!]!
+}
+
+"""
+aggregate fields of "ss.token_metadata"
+"""
+type ss_token_metadata_aggregate_fields {
+  avg: ss_token_metadata_avg_fields
+  count(columns: [ss_token_metadata_select_column!], distinct: Boolean): Int!
+  max: ss_token_metadata_max_fields
+  min: ss_token_metadata_min_fields
+  stddev: ss_token_metadata_stddev_fields
+  stddev_pop: ss_token_metadata_stddev_pop_fields
+  stddev_samp: ss_token_metadata_stddev_samp_fields
+  sum: ss_token_metadata_sum_fields
+  var_pop: ss_token_metadata_var_pop_fields
+  var_samp: ss_token_metadata_var_samp_fields
+  variance: ss_token_metadata_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_token_metadata_avg_fields {
+  decimals: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.token_metadata". All fields are combined with a logical 'AND'.
+"""
+input ss_token_metadata_bool_exp {
+  _and: [ss_token_metadata_bool_exp!]
+  _not: ss_token_metadata_bool_exp
+  _or: [ss_token_metadata_bool_exp!]
+  decimals: bigint_comparison_exp
+  img: String_comparison_exp
+  name: String_comparison_exp
+  symbol: String_comparison_exp
+  tag: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.token_metadata"
+"""
+enum ss_token_metadata_constraint {
+  """unique or primary key constraint"""
+  token_metadata_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.token_metadata"
+"""
+input ss_token_metadata_inc_input {
+  decimals: bigint
+}
+
+"""
+input type for inserting data into table "ss.token_metadata"
+"""
+input ss_token_metadata_insert_input {
+  decimals: bigint
+  img: String
+  name: String
+  symbol: String
+  tag: String
+}
+
+"""aggregate max on columns"""
+type ss_token_metadata_max_fields {
+  decimals: bigint
+  img: String
+  name: String
+  symbol: String
+  tag: String
+}
+
+"""aggregate min on columns"""
+type ss_token_metadata_min_fields {
+  decimals: bigint
+  img: String
+  name: String
+  symbol: String
+  tag: String
+}
+
+"""
+response of any mutation on the table "ss.token_metadata"
+"""
+type ss_token_metadata_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_token_metadata!]!
+}
+
+"""
+on conflict condition type for table "ss.token_metadata"
+"""
+input ss_token_metadata_on_conflict {
+  constraint: ss_token_metadata_constraint!
+  update_columns: [ss_token_metadata_update_column!]! = []
+  where: ss_token_metadata_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.token_metadata"."""
+input ss_token_metadata_order_by {
+  decimals: order_by
+  img: order_by
+  name: order_by
+  symbol: order_by
+  tag: order_by
+}
+
+"""primary key columns input for table: ss_token_metadata"""
+input ss_token_metadata_pk_columns_input {
+  tag: String!
+}
+
+"""
+select columns of table "ss.token_metadata"
+"""
+enum ss_token_metadata_select_column {
+  """column name"""
+  decimals
+
+  """column name"""
+  img
+
+  """column name"""
+  name
+
+  """column name"""
+  symbol
+
+  """column name"""
+  tag
+}
+
+"""
+input type for updating data in table "ss.token_metadata"
+"""
+input ss_token_metadata_set_input {
+  decimals: bigint
+  img: String
+  name: String
+  symbol: String
+  tag: String
+}
+
+"""aggregate stddev on columns"""
+type ss_token_metadata_stddev_fields {
+  decimals: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_token_metadata_stddev_pop_fields {
+  decimals: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_token_metadata_stddev_samp_fields {
+  decimals: Float
+}
+
+"""aggregate sum on columns"""
+type ss_token_metadata_sum_fields {
+  decimals: bigint
+}
+
+"""
+update columns of table "ss.token_metadata"
+"""
+enum ss_token_metadata_update_column {
+  """column name"""
+  decimals
+
+  """column name"""
+  img
+
+  """column name"""
+  name
+
+  """column name"""
+  symbol
+
+  """column name"""
+  tag
+}
+
+"""aggregate var_pop on columns"""
+type ss_token_metadata_var_pop_fields {
+  decimals: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_token_metadata_var_samp_fields {
+  decimals: Float
+}
+
+"""aggregate variance on columns"""
+type ss_token_metadata_variance_fields {
+  decimals: Float
+}
+
+"""
+columns and relationships of "ss.tokens"
+"""
+type ss_tokens {
+  derivedXTZ: String!
+  id: Int!
+  tag: String!
+  totalLiquidity: String!
+  tradeVolume: String!
+  txCount: bigint!
+}
+
+"""
+aggregated selection of "ss.tokens"
+"""
+type ss_tokens_aggregate {
+  aggregate: ss_tokens_aggregate_fields
+  nodes: [ss_tokens!]!
+}
+
+"""
+aggregate fields of "ss.tokens"
+"""
+type ss_tokens_aggregate_fields {
+  avg: ss_tokens_avg_fields
+  count(columns: [ss_tokens_select_column!], distinct: Boolean): Int!
+  max: ss_tokens_max_fields
+  min: ss_tokens_min_fields
+  stddev: ss_tokens_stddev_fields
+  stddev_pop: ss_tokens_stddev_pop_fields
+  stddev_samp: ss_tokens_stddev_samp_fields
+  sum: ss_tokens_sum_fields
+  var_pop: ss_tokens_var_pop_fields
+  var_samp: ss_tokens_var_samp_fields
+  variance: ss_tokens_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_tokens_avg_fields {
+  id: Float
+  txCount: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.tokens". All fields are combined with a logical 'AND'.
+"""
+input ss_tokens_bool_exp {
+  _and: [ss_tokens_bool_exp!]
+  _not: ss_tokens_bool_exp
+  _or: [ss_tokens_bool_exp!]
+  derivedXTZ: String_comparison_exp
+  id: Int_comparison_exp
+  tag: String_comparison_exp
+  totalLiquidity: String_comparison_exp
+  tradeVolume: String_comparison_exp
+  txCount: bigint_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.tokens"
+"""
+enum ss_tokens_constraint {
+  """unique or primary key constraint"""
+  tokens_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.tokens"
+"""
+input ss_tokens_inc_input {
+  id: Int
+  txCount: bigint
+}
+
+"""
+input type for inserting data into table "ss.tokens"
+"""
+input ss_tokens_insert_input {
+  derivedXTZ: String
+  id: Int
+  tag: String
+  totalLiquidity: String
+  tradeVolume: String
+  txCount: bigint
+}
+
+"""aggregate max on columns"""
+type ss_tokens_max_fields {
+  derivedXTZ: String
+  id: Int
+  tag: String
+  totalLiquidity: String
+  tradeVolume: String
+  txCount: bigint
+}
+
+"""aggregate min on columns"""
+type ss_tokens_min_fields {
+  derivedXTZ: String
+  id: Int
+  tag: String
+  totalLiquidity: String
+  tradeVolume: String
+  txCount: bigint
+}
+
+"""
+response of any mutation on the table "ss.tokens"
+"""
+type ss_tokens_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_tokens!]!
+}
+
+"""
+on conflict condition type for table "ss.tokens"
+"""
+input ss_tokens_on_conflict {
+  constraint: ss_tokens_constraint!
+  update_columns: [ss_tokens_update_column!]! = []
+  where: ss_tokens_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.tokens"."""
+input ss_tokens_order_by {
+  derivedXTZ: order_by
+  id: order_by
+  tag: order_by
+  totalLiquidity: order_by
+  tradeVolume: order_by
+  txCount: order_by
+}
+
+"""primary key columns input for table: ss_tokens"""
+input ss_tokens_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.tokens"
+"""
+enum ss_tokens_select_column {
+  """column name"""
+  derivedXTZ
+
+  """column name"""
+  id
+
+  """column name"""
+  tag
+
+  """column name"""
+  totalLiquidity
+
+  """column name"""
+  tradeVolume
+
+  """column name"""
+  txCount
+}
+
+"""
+input type for updating data in table "ss.tokens"
+"""
+input ss_tokens_set_input {
+  derivedXTZ: String
+  id: Int
+  tag: String
+  totalLiquidity: String
+  tradeVolume: String
+  txCount: bigint
+}
+
+"""aggregate stddev on columns"""
+type ss_tokens_stddev_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_tokens_stddev_pop_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_tokens_stddev_samp_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate sum on columns"""
+type ss_tokens_sum_fields {
+  id: Int
+  txCount: bigint
+}
+
+"""
+update columns of table "ss.tokens"
+"""
+enum ss_tokens_update_column {
+  """column name"""
+  derivedXTZ
+
+  """column name"""
+  id
+
+  """column name"""
+  tag
+
+  """column name"""
+  totalLiquidity
+
+  """column name"""
+  tradeVolume
+
+  """column name"""
+  txCount
+}
+
+"""aggregate var_pop on columns"""
+type ss_tokens_var_pop_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_tokens_var_samp_fields {
+  id: Float
+  txCount: Float
+}
+
+"""aggregate variance on columns"""
+type ss_tokens_variance_fields {
+  id: Float
+  txCount: Float
+}
+
+"""
+columns and relationships of "ss.total_supply"
+"""
+type ss_total_supply {
+  contract: String!
+  id: Int!
+  supply: String!
+}
+
+"""
+aggregated selection of "ss.total_supply"
+"""
+type ss_total_supply_aggregate {
+  aggregate: ss_total_supply_aggregate_fields
+  nodes: [ss_total_supply!]!
+}
+
+"""
+aggregate fields of "ss.total_supply"
+"""
+type ss_total_supply_aggregate_fields {
+  avg: ss_total_supply_avg_fields
+  count(columns: [ss_total_supply_select_column!], distinct: Boolean): Int!
+  max: ss_total_supply_max_fields
+  min: ss_total_supply_min_fields
+  stddev: ss_total_supply_stddev_fields
+  stddev_pop: ss_total_supply_stddev_pop_fields
+  stddev_samp: ss_total_supply_stddev_samp_fields
+  sum: ss_total_supply_sum_fields
+  var_pop: ss_total_supply_var_pop_fields
+  var_samp: ss_total_supply_var_samp_fields
+  variance: ss_total_supply_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_total_supply_avg_fields {
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.total_supply". All fields are combined with a logical 'AND'.
+"""
+input ss_total_supply_bool_exp {
+  _and: [ss_total_supply_bool_exp!]
+  _not: ss_total_supply_bool_exp
+  _or: [ss_total_supply_bool_exp!]
+  contract: String_comparison_exp
+  id: Int_comparison_exp
+  supply: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.total_supply"
+"""
+enum ss_total_supply_constraint {
+  """unique or primary key constraint"""
+  total_supply_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.total_supply"
+"""
+input ss_total_supply_inc_input {
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.total_supply"
+"""
+input ss_total_supply_insert_input {
+  contract: String
+  id: Int
+  supply: String
+}
+
+"""aggregate max on columns"""
+type ss_total_supply_max_fields {
+  contract: String
+  id: Int
+  supply: String
+}
+
+"""aggregate min on columns"""
+type ss_total_supply_min_fields {
+  contract: String
+  id: Int
+  supply: String
+}
+
+"""
+response of any mutation on the table "ss.total_supply"
+"""
+type ss_total_supply_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_total_supply!]!
+}
+
+"""
+on conflict condition type for table "ss.total_supply"
+"""
+input ss_total_supply_on_conflict {
+  constraint: ss_total_supply_constraint!
+  update_columns: [ss_total_supply_update_column!]! = []
+  where: ss_total_supply_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.total_supply"."""
+input ss_total_supply_order_by {
+  contract: order_by
+  id: order_by
+  supply: order_by
+}
+
+"""primary key columns input for table: ss_total_supply"""
+input ss_total_supply_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.total_supply"
+"""
+enum ss_total_supply_select_column {
+  """column name"""
+  contract
+
+  """column name"""
+  id
+
+  """column name"""
+  supply
+}
+
+"""
+input type for updating data in table "ss.total_supply"
+"""
+input ss_total_supply_set_input {
+  contract: String
+  id: Int
+  supply: String
+}
+
+"""aggregate stddev on columns"""
+type ss_total_supply_stddev_fields {
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_total_supply_stddev_pop_fields {
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_total_supply_stddev_samp_fields {
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_total_supply_sum_fields {
+  id: Int
+}
+
+"""
+update columns of table "ss.total_supply"
+"""
+enum ss_total_supply_update_column {
+  """column name"""
+  contract
+
+  """column name"""
+  id
+
+  """column name"""
+  supply
+}
+
+"""aggregate var_pop on columns"""
+type ss_total_supply_var_pop_fields {
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_total_supply_var_samp_fields {
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_total_supply_variance_fields {
+  id: Float
+}
+
+"""
+columns and relationships of "ss.usd"
+"""
+type ss_usd {
+  id: Int!
+  price: String!
+}
+
+"""
+aggregated selection of "ss.usd"
+"""
+type ss_usd_aggregate {
+  aggregate: ss_usd_aggregate_fields
+  nodes: [ss_usd!]!
+}
+
+"""
+aggregate fields of "ss.usd"
+"""
+type ss_usd_aggregate_fields {
+  avg: ss_usd_avg_fields
+  count(columns: [ss_usd_select_column!], distinct: Boolean): Int!
+  max: ss_usd_max_fields
+  min: ss_usd_min_fields
+  stddev: ss_usd_stddev_fields
+  stddev_pop: ss_usd_stddev_pop_fields
+  stddev_samp: ss_usd_stddev_samp_fields
+  sum: ss_usd_sum_fields
+  var_pop: ss_usd_var_pop_fields
+  var_samp: ss_usd_var_samp_fields
+  variance: ss_usd_variance_fields
+}
+
+"""aggregate avg on columns"""
+type ss_usd_avg_fields {
+  id: Float
+}
+
+"""
+Boolean expression to filter rows from the table "ss.usd". All fields are combined with a logical 'AND'.
+"""
+input ss_usd_bool_exp {
+  _and: [ss_usd_bool_exp!]
+  _not: ss_usd_bool_exp
+  _or: [ss_usd_bool_exp!]
+  id: Int_comparison_exp
+  price: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "ss.usd"
+"""
+enum ss_usd_constraint {
+  """unique or primary key constraint"""
+  usd_pkey
+}
+
+"""
+input type for incrementing numeric columns in table "ss.usd"
+"""
+input ss_usd_inc_input {
+  id: Int
+}
+
+"""
+input type for inserting data into table "ss.usd"
+"""
+input ss_usd_insert_input {
+  id: Int
+  price: String
+}
+
+"""aggregate max on columns"""
+type ss_usd_max_fields {
+  id: Int
+  price: String
+}
+
+"""aggregate min on columns"""
+type ss_usd_min_fields {
+  id: Int
+  price: String
+}
+
+"""
+response of any mutation on the table "ss.usd"
+"""
+type ss_usd_mutation_response {
+  """number of rows affected by the mutation"""
+  affected_rows: Int!
+
+  """data from the rows affected by the mutation"""
+  returning: [ss_usd!]!
+}
+
+"""
+on conflict condition type for table "ss.usd"
+"""
+input ss_usd_on_conflict {
+  constraint: ss_usd_constraint!
+  update_columns: [ss_usd_update_column!]! = []
+  where: ss_usd_bool_exp
+}
+
+"""Ordering options when selecting data from "ss.usd"."""
+input ss_usd_order_by {
+  id: order_by
+  price: order_by
+}
+
+"""primary key columns input for table: ss_usd"""
+input ss_usd_pk_columns_input {
+  id: Int!
+}
+
+"""
+select columns of table "ss.usd"
+"""
+enum ss_usd_select_column {
+  """column name"""
+  id
+
+  """column name"""
+  price
+}
+
+"""
+input type for updating data in table "ss.usd"
+"""
+input ss_usd_set_input {
+  id: Int
+  price: String
+}
+
+"""aggregate stddev on columns"""
+type ss_usd_stddev_fields {
+  id: Float
+}
+
+"""aggregate stddev_pop on columns"""
+type ss_usd_stddev_pop_fields {
+  id: Float
+}
+
+"""aggregate stddev_samp on columns"""
+type ss_usd_stddev_samp_fields {
+  id: Float
+}
+
+"""aggregate sum on columns"""
+type ss_usd_sum_fields {
+  id: Int
+}
+
+"""
+update columns of table "ss.usd"
+"""
+enum ss_usd_update_column {
+  """column name"""
+  id
+
+  """column name"""
+  price
+}
+
+"""aggregate var_pop on columns"""
+type ss_usd_var_pop_fields {
+  id: Float
+}
+
+"""aggregate var_samp on columns"""
+type ss_usd_var_samp_fields {
+  id: Float
+}
+
+"""aggregate variance on columns"""
+type ss_usd_variance_fields {
+  id: Float
+}
+
+type subscription_root {
+  """
+  fetch data from the table: "ss.actions"
+  """
+  ss_actions(
+    """distinct select on columns"""
+    distinct_on: [ss_actions_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_actions_order_by!]
+
+    """filter the rows returned"""
+    where: ss_actions_bool_exp
+  ): [ss_actions!]!
+
+  """
+  fetch aggregated fields from the table: "ss.actions"
+  """
+  ss_actions_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_actions_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_actions_order_by!]
+
+    """filter the rows returned"""
+    where: ss_actions_bool_exp
+  ): ss_actions_aggregate!
+
+  """fetch data from the table: "ss.actions" using primary key columns"""
+  ss_actions_by_pk(id: Int!): ss_actions
+
+  """
+  fetch data from the table: "ss.dipdup_state"
+  """
+  ss_dipdup_state(
+    """distinct select on columns"""
+    distinct_on: [ss_dipdup_state_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_dipdup_state_order_by!]
+
+    """filter the rows returned"""
+    where: ss_dipdup_state_bool_exp
+  ): [ss_dipdup_state!]!
+
+  """
+  fetch aggregated fields from the table: "ss.dipdup_state"
+  """
+  ss_dipdup_state_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_dipdup_state_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_dipdup_state_order_by!]
+
+    """filter the rows returned"""
+    where: ss_dipdup_state_bool_exp
+  ): ss_dipdup_state_aggregate!
+
+  """fetch data from the table: "ss.dipdup_state" using primary key columns"""
+  ss_dipdup_state_by_pk(index_name: String!): ss_dipdup_state
+
+  """
+  fetch data from the table: "ss.farm_account"
+  """
+  ss_farm_account(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_account_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_account_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_account_bool_exp
+  ): [ss_farm_account!]!
+
+  """
+  fetch aggregated fields from the table: "ss.farm_account"
+  """
+  ss_farm_account_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_account_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_account_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_account_bool_exp
+  ): ss_farm_account_aggregate!
+
+  """fetch data from the table: "ss.farm_account" using primary key columns"""
+  ss_farm_account_by_pk(id: Int!): ss_farm_account
+
+  """
+  fetch data from the table: "ss.farm_info"
+  """
+  ss_farm_info(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_info_bool_exp
+  ): [ss_farm_info!]!
+
+  """
+  fetch aggregated fields from the table: "ss.farm_info"
+  """
+  ss_farm_info_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_farm_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_farm_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_farm_info_bool_exp
+  ): ss_farm_info_aggregate!
+
+  """fetch data from the table: "ss.farm_info" using primary key columns"""
+  ss_farm_info_by_pk(id: Int!): ss_farm_info
+
+  """
+  fetch data from the table: "ss.liquidity"
+  """
+  ss_liquidity(
+    """distinct select on columns"""
+    distinct_on: [ss_liquidity_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_liquidity_order_by!]
+
+    """filter the rows returned"""
+    where: ss_liquidity_bool_exp
+  ): [ss_liquidity!]!
+
+  """
+  fetch aggregated fields from the table: "ss.liquidity"
+  """
+  ss_liquidity_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_liquidity_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_liquidity_order_by!]
+
+    """filter the rows returned"""
+    where: ss_liquidity_bool_exp
+  ): ss_liquidity_aggregate!
+
+  """fetch data from the table: "ss.liquidity" using primary key columns"""
+  ss_liquidity_by_pk(id: Int!): ss_liquidity
+
+  """
+  fetch data from the table: "ss.pair_day_data"
+  """
+  ss_pair_day_data(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_day_data_bool_exp
+  ): [ss_pair_day_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.pair_day_data"
+  """
+  ss_pair_day_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_day_data_bool_exp
+  ): ss_pair_day_data_aggregate!
+
+  """
+  fetch data from the table: "ss.pair_day_data" using primary key columns
+  """
+  ss_pair_day_data_by_pk(id: Int!): ss_pair_day_data
+
+  """
+  fetch data from the table: "ss.pair_hour_data"
+  """
+  ss_pair_hour_data(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_hour_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_hour_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_hour_data_bool_exp
+  ): [ss_pair_hour_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.pair_hour_data"
+  """
+  ss_pair_hour_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_hour_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_hour_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_hour_data_bool_exp
+  ): ss_pair_hour_data_aggregate!
+
+  """
+  fetch data from the table: "ss.pair_hour_data" using primary key columns
+  """
+  ss_pair_hour_data_by_pk(id: Int!): ss_pair_hour_data
+
+  """
+  fetch data from the table: "ss.pair_info"
+  """
+  ss_pair_info(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_info_bool_exp
+  ): [ss_pair_info!]!
+
+  """
+  fetch aggregated fields from the table: "ss.pair_info"
+  """
+  ss_pair_info_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_pair_info_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_pair_info_order_by!]
+
+    """filter the rows returned"""
+    where: ss_pair_info_bool_exp
+  ): ss_pair_info_aggregate!
+
+  """fetch data from the table: "ss.pair_info" using primary key columns"""
+  ss_pair_info_by_pk(id: Int!): ss_pair_info
+
+  """
+  fetch data from the table: "ss.spicy"
+  """
+  ss_spicy(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_bool_exp
+  ): [ss_spicy!]!
+
+  """
+  fetch aggregated fields from the table: "ss.spicy"
+  """
+  ss_spicy_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_bool_exp
+  ): ss_spicy_aggregate!
+
+  """fetch data from the table: "ss.spicy" using primary key columns"""
+  ss_spicy_by_pk(id: Int!): ss_spicy
+
+  """
+  fetch data from the table: "ss.spicy_day_data"
+  """
+  ss_spicy_day_data(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_day_data_bool_exp
+  ): [ss_spicy_day_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.spicy_day_data"
+  """
+  ss_spicy_day_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_spicy_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_spicy_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_spicy_day_data_bool_exp
+  ): ss_spicy_day_data_aggregate!
+
+  """
+  fetch data from the table: "ss.spicy_day_data" using primary key columns
+  """
+  ss_spicy_day_data_by_pk(id: Int!): ss_spicy_day_data
+
+  """
+  fetch data from the table: "ss.token_day_data"
+  """
+  ss_token_day_data(
+    """distinct select on columns"""
+    distinct_on: [ss_token_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_day_data_bool_exp
+  ): [ss_token_day_data!]!
+
+  """
+  fetch aggregated fields from the table: "ss.token_day_data"
+  """
+  ss_token_day_data_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_token_day_data_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_day_data_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_day_data_bool_exp
+  ): ss_token_day_data_aggregate!
+
+  """
+  fetch data from the table: "ss.token_day_data" using primary key columns
+  """
+  ss_token_day_data_by_pk(id: Int!): ss_token_day_data
+
+  """
+  fetch data from the table: "ss.token_metadata"
+  """
+  ss_token_metadata(
+    """distinct select on columns"""
+    distinct_on: [ss_token_metadata_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_metadata_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_metadata_bool_exp
+  ): [ss_token_metadata!]!
+
+  """
+  fetch aggregated fields from the table: "ss.token_metadata"
+  """
+  ss_token_metadata_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_token_metadata_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_token_metadata_order_by!]
+
+    """filter the rows returned"""
+    where: ss_token_metadata_bool_exp
+  ): ss_token_metadata_aggregate!
+
+  """
+  fetch data from the table: "ss.token_metadata" using primary key columns
+  """
+  ss_token_metadata_by_pk(tag: String!): ss_token_metadata
+
+  """
+  fetch data from the table: "ss.tokens"
+  """
+  ss_tokens(
+    """distinct select on columns"""
+    distinct_on: [ss_tokens_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_tokens_order_by!]
+
+    """filter the rows returned"""
+    where: ss_tokens_bool_exp
+  ): [ss_tokens!]!
+
+  """
+  fetch aggregated fields from the table: "ss.tokens"
+  """
+  ss_tokens_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_tokens_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_tokens_order_by!]
+
+    """filter the rows returned"""
+    where: ss_tokens_bool_exp
+  ): ss_tokens_aggregate!
+
+  """fetch data from the table: "ss.tokens" using primary key columns"""
+  ss_tokens_by_pk(id: Int!): ss_tokens
+
+  """
+  fetch data from the table: "ss.total_supply"
+  """
+  ss_total_supply(
+    """distinct select on columns"""
+    distinct_on: [ss_total_supply_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_total_supply_order_by!]
+
+    """filter the rows returned"""
+    where: ss_total_supply_bool_exp
+  ): [ss_total_supply!]!
+
+  """
+  fetch aggregated fields from the table: "ss.total_supply"
+  """
+  ss_total_supply_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_total_supply_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_total_supply_order_by!]
+
+    """filter the rows returned"""
+    where: ss_total_supply_bool_exp
+  ): ss_total_supply_aggregate!
+
+  """fetch data from the table: "ss.total_supply" using primary key columns"""
+  ss_total_supply_by_pk(id: Int!): ss_total_supply
+
+  """
+  fetch data from the table: "ss.usd"
+  """
+  ss_usd(
+    """distinct select on columns"""
+    distinct_on: [ss_usd_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_usd_order_by!]
+
+    """filter the rows returned"""
+    where: ss_usd_bool_exp
+  ): [ss_usd!]!
+
+  """
+  fetch aggregated fields from the table: "ss.usd"
+  """
+  ss_usd_aggregate(
+    """distinct select on columns"""
+    distinct_on: [ss_usd_select_column!]
+
+    """limit the number of rows returned"""
+    limit: Int
+
+    """skip the first n rows. Use only with order_by"""
+    offset: Int
+
+    """sort the rows by one or more columns"""
+    order_by: [ss_usd_order_by!]
+
+    """filter the rows returned"""
+    where: ss_usd_bool_exp
+  ): ss_usd_aggregate!
+
+  """fetch data from the table: "ss.usd" using primary key columns"""
+  ss_usd_by_pk(id: Int!): ss_usd
+}
+
+scalar timestamptz
+
+"""
+Boolean expression to compare columns of type "timestamptz". All fields are combined with logical 'AND'.
+"""
+input timestamptz_comparison_exp {
+  _eq: timestamptz
+  _gt: timestamptz
+  _gte: timestamptz
+  _in: [timestamptz!]
+  _is_null: Boolean
+  _lt: timestamptz
+  _lte: timestamptz
+  _neq: timestamptz
+  _nin: [timestamptz!]
+}
+
