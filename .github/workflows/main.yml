@@ -8,7 +8,10 @@ jobs:
   build:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    steps:
+    steps:      
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Check out repo
+      uses: actions/checkout@v2
     # Node is required for npm
     - name: Set up Node
       uses: actions/setup-node@v2
