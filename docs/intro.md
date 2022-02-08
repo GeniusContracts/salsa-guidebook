@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# hi have fun (remove me)
+# test auto-deploy
 
 # Welcome to SalsaDAO Ecosystem Guidebook
 
