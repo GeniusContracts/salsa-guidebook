@@ -3,7 +3,9 @@ sidebar_position: 1
 slug: /
 ---
 
-# Welcome to SpicySwap Docs
+# hi have fun (remove me)
+
+# Welcome to SalsaDAO Ecosystem Guidebook
 
 :::tip Note!
 
@@ -11,7 +13,7 @@ Screenshots coming as soon as the final UI design is complete.
 
 :::
 
-## What is SpicySwap?
+## What is SalsaDAO?
 
 SpicySwap is a next-generation DEX built by [Genius Contracts](https://geniuscontracts.medium.com/) specifically for token-to-token swaps on Tezos. SpicySwap is governed by [SalsaDAO](https://salsadao.xyz/) ($sDAO), which is the governance entity for the wider suite of Genius Contracts platforms and products. SpicySwap is heavily inspired by Uniswap, and was built from the ground up for Tezos. 
 
