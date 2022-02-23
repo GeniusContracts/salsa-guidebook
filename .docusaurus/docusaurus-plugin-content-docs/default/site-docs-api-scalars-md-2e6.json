@@ -1,0 +1,24 @@
+{
+  "unversionedId": "api/scalars",
+  "id": "api/scalars",
+  "isDocsHomePage": false,
+  "title": "Scalars",
+  "description": "bigint",
+  "source": "@site/docs/api/scalars.md",
+  "sourceDirName": "api",
+  "slug": "/api/scalars",
+  "permalink": "/api/scalars",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "id": "scalars",
+    "title": "Scalars",
+    "slug": "scalars",
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Input objects",
+    "permalink": "/api/inputObjects"
+  }
+}

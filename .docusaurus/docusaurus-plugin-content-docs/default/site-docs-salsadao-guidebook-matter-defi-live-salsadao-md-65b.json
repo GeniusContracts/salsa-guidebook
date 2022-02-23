@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi-live/salsadao",
+  "id": "salsadao-guidebook/matter-defi-live/salsadao",
+  "isDocsHomePage": false,
+  "title": "Farm as a Service",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi-live/salsadao.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi-live",
+  "slug": "/faas",
+  "permalink": "/faas",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/faas"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Farm as a Service",
+    "permalink": "/faas"
+  },
+  "next": {
+    "title": "3.2 Staking & Staking Fee",
+    "permalink": "/staking"
+  }
+}

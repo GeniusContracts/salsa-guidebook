@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/new-pool",
+  "id": "salsadao-guidebook/spicyswap/new-pool",
+  "isDocsHomePage": false,
+  "title": "1.8 Creating a New Liquidity Pool",
+  "description": "Custom Pools",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/new-pool.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/new-pool",
+  "permalink": "/new-pool",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "slug": "/new-pool"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.7 Removing Liquidity",
+    "permalink": "/removeliquidity"
+  },
+  "next": {
+    "title": "1.9 $SPI Utility Token & Fee Farming",
+    "permalink": "/$spi"
+  }
+}

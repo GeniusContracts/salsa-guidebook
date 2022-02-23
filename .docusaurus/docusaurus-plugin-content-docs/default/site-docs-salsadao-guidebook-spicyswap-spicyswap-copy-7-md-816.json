@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/spicyswap copy 7",
+  "id": "salsadao-guidebook/spicyswap/spicyswap copy 7",
+  "isDocsHomePage": false,
+  "title": "1.8 $SPI Utility Token & Fee Farming",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/spicyswap copy 7.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/$spi",
+  "permalink": "/$spi",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/$spi"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.2 Nodes & Indexer Status",
+    "permalink": "/nodes-indexer"
+  },
+  "next": {
+    "title": "1.4 Swaps",
+    "permalink": "/swaps"
+  }
+}

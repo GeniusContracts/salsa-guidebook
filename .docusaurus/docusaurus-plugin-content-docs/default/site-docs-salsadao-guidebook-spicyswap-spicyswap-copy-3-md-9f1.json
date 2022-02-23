@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/spicyswap copy 3",
+  "id": "salsadao-guidebook/spicyswap/spicyswap copy 3",
+  "isDocsHomePage": false,
+  "title": "1.4 Swaps",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/spicyswap copy 3.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/swaps",
+  "permalink": "/swaps",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/swaps"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.3 Selecting a Theme",
+    "permalink": "/selecting-theme"
+  },
+  "next": {
+    "title": "Syncing Your Wallet & Selecting a Theme",
+    "permalink": "/matter-defi"
+  }
+}

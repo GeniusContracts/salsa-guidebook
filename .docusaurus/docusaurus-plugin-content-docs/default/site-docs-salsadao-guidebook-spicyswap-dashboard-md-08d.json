@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/dashboard",
+  "id": "salsadao-guidebook/spicyswap/dashboard",
+  "isDocsHomePage": false,
+  "title": "1.12 Dashboard",
+  "description": "alt text",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/dashboard.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/dashboard",
+  "permalink": "/dashboard",
+  "version": "current",
+  "sidebarPosition": 12,
+  "frontMatter": {
+    "sidebar_position": 12,
+    "slug": "/dashboard"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.11 Spicyswap Analytics",
+    "permalink": "/analytics"
+  },
+  "next": {
+    "title": "2.1 Syncing Your Wallet",
+    "permalink": "/matter-defi"
+  }
+}

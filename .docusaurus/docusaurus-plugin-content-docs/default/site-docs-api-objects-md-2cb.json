@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/objects",
+  "id": "api/objects",
+  "isDocsHomePage": false,
+  "title": "Objects",
+  "description": "mutation_root",
+  "source": "@site/docs/api/objects.md",
+  "sourceDirName": "api",
+  "slug": "/api/objects",
+  "permalink": "/api/objects",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "objects",
+    "title": "Objects",
+    "slug": "objects",
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Mutations",
+    "permalink": "/api/mutations"
+  },
+  "next": {
+    "title": "Interfaces",
+    "permalink": "/api/interfaces"
+  }
+}

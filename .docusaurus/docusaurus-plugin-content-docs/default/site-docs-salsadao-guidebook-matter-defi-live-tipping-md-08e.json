@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi-live/tipping",
+  "id": "salsadao-guidebook/matter-defi-live/tipping",
+  "isDocsHomePage": false,
+  "title": "3.6 Tipping a Farm",
+  "description": "Matter Live Tipping",
+  "source": "@site/docs/salsadao-guidebook/matter-defi-live/tipping.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi-live",
+  "slug": "/tipping",
+  "permalink": "/tipping",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "slug": "/tipping"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3.5 Dashboard",
+    "permalink": "/dashboard"
+  },
+  "next": {
+    "title": "4.1 SalsaDAO: Getting Started",
+    "permalink": "/salsadao"
+  }
+}

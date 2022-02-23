@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi/syncing-wallet",
+  "id": "salsadao-guidebook/matter-defi/syncing-wallet",
+  "isDocsHomePage": false,
+  "title": "2.1 Syncing Your Wallet",
+  "description": "Matter DeFi Core is one of the auxiliary dApps the make up the SalsaDAO ecosystem. Matter DeFi itself is a farming platform that incentivizes providing liquidity to Spicyswap. By staking Spicyswap SSLP (Spicyswap LP tokens), liquidity providers are rewarded in $MTTR tokens by staking their SSLP in one of the Matter farms.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi/syncing-wallet.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi",
+  "slug": "/syncing-wallet",
+  "permalink": "/syncing-wallet",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/syncing-wallet"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.2 Menu Bar",
+    "permalink": "/menu-bar"
+  },
+  "next": {
+    "title": "2.3 Selecting a Theme",
+    "permalink": "/selecting-theme"
+  }
+}

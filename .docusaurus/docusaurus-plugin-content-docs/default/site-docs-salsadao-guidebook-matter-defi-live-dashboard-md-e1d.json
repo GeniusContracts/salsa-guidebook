@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi-live/dashboard",
+  "id": "salsadao-guidebook/matter-defi-live/dashboard",
+  "isDocsHomePage": false,
+  "title": "3.5 Dashboard",
+  "description": "Dashboard",
+  "source": "@site/docs/salsadao-guidebook/matter-defi-live/dashboard.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi-live",
+  "slug": "/dashboard",
+  "permalink": "/dashboard",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "slug": "/dashboard"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3.4 Claiming Rewards",
+    "permalink": "/claiming-rewards"
+  },
+  "next": {
+    "title": "3.6 Tipping a Farm",
+    "permalink": "/tipping"
+  }
+}

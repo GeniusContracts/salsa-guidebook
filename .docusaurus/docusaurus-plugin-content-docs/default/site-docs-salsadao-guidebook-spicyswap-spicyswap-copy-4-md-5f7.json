@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/spicyswap copy 4",
+  "id": "salsadao-guidebook/spicyswap/spicyswap copy 4",
+  "isDocsHomePage": false,
+  "title": "1.3 Selecting a Theme",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/spicyswap copy 4.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/selecting-theme",
+  "permalink": "/selecting-theme",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/selecting-theme"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.2 Nodes & Indexer Status",
+    "permalink": "/spicyswap"
+  },
+  "next": {
+    "title": "1.4 Swaps",
+    "permalink": "/swaps"
+  }
+}

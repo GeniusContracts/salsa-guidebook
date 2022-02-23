@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/unions",
+  "id": "api/unions",
+  "isDocsHomePage": false,
+  "title": "Unions",
+  "description": "",
+  "source": "@site/docs/api/unions.md",
+  "sourceDirName": "api",
+  "slug": "/api/unions",
+  "permalink": "/api/unions",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "id": "unions",
+    "title": "Unions",
+    "slug": "unions",
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Enums",
+    "permalink": "/api/enums"
+  },
+  "next": {
+    "title": "Input objects",
+    "permalink": "/api/inputObjects"
+  }
+}

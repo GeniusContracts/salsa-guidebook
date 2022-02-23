@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/spicyswap copy",
+  "id": "salsadao-guidebook/spicyswap/spicyswap copy",
+  "isDocsHomePage": false,
+  "title": "1.1 Syncing Your Wallet",
+  "description": "Screenshots may update from time to time as adjustments are made to the UI.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/spicyswap copy.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/spicyswap",
+  "permalink": "/spicyswap",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/spicyswap"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Scalars",
+    "permalink": "/api/scalars"
+  },
+  "next": {
+    "title": "1.1 Syncing Your Wallet",
+    "permalink": "/spicyswap"
+  }
+}
