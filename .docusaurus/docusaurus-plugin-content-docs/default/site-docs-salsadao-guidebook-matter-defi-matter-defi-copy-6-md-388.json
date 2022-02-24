@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi/matter-defi copy 6",
+  "id": "salsadao-guidebook/matter-defi/matter-defi copy 6",
+  "isDocsHomePage": false,
+  "title": "2.5 Unstaking",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi/matter-defi copy 6.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi",
+  "slug": "/unstaking",
+  "permalink": "/unstaking",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "slug": "/unstaking"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.4 Staking",
+    "permalink": "/staking"
+  },
+  "next": {
+    "title": "1 Spicyswap",
+    "permalink": "/salsadao"
+  }
+}

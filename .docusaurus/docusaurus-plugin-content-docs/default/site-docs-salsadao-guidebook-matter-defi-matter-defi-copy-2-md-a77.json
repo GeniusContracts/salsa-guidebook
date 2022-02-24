@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi/matter-defi copy 2",
+  "id": "salsadao-guidebook/matter-defi/matter-defi copy 2",
+  "isDocsHomePage": false,
+  "title": "Syncing Your Wallet & Selecting a Theme",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi/matter-defi copy 2.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi",
+  "slug": "/matter-defi",
+  "permalink": "/matter-defi",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/matter-defi"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.10 Dashboard",
+    "permalink": "/dashboard"
+  },
+  "next": {
+    "title": "Syncing Your Wallet & Selecting a Theme",
+    "permalink": "/matter-defi"
+  }
+}

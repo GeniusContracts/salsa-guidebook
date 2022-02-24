@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/spicydashboard",
+  "id": "salsadao-guidebook/spicyswap/spicydashboard",
+  "isDocsHomePage": false,
+  "title": "1.11 Dashboard",
+  "description": "Dashboard Home Page",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/spicydashboard.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/spicydashboard",
+  "permalink": "/spicydashboard",
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11,
+    "slug": "/spicydashboard"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.10 Spicyswap Analytics",
+    "permalink": "/analytics"
+  },
+  "next": {
+    "title": "2.1 What is Matter DeFi Core?",
+    "permalink": "/matter-defi"
+  }
+}

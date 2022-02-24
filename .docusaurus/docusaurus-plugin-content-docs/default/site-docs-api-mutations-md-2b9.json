@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/mutations",
+  "id": "api/mutations",
+  "isDocsHomePage": false,
+  "title": "Mutations",
+  "description": "",
+  "source": "@site/docs/api/mutations.md",
+  "sourceDirName": "api",
+  "slug": "/api/mutations",
+  "permalink": "/api/mutations",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "mutations",
+    "title": "Mutations",
+    "slug": "mutations",
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Queries",
+    "permalink": "/api/queries"
+  },
+  "next": {
+    "title": "Objects",
+    "permalink": "/api/objects"
+  }
+}

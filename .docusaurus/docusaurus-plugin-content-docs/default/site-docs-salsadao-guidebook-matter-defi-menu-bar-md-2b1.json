@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi/menu-bar",
+  "id": "salsadao-guidebook/matter-defi/menu-bar",
+  "isDocsHomePage": false,
+  "title": "2.3 Menu Bar & Nodes",
+  "description": "Menu",
+  "source": "@site/docs/salsadao-guidebook/matter-defi/menu-bar.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi",
+  "slug": "/menu-bar",
+  "permalink": "/menu-bar",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/menu-bar"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.2 Syncing Your Wallet",
+    "permalink": "/syncing-wallet-matter"
+  },
+  "next": {
+    "title": "2.4 Selecting a Theme",
+    "permalink": "/selecting-theme"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/xtz-via-wtz",
+  "id": "salsadao-guidebook/spicyswap/xtz-via-wtz",
+  "isDocsHomePage": false,
+  "title": "1.5 XTZ via WTZ",
+  "description": "alt text",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/xtz-via-wtz.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/xtz-via-wtz",
+  "permalink": "/xtz-via-wtz",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "slug": "/xtz-via-wtz"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.4 Swaps",
+    "permalink": "/swaps"
+  },
+  "next": {
+    "title": "1.5.1 Rationale for WTZ",
+    "permalink": "/rationale-wtz"
+  }
+}

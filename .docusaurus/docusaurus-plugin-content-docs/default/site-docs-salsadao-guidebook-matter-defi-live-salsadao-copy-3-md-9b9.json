@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi-live/salsadao copy 3",
+  "id": "salsadao-guidebook/matter-defi-live/salsadao copy 3",
+  "isDocsHomePage": false,
+  "title": "3.4 Claiming Rewards",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi-live/salsadao copy 3.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi-live",
+  "slug": "/claiming-rewards",
+  "permalink": "/claiming-rewards",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/claiming-rewards"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3.3 Unstaking",
+    "permalink": "/unstaking"
+  },
+  "next": {
+    "title": "1 Spicyswap",
+    "permalink": "/salsadao"
+  }
+}

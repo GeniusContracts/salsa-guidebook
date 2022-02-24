@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi/matter-defi copy 8",
+  "id": "salsadao-guidebook/matter-defi/matter-defi copy 8",
+  "isDocsHomePage": false,
+  "title": "2.7 Compounding Rewards",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi/matter-defi copy 8.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi",
+  "slug": "/compounding",
+  "permalink": "/compounding",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "slug": "/compounding"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.6 Claiming Rewards",
+    "permalink": "/claiming"
+  },
+  "next": {
+    "title": "1 Spicyswap",
+    "permalink": "/salsadao"
+  }
+}

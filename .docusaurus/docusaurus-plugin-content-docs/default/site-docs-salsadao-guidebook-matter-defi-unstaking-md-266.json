@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi/unstaking",
+  "id": "salsadao-guidebook/matter-defi/unstaking",
+  "isDocsHomePage": false,
+  "title": "2.6 Unstaking",
+  "description": "alt text",
+  "source": "@site/docs/salsadao-guidebook/matter-defi/unstaking.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi",
+  "slug": "/unstakingcore",
+  "permalink": "/unstakingcore",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "slug": "/unstakingcore"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2.5 Staking",
+    "permalink": "/stakingcore"
+  },
+  "next": {
+    "title": "2.7 Claiming Rewards",
+    "permalink": "/claiming"
+  }
+}

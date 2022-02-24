@@ -1,0 +1,28 @@
+{
+  "unversionedId": "api/queries",
+  "id": "api/queries",
+  "isDocsHomePage": false,
+  "title": "Queries",
+  "description": "",
+  "source": "@site/docs/api/queries.md",
+  "sourceDirName": "api",
+  "slug": "/api/queries",
+  "permalink": "/api/queries",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "queries",
+    "title": "Queries",
+    "slug": "queries",
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Governance",
+    "permalink": "/tutorial-extras/governance"
+  },
+  "next": {
+    "title": "Mutations",
+    "permalink": "/api/mutations"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/selecting-theme",
+  "id": "salsadao-guidebook/spicyswap/selecting-theme",
+  "isDocsHomePage": false,
+  "title": "1.3 Selecting a Theme",
+  "description": "If for any reason you ever wish to manually change nodes (say, because you are experiencing issues getting transactions applied), you’ll be prompted to enter a node URL after selecting ‘Change Node’ in the ‘Menu’ bar, which sits directly to the right of the ‘Connect Wallet’ button.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/selecting-theme.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/spicy-theme",
+  "permalink": "/spicy-theme",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/spicy-theme"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.2 Nodes & Indexer Status",
+    "permalink": "/nodes-indexer"
+  },
+  "next": {
+    "title": "1.4 Swaps",
+    "permalink": "/swaps"
+  }
+}

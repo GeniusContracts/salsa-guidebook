@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/nodes-indexer copy",
+  "id": "salsadao-guidebook/spicyswap/nodes-indexer copy",
+  "isDocsHomePage": false,
+  "title": "1.2 Nodes & Indexer Status",
+  "description": "If for any reason you ever wish to manually change nodes (say, because you are experiencing issues getting transactions applied), you’ll be prompted to enter a node URL after selecting ‘Change Node’ in the ‘Menu’ bar, which sits directly to the right of the ‘Connect Wallet’ button.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/nodes-indexer copy.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/nodes-indexer",
+  "permalink": "/nodes-indexer",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/nodes-indexer"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.1 Syncing Your Wallet",
+    "permalink": "/spicyswap"
+  },
+  "next": {
+    "title": "1.2 Nodes & Indexer Status",
+    "permalink": "/nodes-indexer"
+  }
+}

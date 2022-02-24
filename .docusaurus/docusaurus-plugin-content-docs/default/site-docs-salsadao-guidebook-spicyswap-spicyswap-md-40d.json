@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/spicyswap",
+  "id": "salsadao-guidebook/spicyswap/spicyswap",
+  "isDocsHomePage": false,
+  "title": "1.1 Syncing Your Wallet",
+  "description": "What is Spicyswap?",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/spicyswap.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/spicyswap",
+  "permalink": "/spicyswap",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/spicyswap"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to the SalsaDAO Ecosystem Guidebook",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "1.2 Nodes & Indexer Status",
+    "permalink": "/nodes-indexer"
+  }
+}

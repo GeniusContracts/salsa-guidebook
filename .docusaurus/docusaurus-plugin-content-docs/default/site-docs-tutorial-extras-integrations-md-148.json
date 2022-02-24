@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tutorial-extras/integrations",
+  "id": "tutorial-extras/integrations",
+  "isDocsHomePage": false,
+  "title": "Integrations",
+  "description": "Under Construction!",
+  "source": "@site/docs/tutorial-extras/integrations.md",
+  "sourceDirName": "tutorial-extras",
+  "slug": "/tutorial-extras/integrations",
+  "permalink": "/tutorial-extras/integrations",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "4.5 Governance & Voting",
+    "permalink": "/governance-voting"
+  },
+  "next": {
+    "title": "API Reference",
+    "permalink": "/tutorial-extras/api-reference"
+  }
+}

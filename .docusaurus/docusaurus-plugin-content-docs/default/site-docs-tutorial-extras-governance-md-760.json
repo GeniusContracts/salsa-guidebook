@@ -1,0 +1,25 @@
+{
+  "unversionedId": "tutorial-extras/governance",
+  "id": "tutorial-extras/governance",
+  "isDocsHomePage": false,
+  "title": "Governance",
+  "description": "Coming soon!",
+  "source": "@site/docs/tutorial-extras/governance.md",
+  "sourceDirName": "tutorial-extras",
+  "slug": "/tutorial-extras/governance",
+  "permalink": "/tutorial-extras/governance",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "API Reference",
+    "permalink": "/tutorial-extras/api-reference"
+  },
+  "next": {
+    "title": "Queries",
+    "permalink": "/api/queries"
+  }
+}
