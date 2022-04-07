@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spi/analytics",
+  "id": "spi/analytics",
+  "isDocsHomePage": false,
+  "title": "SpicySwap Analytics",
+  "description": "Spicyswap has an analytics page that allows users to view and keep track of certain stats, such as: DEX volume, Total Value Locked in the DEX, stats for each token pair, stats for Spicy Fee Farming, stats for individual tokens, general DEX transaction history, etc.",
+  "source": "@site/docs/spi/analytics.md",
+  "sourceDirName": "spi",
+  "slug": "/analytics",
+  "permalink": "/analytics",
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {
+    "sidebar_position": 10,
+    "slug": "/analytics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SPI Token & Fee Farming",
+    "permalink": "/SPI"
+  },
+  "next": {
+    "title": "User Dashboard",
+    "permalink": "/spicydashboard"
+  }
+}

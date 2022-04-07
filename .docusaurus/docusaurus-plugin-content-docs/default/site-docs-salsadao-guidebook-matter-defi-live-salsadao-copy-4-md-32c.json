@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi-live/salsadao copy 4",
+  "id": "salsadao-guidebook/matter-defi-live/salsadao copy 4",
+  "isDocsHomePage": false,
+  "title": "3.3 Unstaking",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/matter-defi-live/salsadao copy 4.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi-live",
+  "slug": "/unstaking",
+  "permalink": "/unstaking",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/unstaking"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3.2 Staking & Staking Fee",
+    "permalink": "/staking"
+  },
+  "next": {
+    "title": "1 Spicyswap",
+    "permalink": "/salsadao"
+  }
+}

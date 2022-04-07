@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/salsadao/gaming hall",
+  "id": "salsadao-guidebook/salsadao/gaming hall",
+  "isDocsHomePage": false,
+  "title": "4.4 Gaming Hall",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/salsadao/gaming hall.md",
+  "sourceDirName": "salsadao-guidebook/salsadao",
+  "slug": "/salsadao",
+  "permalink": "/salsadao",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/salsadao"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "4.1 Syncing Your Wallet",
+    "permalink": "/salsadao"
+  },
+  "next": {
+    "title": "Spicyswap",
+    "permalink": "/salsadao-guidebook"
+  }
+}

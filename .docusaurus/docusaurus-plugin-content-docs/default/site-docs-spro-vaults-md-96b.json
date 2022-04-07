@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spro/vaults",
+  "id": "spro/vaults",
+  "isDocsHomePage": false,
+  "title": "SpicyPro SVaults",
+  "description": "Welcome to SpicyPro SVaults!",
+  "source": "@site/docs/spro/vaults.md",
+  "sourceDirName": "spro",
+  "slug": "/svaults",
+  "permalink": "/svaults",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/svaults"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SpicyPro Limit Orders",
+    "permalink": "/limits"
+  },
+  "next": {
+    "title": "Introducing Matter DeFi",
+    "permalink": "/matter-defi"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap-how-to/salsadao-guidebook",
+  "id": "salsadao-guidebook/spicyswap-how-to/salsadao-guidebook",
+  "isDocsHomePage": false,
+  "title": "Spicyswap",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/spicyswap-how-to/salsadao-guidebook.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap-how-to",
+  "slug": "/spicyswap",
+  "permalink": "/spicyswap",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "slug": "/spicyswap"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Spicyswap",
+    "permalink": "/salsadao-guidebook"
+  },
+  "next": {
+    "title": "Spicyswap",
+    "permalink": "/spicyswap"
+  }
+}

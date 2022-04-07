@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr/claiming",
+  "id": "mttr/claiming",
+  "isDocsHomePage": false,
+  "title": "Claiming Rewards",
+  "description": "1. To claim rewards, click the ‘Claim’ button to the right of the farm box.",
+  "source": "@site/docs/mttr/claiming.md",
+  "sourceDirName": "mttr",
+  "slug": "/claiming",
+  "permalink": "/claiming",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7,
+    "slug": "/claiming"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Unstaking",
+    "permalink": "/unstakingcore"
+  },
+  "next": {
+    "title": "Compounding Rewards",
+    "permalink": "/compounding"
+  }
+}

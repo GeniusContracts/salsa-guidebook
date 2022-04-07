@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/salsadao/salsadao copy 3",
+  "id": "salsadao-guidebook/salsadao/salsadao copy 3",
+  "isDocsHomePage": false,
+  "title": "4.1 Syncing Your Wallet",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/salsadao/salsadao copy 3.md",
+  "sourceDirName": "salsadao-guidebook/salsadao",
+  "slug": "/salsadao",
+  "permalink": "/salsadao",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/salsadao"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "4.3 Cart Function",
+    "permalink": "/cart-function"
+  },
+  "next": {
+    "title": "4.1 Syncing Your Wallet",
+    "permalink": "/salsadao"
+  }
+}

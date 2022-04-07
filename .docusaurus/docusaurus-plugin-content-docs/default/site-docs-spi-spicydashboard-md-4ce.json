@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spi/spicydashboard",
+  "id": "spi/spicydashboard",
+  "isDocsHomePage": false,
+  "title": "User Dashboard",
+  "description": "Dashboard Home Page",
+  "source": "@site/docs/spi/spicydashboard.md",
+  "sourceDirName": "spi",
+  "slug": "/spicydashboard",
+  "permalink": "/spicydashboard",
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11,
+    "slug": "/spicydashboard"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SpicySwap Analytics",
+    "permalink": "/analytics"
+  },
+  "next": {
+    "title": "SpicyPro Recipes",
+    "permalink": "/recipes"
+  }
+}

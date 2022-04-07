@@ -1,0 +1,22 @@
+{
+  "unversionedId": "salsadao-guidebook/salsadao-guidebook",
+  "id": "salsadao-guidebook/salsadao-guidebook",
+  "isDocsHomePage": false,
+  "title": "Spicyswap",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/salsadao-guidebook.md",
+  "sourceDirName": "salsadao-guidebook",
+  "slug": "/salsadao-guidebook",
+  "permalink": "/salsadao-guidebook",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/salsadao-guidebook"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "4.5 Governance & Voting",
+    "permalink": "/governance-voting"
+  }
+}

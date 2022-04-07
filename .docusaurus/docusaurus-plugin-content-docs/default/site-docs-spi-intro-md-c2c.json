@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spi/intro",
+  "id": "spi/intro",
+  "isDocsHomePage": false,
+  "title": "Welcome to SpicySwap",
+  "description": "alt text",
+  "source": "@site/docs/spi/intro.md",
+  "sourceDirName": "spi",
+  "slug": "/",
+  "permalink": "/",
+  "version": "current",
+  "sidebarPosition": 11,
+  "frontMatter": {
+    "sidebar_position": 11,
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SpicySwap Analytics",
+    "permalink": "/analytics"
+  },
+  "next": {
+    "title": "User Dashboard",
+    "permalink": "/spicydashboard"
+  }
+}

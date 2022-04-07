@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/matter-defi-live/claiming-rewards",
+  "id": "salsadao-guidebook/matter-defi-live/claiming-rewards",
+  "isDocsHomePage": false,
+  "title": "3.4 Claiming Rewards",
+  "description": "Claiming Rewards",
+  "source": "@site/docs/salsadao-guidebook/matter-defi-live/claiming-rewards.md",
+  "sourceDirName": "salsadao-guidebook/matter-defi-live",
+  "slug": "/claiming-rewards",
+  "permalink": "/claiming-rewards",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/claiming-rewards"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3.3 Unstaking",
+    "permalink": "/unstaking"
+  },
+  "next": {
+    "title": "3.5 Dashboard",
+    "permalink": "/dashboard"
+  }
+}

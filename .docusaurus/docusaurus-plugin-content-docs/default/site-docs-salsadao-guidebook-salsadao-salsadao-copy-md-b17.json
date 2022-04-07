@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/salsadao/salsadao copy",
+  "id": "salsadao-guidebook/salsadao/salsadao copy",
+  "isDocsHomePage": false,
+  "title": "4.3 Cart Function",
+  "description": "Screenshots coming as soon as the final UI design is complete.",
+  "source": "@site/docs/salsadao-guidebook/salsadao/salsadao copy.md",
+  "sourceDirName": "salsadao-guidebook/salsadao",
+  "slug": "/cart-function",
+  "permalink": "/cart-function",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/cart-function"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3.6 Tipping a Farm",
+    "permalink": "/tipping"
+  },
+  "next": {
+    "title": "4.1 Syncing Your Wallet",
+    "permalink": "/salsadao"
+  }
+}

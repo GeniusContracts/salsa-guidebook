@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/swaps",
+  "id": "salsadao-guidebook/spicyswap/swaps",
+  "isDocsHomePage": false,
+  "title": "1.4 Swaps",
+  "description": "Swaps",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/swaps.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/swaps",
+  "permalink": "/swaps",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/swaps"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.3 Selecting a Theme",
+    "permalink": "/spicy-theme"
+  },
+  "next": {
+    "title": "1.5 XTZ via WTZ",
+    "permalink": "/xtz-via-wtz"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr-live/unstaking",
+  "id": "mttr-live/unstaking",
+  "isDocsHomePage": false,
+  "title": "Unstaking",
+  "description": "Removing Stake",
+  "source": "@site/docs/mttr-live/unstaking.md",
+  "sourceDirName": "mttr-live",
+  "slug": "/unstaking",
+  "permalink": "/unstaking",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/unstaking"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Staking & Fees",
+    "permalink": "/staking"
+  },
+  "next": {
+    "title": "Claiming Rewards",
+    "permalink": "/claiming-rewards"
+  }
+}

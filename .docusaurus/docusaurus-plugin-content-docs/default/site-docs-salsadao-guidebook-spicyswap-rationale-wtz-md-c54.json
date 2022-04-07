@@ -1,0 +1,26 @@
+{
+  "unversionedId": "salsadao-guidebook/spicyswap/rationale-wtz",
+  "id": "salsadao-guidebook/spicyswap/rationale-wtz",
+  "isDocsHomePage": false,
+  "title": "1.5.1 Rationale for WTZ",
+  "description": "Why WTZ?",
+  "source": "@site/docs/salsadao-guidebook/spicyswap/rationale-wtz.md",
+  "sourceDirName": "salsadao-guidebook/spicyswap",
+  "slug": "/rationale-wtz",
+  "permalink": "/rationale-wtz",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "slug": "/rationale-wtz"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1.5 XTZ via WTZ",
+    "permalink": "/xtz-via-wtz"
+  },
+  "next": {
+    "title": "1.6 Adding Liquidity",
+    "permalink": "/addliquidity"
+  }
+}
