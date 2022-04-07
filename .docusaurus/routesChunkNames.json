@@ -40,7 +40,7 @@
     "component": "component---theme-mdx-page-1-f-3-b90",
     "content": "content---markdown-page-393-028"
   },
-  "/-658": {
+  "/-a84": {
     "component": "component---theme-doc-page-1-be-9be",
     "versionMetadata": "versionMetadata---935-fcf"
   },
@@ -48,176 +48,140 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---0-e-3-279"
   },
-  "/$spi-c3f": {
+  "/addliquidity-d85": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---spib-3-d-713"
+    "content": "content---addliquidity-4-a-2-663"
   },
-  "/$spi-farms-ed0": {
+  "/analytics-ba8": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---spi-farmsd-63-4e6"
+    "content": "content---analytics-918-318"
   },
-  "/addliquidity-fab": {
+  "/cart-function-eee": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---liquidity-353-06c"
+    "content": "content---cart-function-79-f-512"
   },
-  "/analytics-b26": {
+  "/claiming-e06": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---analytics-643-340"
+    "content": "content---claiming-605-b78"
   },
-  "/api/enums-956": {
+  "/claiming-rewards-f78": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-enumsfc-0-a14"
+    "content": "content---claiming-rewardsfd-5-a61"
   },
-  "/api/inputObjects-848": {
+  "/compounding-e80": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-input-objectsb-0-f-d89"
+    "content": "content---compoundingd-86-634"
   },
-  "/api/interfaces-404": {
+  "/dashboard-a23": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-interfaces-7-d-1-08f"
+    "content": "content---dashboard-098-0b5"
   },
-  "/api/mutations-660": {
+  "/faas-608": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-mutations-2-b-9-fba"
+    "content": "content---faas-6-ec-43a"
   },
-  "/api/objects-105": {
+  "/gaming-hall-16b": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-objects-2-cb-c89"
+    "content": "content---gaming-hallcb-1-955"
   },
-  "/api/queries-a9e": {
+  "/governance-voting-048": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-queries-8-e-9-03b"
+    "content": "content---governance-voting-5-fa-ac1"
   },
-  "/api/scalars-0a1": {
+  "/limits-415": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-scalars-2-e-6-f59"
+    "content": "content---limits-533-516"
   },
-  "/api/unions-dce": {
+  "/matter-analytics-757": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---api-unionsf-0-e-9d5"
+    "content": "content---matter-analytics-99-e-d5b"
   },
-  "/cart-function-899": {
+  "/matter-defi-ba6": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---cart-functiond-71-bff"
+    "content": "content---matter-defi-897-438"
   },
-  "/claiming-627": {
+  "/menu-bar-8c5": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---claiming-012-9b6"
+    "content": "content---menu-barbbb-033"
   },
-  "/claiming-rewards-5f1": {
+  "/new-pool-86e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---claiming-rewards-4-fa-efd"
+    "content": "content---new-pool-2-fe-1c8"
   },
-  "/compounding-7b6": {
+  "/nodes-indexer-dcc": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---compoundingc-7-b-b84"
+    "content": "content---nodes-indexere-5-e-3b4"
   },
-  "/dashboard-5d6": {
+  "/rationale-wtz-a70": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---dashboarde-1-d-209"
+    "content": "content---rationale-wtzcdd-969"
   },
-  "/faas-7ba": {
+  "/recipes-55e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---faas-878-265"
+    "content": "content---recipesd-86-1f7"
   },
-  "/gaming-hall-435": {
+  "/removeliquidity-01e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---gaming-hall-85-a-04d"
+    "content": "content---removeliquidity-317-331"
   },
-  "/governance-voting-1c8": {
+  "/salsadao-64f": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---governance-voting-04-b-74f"
+    "content": "content---salsadao-42-f-368"
   },
-  "/matter-analytics-079": {
+  "/selecting-theme-a54": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---matter-analyticsa-64-842"
+    "content": "content---selecting-theme-731-a1e"
   },
-  "/matter-defi-9fa": {
+  "/SPI-2c5": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---matter-defi-1-a-7-6e2"
+    "content": "content---spi-1-bf-49d"
   },
-  "/menu-bar-9fd": {
+  "/spicy-theme-840": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---menu-bar-2-b-1-769"
+    "content": "content---spicy-theme-13-c-d1b"
   },
-  "/new-pool-655": {
+  "/spicydashboard-d0c": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---new-pool-03-a-95b"
+    "content": "content---spicydashboard-4-ce-43f"
   },
-  "/nodes-indexer-41d": {
+  "/spicyswap-d41": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---nodes-indexerf-48-8cb"
+    "content": "content---spicyswap-786-3bc"
   },
-  "/rationale-wtz-f39": {
+  "/staking-351": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---rationale-wtzc-54-f29"
+    "content": "content---stakingd-6-f-993"
   },
-  "/removeliquidity-5c9": {
+  "/stakingcore-d44": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---addliquidityd-8-d-940"
+    "content": "content---stakingcore-1-b-3-816"
   },
-  "/salsadao-a9c": {
+  "/svaults-047": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---salsadaoaea-23f"
+    "content": "content---svaults-96-b-710"
   },
-  "/selecting-theme-2dc": {
+  "/swaps-fc8": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---selecting-theme-0-db-7f8"
+    "content": "content---swaps-6-c-2-b50"
   },
-  "/spicy-theme-e78": {
+  "/syncing-wallet-matter-fdb": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---spicy-themee-5-e-2c3"
+    "content": "content---syncing-wallet-matteref-9-c99"
   },
-  "/spicydashboard-4d0": {
+  "/tipping-670": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---dashboarda-37-94f"
+    "content": "content---tipping-713-68f"
   },
-  "/spicyswap-b34": {
+  "/unstaking-22e": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---spicyswap-40-d-e02"
+    "content": "content---unstaking-807-6d6"
   },
-  "/staking-702": {
+  "/unstakingcore-501": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---stakingd-1-e-93a"
+    "content": "content---unstakingcore-6-d-9-42e"
   },
-  "/stakingcore-2a2": {
+  "/xtz-via-wtz-2ed": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---stakingcorebf-4-77f"
-  },
-  "/swaps-865": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---swapscd-8-fee"
-  },
-  "/syncing-wallet-matter-740": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---syncing-walletdad-80e"
-  },
-  "/tipping-5f2": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---tipping-08-e-aba"
-  },
-  "/tutorial-extras/api-reference-759": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---tutorial-extras-api-reference-561-5df"
-  },
-  "/tutorial-extras/governance-f5c": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---tutorial-extras-governance-760-144"
-  },
-  "/tutorial-extras/integrations-5fc": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---tutorial-extras-integrations-148-64a"
-  },
-  "/unstaking-502": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---unstakingbb-4-437"
-  },
-  "/unstakingcore-48f": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---unstakingcorec-6-e-8de"
-  },
-  "/xtz-via-wtz-54d": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---xtz-via-wtz-697-90b"
+    "content": "content---xtz-via-wtze-03-97a"
   }
 }

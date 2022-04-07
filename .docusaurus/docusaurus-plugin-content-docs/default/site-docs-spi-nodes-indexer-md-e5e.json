@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spi/nodes-indexer",
+  "id": "spi/nodes-indexer",
+  "isDocsHomePage": false,
+  "title": "Nodes & Indexer Status",
+  "description": "Changing a Node",
+  "source": "@site/docs/spi/nodes-indexer.md",
+  "sourceDirName": "spi",
+  "slug": "/nodes-indexer",
+  "permalink": "/nodes-indexer",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/nodes-indexer"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Welcome to SpicySwap",
+    "permalink": "/spicyswap"
+  },
+  "next": {
+    "title": "Selecting a Theme",
+    "permalink": "/spicy-theme"
+  }
+}

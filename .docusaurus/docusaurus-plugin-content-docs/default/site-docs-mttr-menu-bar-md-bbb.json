@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr/menu-bar",
+  "id": "mttr/menu-bar",
+  "isDocsHomePage": false,
+  "title": "Menu Bar & Nodes",
+  "description": "Menu",
+  "source": "@site/docs/mttr/menu-bar.md",
+  "sourceDirName": "mttr",
+  "slug": "/menu-bar",
+  "permalink": "/menu-bar",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/menu-bar"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Syncing Your Wallet",
+    "permalink": "/syncing-wallet-matter"
+  },
+  "next": {
+    "title": "Selecting a Theme",
+    "permalink": "/selecting-theme"
+  }
+}

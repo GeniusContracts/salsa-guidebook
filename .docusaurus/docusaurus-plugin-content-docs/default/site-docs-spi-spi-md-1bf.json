@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spi/$spi",
+  "id": "spi/$spi",
+  "isDocsHomePage": false,
+  "title": "SPI Token & Fee Farming",
+  "description": "What is Spice Fee Farming?",
+  "source": "@site/docs/spi/$spi.md",
+  "sourceDirName": "spi",
+  "slug": "/SPI",
+  "permalink": "/SPI",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "slug": "/SPI"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Creating a New Liquidity Pool",
+    "permalink": "/new-pool"
+  },
+  "next": {
+    "title": "SpicySwap Analytics",
+    "permalink": "/analytics"
+  }
+}

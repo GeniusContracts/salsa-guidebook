@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr/matter-defi",
+  "id": "mttr/matter-defi",
+  "isDocsHomePage": false,
+  "title": "Introducing Matter DeFi",
+  "description": "Matter DeFi is a yield farming platform aimed to incentivize providing liquidity on Spicyswap DEX. Users may stake SpicySwap LP Tokens to earn the protocol token MTTR.",
+  "source": "@site/docs/mttr/matter-defi.md",
+  "sourceDirName": "mttr",
+  "slug": "/matter-defi",
+  "permalink": "/matter-defi",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/matter-defi"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SpicyPro SVaults",
+    "permalink": "/svaults"
+  },
+  "next": {
+    "title": "Syncing Your Wallet",
+    "permalink": "/syncing-wallet-matter"
+  }
+}

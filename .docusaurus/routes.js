@@ -55,7 +55,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/','658'),
+    component: ComponentCreator('/','a84'),
     routes: [
       {
         path: '/',
@@ -64,260 +64,206 @@ export default [
         'sidebar': "tutorialSidebar"
       },
       {
-        path: '/$spi',
-        component: ComponentCreator('/$spi','c3f'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/$spi-farms',
-        component: ComponentCreator('/$spi-farms','ed0'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
         path: '/addliquidity',
-        component: ComponentCreator('/addliquidity','fab'),
+        component: ComponentCreator('/addliquidity','d85'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/analytics',
-        component: ComponentCreator('/analytics','b26'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/enums',
-        component: ComponentCreator('/api/enums','956'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/inputObjects',
-        component: ComponentCreator('/api/inputObjects','848'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/interfaces',
-        component: ComponentCreator('/api/interfaces','404'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/mutations',
-        component: ComponentCreator('/api/mutations','660'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/objects',
-        component: ComponentCreator('/api/objects','105'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/queries',
-        component: ComponentCreator('/api/queries','a9e'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/scalars',
-        component: ComponentCreator('/api/scalars','0a1'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/api/unions',
-        component: ComponentCreator('/api/unions','dce'),
+        component: ComponentCreator('/analytics','ba8'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/cart-function',
-        component: ComponentCreator('/cart-function','899'),
+        component: ComponentCreator('/cart-function','eee'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/claiming',
-        component: ComponentCreator('/claiming','627'),
+        component: ComponentCreator('/claiming','e06'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/claiming-rewards',
-        component: ComponentCreator('/claiming-rewards','5f1'),
+        component: ComponentCreator('/claiming-rewards','f78'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/compounding',
-        component: ComponentCreator('/compounding','7b6'),
+        component: ComponentCreator('/compounding','e80'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/dashboard',
-        component: ComponentCreator('/dashboard','5d6'),
+        component: ComponentCreator('/dashboard','a23'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/faas',
-        component: ComponentCreator('/faas','7ba'),
+        component: ComponentCreator('/faas','608'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/gaming-hall',
-        component: ComponentCreator('/gaming-hall','435'),
+        component: ComponentCreator('/gaming-hall','16b'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/governance-voting',
-        component: ComponentCreator('/governance-voting','1c8'),
+        component: ComponentCreator('/governance-voting','048'),
+        exact: true,
+        'sidebar': "tutorialSidebar"
+      },
+      {
+        path: '/limits',
+        component: ComponentCreator('/limits','415'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/matter-analytics',
-        component: ComponentCreator('/matter-analytics','079'),
+        component: ComponentCreator('/matter-analytics','757'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/matter-defi',
-        component: ComponentCreator('/matter-defi','9fa'),
+        component: ComponentCreator('/matter-defi','ba6'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/menu-bar',
-        component: ComponentCreator('/menu-bar','9fd'),
+        component: ComponentCreator('/menu-bar','8c5'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/new-pool',
-        component: ComponentCreator('/new-pool','655'),
+        component: ComponentCreator('/new-pool','86e'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/nodes-indexer',
-        component: ComponentCreator('/nodes-indexer','41d'),
+        component: ComponentCreator('/nodes-indexer','dcc'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/rationale-wtz',
-        component: ComponentCreator('/rationale-wtz','f39'),
+        component: ComponentCreator('/rationale-wtz','a70'),
+        exact: true,
+        'sidebar': "tutorialSidebar"
+      },
+      {
+        path: '/recipes',
+        component: ComponentCreator('/recipes','55e'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/removeliquidity',
-        component: ComponentCreator('/removeliquidity','5c9'),
+        component: ComponentCreator('/removeliquidity','01e'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/salsadao',
-        component: ComponentCreator('/salsadao','a9c'),
+        component: ComponentCreator('/salsadao','64f'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/selecting-theme',
-        component: ComponentCreator('/selecting-theme','2dc'),
+        component: ComponentCreator('/selecting-theme','a54'),
+        exact: true,
+        'sidebar': "tutorialSidebar"
+      },
+      {
+        path: '/SPI',
+        component: ComponentCreator('/SPI','2c5'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/spicy-theme',
-        component: ComponentCreator('/spicy-theme','e78'),
+        component: ComponentCreator('/spicy-theme','840'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/spicydashboard',
-        component: ComponentCreator('/spicydashboard','4d0'),
+        component: ComponentCreator('/spicydashboard','d0c'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/spicyswap',
-        component: ComponentCreator('/spicyswap','b34'),
+        component: ComponentCreator('/spicyswap','d41'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/staking',
-        component: ComponentCreator('/staking','702'),
+        component: ComponentCreator('/staking','351'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/stakingcore',
-        component: ComponentCreator('/stakingcore','2a2'),
+        component: ComponentCreator('/stakingcore','d44'),
+        exact: true,
+        'sidebar': "tutorialSidebar"
+      },
+      {
+        path: '/svaults',
+        component: ComponentCreator('/svaults','047'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/swaps',
-        component: ComponentCreator('/swaps','865'),
+        component: ComponentCreator('/swaps','fc8'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/syncing-wallet-matter',
-        component: ComponentCreator('/syncing-wallet-matter','740'),
+        component: ComponentCreator('/syncing-wallet-matter','fdb'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/tipping',
-        component: ComponentCreator('/tipping','5f2'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/tutorial-extras/api-reference',
-        component: ComponentCreator('/tutorial-extras/api-reference','759'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/tutorial-extras/governance',
-        component: ComponentCreator('/tutorial-extras/governance','f5c'),
-        exact: true,
-        'sidebar': "tutorialSidebar"
-      },
-      {
-        path: '/tutorial-extras/integrations',
-        component: ComponentCreator('/tutorial-extras/integrations','5fc'),
+        component: ComponentCreator('/tipping','670'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/unstaking',
-        component: ComponentCreator('/unstaking','502'),
+        component: ComponentCreator('/unstaking','22e'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/unstakingcore',
-        component: ComponentCreator('/unstakingcore','48f'),
+        component: ComponentCreator('/unstakingcore','501'),
         exact: true,
         'sidebar': "tutorialSidebar"
       },
       {
         path: '/xtz-via-wtz',
-        component: ComponentCreator('/xtz-via-wtz','54d'),
+        component: ComponentCreator('/xtz-via-wtz','2ed'),
         exact: true,
         'sidebar': "tutorialSidebar"
       }

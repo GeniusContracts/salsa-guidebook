@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr/matter-analytics",
+  "id": "mttr/matter-analytics",
+  "isDocsHomePage": false,
+  "title": "Matter DeFi Analytics",
+  "description": "Watch the Burn",
+  "source": "@site/docs/mttr/matter-analytics.md",
+  "sourceDirName": "mttr",
+  "slug": "/matter-analytics",
+  "permalink": "/matter-analytics",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {
+    "sidebar_position": 9,
+    "slug": "/matter-analytics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Compounding Rewards",
+    "permalink": "/compounding"
+  },
+  "next": {
+    "title": "Farm as a Service",
+    "permalink": "/faas"
+  }
+}
