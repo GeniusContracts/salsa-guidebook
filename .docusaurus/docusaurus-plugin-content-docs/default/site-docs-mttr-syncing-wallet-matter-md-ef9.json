@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr/syncing-wallet-matter",
+  "id": "mttr/syncing-wallet-matter",
+  "isDocsHomePage": false,
+  "title": "Syncing Your Wallet",
+  "description": "Getting Started",
+  "source": "@site/docs/mttr/syncing-wallet-matter.md",
+  "sourceDirName": "mttr",
+  "slug": "/syncing-wallet-matter",
+  "permalink": "/syncing-wallet-matter",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "slug": "/syncing-wallet-matter"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introducing Matter DeFi",
+    "permalink": "/matter-defi"
+  },
+  "next": {
+    "title": "Menu Bar & Nodes",
+    "permalink": "/menu-bar"
+  }
+}

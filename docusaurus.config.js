@@ -9,16 +9,16 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/sDAO.png',
   organizationName: '', // Usually your GitHub org/user name.
   projectName: '', // Usually your repo name.
   onBrokenLinks: 'ignore',
   themeConfig: {
     navbar: {
-      title: 'SpicySwap Docs',
+      title: 'SalsaDAO Guidebook',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/spicy.png',
+        alt: 'SalsaDAO Logo',
+        src: 'img/sDAO.png',
       },
       items: [
         {
@@ -27,10 +27,27 @@ module.exports = {
           position: 'left',
           label: 'Home',
         },
-        {to: '/blog', label: 'News', position: 'left'},
         {
-          href: 'https://spicyswap.xyz',
-          label: 'Try SpicySwap',
+          type: 'doc',
+          docId: 'sdao/salsadao',
+          position: 'left',
+          label: 'SalsaDAO',
+        },
+        {
+          type: 'doc',
+          docId: 'spi/spicyswap',
+          position: 'left',
+          label: 'SpicySwap',
+        },
+        {
+          type: 'doc',
+          docId: 'mttr/matter-defi',
+          position: 'left',
+          label: 'Matter Defi',
+        },
+        {
+          href: 'https://salsadao.xyz',
+          label: 'Join SalsaDAO',
           position: 'right',
         },
       ],
@@ -51,12 +68,16 @@ module.exports = {
           title: 'Apps',
           items: [
             {
+              label: 'SalsaDAO',
+              href: 'https://salsadao.xyz',
+            },
+            {
               label: 'SpicySwap',
               href: 'https://spicyswap.xyz',
             },
             {
-              label: 'SalsaDAO',
-              href: 'https://salsadao.xyz',
+              label: 'Matter Defi',
+              href: 'https://matterdefi.xyz',
             },
           ],
         },

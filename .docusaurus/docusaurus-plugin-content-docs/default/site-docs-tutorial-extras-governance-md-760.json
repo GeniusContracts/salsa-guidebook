@@ -2,24 +2,25 @@
   "unversionedId": "tutorial-extras/governance",
   "id": "tutorial-extras/governance",
   "isDocsHomePage": false,
-  "title": "Governance",
-  "description": "Coming soon!",
+  "title": "SpicyPro SVaults",
+  "description": "SpicySwap was built with integrations in mind. There are 3 levels of integrations into the SpicySwap protocol: contract level, token level, or interface level.",
   "source": "@site/docs/tutorial-extras/governance.md",
   "sourceDirName": "tutorial-extras",
-  "slug": "/tutorial-extras/governance",
-  "permalink": "/tutorial-extras/governance",
+  "slug": "/svaults",
+  "permalink": "/svaults",
   "version": "current",
   "sidebarPosition": 3,
   "frontMatter": {
-    "sidebar_position": 3
+    "sidebar_position": 3,
+    "slug": "/svaults"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "API Reference",
-    "permalink": "/tutorial-extras/api-reference"
+    "title": "SpicyPro Limit Orders",
+    "permalink": "/limits"
   },
   "next": {
-    "title": "Queries",
-    "permalink": "/api/queries"
+    "title": "Introducing Matter DeFi",
+    "permalink": "/matter-defi"
   }
 }

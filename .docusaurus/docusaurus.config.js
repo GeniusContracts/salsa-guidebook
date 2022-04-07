@@ -5,15 +5,15 @@ export default {
   "baseUrl": "/",
   "onBrokenLinks": "ignore",
   "onBrokenMarkdownLinks": "warn",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/sDAO.png",
   "organizationName": "",
   "projectName": "",
   "themeConfig": {
     "navbar": {
-      "title": "SpicySwap Docs",
+      "title": "SalsaDAO Guidebook",
       "logo": {
-        "alt": "My Site Logo",
-        "src": "img/spicy.png"
+        "alt": "SalsaDAO Logo",
+        "src": "img/sDAO.png"
       },
       "items": [
         {
@@ -24,13 +24,29 @@ export default {
           "activeSidebarClassName": "navbar__link--active"
         },
         {
-          "to": "/blog",
-          "label": "News",
-          "position": "left"
+          "type": "doc",
+          "docId": "sdao/salsadao",
+          "position": "left",
+          "label": "SalsaDAO",
+          "activeSidebarClassName": "navbar__link--active"
         },
         {
-          "href": "https://spicyswap.xyz",
-          "label": "Try SpicySwap",
+          "type": "doc",
+          "docId": "spi/spicyswap",
+          "position": "left",
+          "label": "SpicySwap",
+          "activeSidebarClassName": "navbar__link--active"
+        },
+        {
+          "type": "doc",
+          "docId": "mttr/matter-defi",
+          "position": "left",
+          "label": "Matter Defi",
+          "activeSidebarClassName": "navbar__link--active"
+        },
+        {
+          "href": "https://salsadao.xyz",
+          "label": "Join SalsaDAO",
           "position": "right"
         }
       ],
@@ -52,12 +68,16 @@ export default {
           "title": "Apps",
           "items": [
             {
+              "label": "SalsaDAO",
+              "href": "https://salsadao.xyz"
+            },
+            {
               "label": "SpicySwap",
               "href": "https://spicyswap.xyz"
             },
             {
-              "label": "SalsaDAO",
-              "href": "https://salsadao.xyz"
+              "label": "Matter Defi",
+              "href": "https://matterdefi.xyz"
             }
           ]
         },
@@ -311,14 +331,14 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/tao/Desktop/salsa-guidebook/sidebars.js",
+          "sidebarPath": "/home/aaa/git/salsa-guidebook/sidebars.js",
           "routeBasePath": "/"
         },
         "blog": {
           "showReadingTime": true
         },
         "theme": {
-          "customCss": "/Users/tao/Desktop/salsa-guidebook/src/css/custom.css"
+          "customCss": "/home/aaa/git/salsa-guidebook/src/css/custom.css"
         }
       }
     ]

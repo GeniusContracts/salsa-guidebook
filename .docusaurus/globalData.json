@@ -11,223 +11,178 @@
           "mainDocId": "intro",
           "docs": [
             {
-              "id": "api/enums",
-              "path": "/api/enums",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/inputObjects",
-              "path": "/api/inputObjects",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/interfaces",
-              "path": "/api/interfaces",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/mutations",
-              "path": "/api/mutations",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/objects",
-              "path": "/api/objects",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/queries",
-              "path": "/api/queries",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/scalars",
-              "path": "/api/scalars",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "api/unions",
-              "path": "/api/unions",
-              "sidebar": "tutorialSidebar"
-            },
-            {
               "id": "intro",
               "path": "/",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi-live/claiming-rewards",
+              "id": "mttr-live/claiming-rewards",
               "path": "/claiming-rewards",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi-live/dashboard",
+              "id": "mttr-live/dashboard",
               "path": "/dashboard",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi-live/faas",
+              "id": "mttr-live/faas",
               "path": "/faas",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi-live/staking",
+              "id": "mttr-live/staking",
               "path": "/staking",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi-live/tipping",
+              "id": "mttr-live/tipping",
               "path": "/tipping",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi-live/unstaking",
+              "id": "mttr-live/unstaking",
               "path": "/unstaking",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/claiming",
+              "id": "mttr/claiming",
               "path": "/claiming",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/compounding",
+              "id": "mttr/compounding",
               "path": "/compounding",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/matter-analytics",
+              "id": "mttr/matter-analytics",
               "path": "/matter-analytics",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/matter-defi",
+              "id": "mttr/matter-defi",
               "path": "/matter-defi",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/menu-bar",
+              "id": "mttr/menu-bar",
               "path": "/menu-bar",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/selecting-theme",
+              "id": "mttr/selecting-theme",
               "path": "/selecting-theme",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/stakingcore",
+              "id": "mttr/stakingcore",
               "path": "/stakingcore",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/syncing-wallet-matter",
+              "id": "mttr/syncing-wallet-matter",
               "path": "/syncing-wallet-matter",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/matter-defi/unstakingcore",
+              "id": "mttr/unstakingcore",
               "path": "/unstakingcore",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/salsadao/$spi-farms",
-              "path": "/$spi-farms",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "salsadao-guidebook/salsadao/cart-function",
+              "id": "sdao/cart-function",
               "path": "/cart-function",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/salsadao/gaming-hall",
+              "id": "sdao/gaming-hall",
               "path": "/gaming-hall",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/salsadao/governance-voting",
+              "id": "sdao/governance-voting",
               "path": "/governance-voting",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/salsadao/salsadao",
+              "id": "sdao/salsadao",
               "path": "/salsadao",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/$spi",
-              "path": "/$spi",
+              "id": "spi/$spi",
+              "path": "/SPI",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/addliquidity",
+              "id": "spi/addliquidity",
               "path": "/addliquidity",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/analytics",
+              "id": "spi/analytics",
               "path": "/analytics",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/new-pool",
+              "id": "spi/new-pool",
               "path": "/new-pool",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/nodes-indexer",
+              "id": "spi/nodes-indexer",
               "path": "/nodes-indexer",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/rationale-wtz",
+              "id": "spi/rationale-wtz",
               "path": "/rationale-wtz",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/removeliquidity",
+              "id": "spi/removeliquidity",
               "path": "/removeliquidity",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/spicy-theme",
+              "id": "spi/spicy-theme",
               "path": "/spicy-theme",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/spicydashboard",
+              "id": "spi/spicydashboard",
               "path": "/spicydashboard",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/spicyswap",
+              "id": "spi/spicyswap",
               "path": "/spicyswap",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/swaps",
+              "id": "spi/swaps",
               "path": "/swaps",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "salsadao-guidebook/spicyswap/xtz-via-wtz",
+              "id": "spi/xtz-via-wtz",
               "path": "/xtz-via-wtz",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/api-reference",
-              "path": "/tutorial-extras/api-reference",
+              "id": "spro/limits",
+              "path": "/limits",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/governance",
-              "path": "/tutorial-extras/governance",
+              "id": "spro/recipes",
+              "path": "/recipes",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorial-extras/integrations",
-              "path": "/tutorial-extras/integrations",
+              "id": "spro/vaults",
+              "path": "/svaults",
               "sidebar": "tutorialSidebar"
             }
           ]

@@ -9,9 +9,9 @@
           "versionBanner": "none",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/Users/tao/Desktop/salsa-guidebook/sidebars.js",
-          "contentPath": "/Users/tao/Desktop/salsa-guidebook/docs",
-          "contentPathLocalized": "/Users/tao/Desktop/salsa-guidebook/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/home/aaa/git/salsa-guidebook/sidebars.js",
+          "contentPath": "/home/aaa/git/salsa-guidebook/docs",
+          "contentPathLocalized": "/home/aaa/git/salsa-guidebook/i18n/en/docusaurus-plugin-content-docs/current",
           "mainDocId": "intro",
           "sidebars": {
             "tutorialSidebar": [
@@ -21,167 +21,23 @@
               },
               {
                 "type": "category",
-                "label": "SalsaDAO Guidebook",
+                "label": "SalsaDAO",
                 "items": [
                   {
-                    "type": "category",
-                    "label": "1 Spicyswap",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/spicyswap"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/nodes-indexer"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/spicy-theme"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/swaps"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/xtz-via-wtz"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/rationale-wtz"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/addliquidity"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/removeliquidity"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/new-pool"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/$spi"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/analytics"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/spicyswap/spicydashboard"
-                      }
-                    ],
-                    "collapsed": true,
-                    "collapsible": true
+                    "type": "doc",
+                    "id": "sdao/salsadao"
                   },
                   {
-                    "type": "category",
-                    "label": "2 Matter Defi (Core)",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/matter-defi"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/syncing-wallet-matter"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/menu-bar"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/selecting-theme"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/stakingcore"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/unstakingcore"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/claiming"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/compounding"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi/matter-analytics"
-                      }
-                    ],
-                    "collapsed": true,
-                    "collapsible": true
+                    "type": "doc",
+                    "id": "sdao/gaming-hall"
                   },
                   {
-                    "type": "category",
-                    "label": "3 Matter DeFi (Live)",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi-live/faas"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi-live/staking"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi-live/unstaking"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi-live/claiming-rewards"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi-live/dashboard"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/matter-defi-live/tipping"
-                      }
-                    ],
-                    "collapsed": true,
-                    "collapsible": true
+                    "type": "doc",
+                    "id": "sdao/governance-voting"
                   },
                   {
-                    "type": "category",
-                    "label": "4 SalsaDAO",
-                    "items": [
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/salsadao/salsadao"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/salsadao/$spi-farms"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/salsadao/cart-function"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/salsadao/gaming-hall"
-                      },
-                      {
-                        "type": "doc",
-                        "id": "salsadao-guidebook/salsadao/governance-voting"
-                      }
-                    ],
-                    "collapsed": true,
-                    "collapsible": true
+                    "type": "doc",
+                    "id": "sdao/cart-function"
                   }
                 ],
                 "collapsed": true,
@@ -189,19 +45,55 @@
               },
               {
                 "type": "category",
-                "label": "SpicySwap - Advanced",
+                "label": "SpicySwap",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/integrations"
+                    "id": "spi/spicyswap"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/api-reference"
+                    "id": "spi/nodes-indexer"
                   },
                   {
                     "type": "doc",
-                    "id": "tutorial-extras/governance"
+                    "id": "spi/spicy-theme"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/swaps"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/xtz-via-wtz"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/rationale-wtz"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/addliquidity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/removeliquidity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/new-pool"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/$spi"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/analytics"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "spi/spicydashboard"
                   }
                 ],
                 "collapsed": true,
@@ -209,39 +101,95 @@
               },
               {
                 "type": "category",
-                "label": "GraphQL Appendix",
+                "label": "SpicyPro (Advanced)",
                 "items": [
                   {
                     "type": "doc",
-                    "id": "api/queries"
+                    "id": "spro/recipes"
                   },
                   {
                     "type": "doc",
-                    "id": "api/mutations"
+                    "id": "spro/limits"
                   },
                   {
                     "type": "doc",
-                    "id": "api/objects"
+                    "id": "spro/vaults"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Matter DeFi",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "mttr/matter-defi"
                   },
                   {
                     "type": "doc",
-                    "id": "api/interfaces"
+                    "id": "mttr/syncing-wallet-matter"
                   },
                   {
                     "type": "doc",
-                    "id": "api/enums"
+                    "id": "mttr/menu-bar"
                   },
                   {
                     "type": "doc",
-                    "id": "api/unions"
+                    "id": "mttr/selecting-theme"
                   },
                   {
                     "type": "doc",
-                    "id": "api/inputObjects"
+                    "id": "mttr/stakingcore"
                   },
                   {
                     "type": "doc",
-                    "id": "api/scalars"
+                    "id": "mttr/unstakingcore"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr/claiming"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr/compounding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr/matter-analytics"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Matter Live",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "mttr-live/faas"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr-live/staking"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr-live/unstaking"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr-live/claiming-rewards"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr-live/dashboard"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "mttr-live/tipping"
                   }
                 ],
                 "collapsed": true,
@@ -251,230 +199,10 @@
           },
           "docs": [
             {
-              "unversionedId": "api/enums",
-              "id": "api/enums",
-              "isDocsHomePage": false,
-              "title": "Enums",
-              "description": "order_by",
-              "source": "@site/docs/api/enums.md",
-              "sourceDirName": "api",
-              "slug": "/api/enums",
-              "permalink": "/api/enums",
-              "version": "current",
-              "sidebarPosition": 5,
-              "frontMatter": {
-                "id": "enums",
-                "title": "Enums",
-                "slug": "enums",
-                "sidebar_position": 5
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Interfaces",
-                "permalink": "/api/interfaces"
-              },
-              "next": {
-                "title": "Unions",
-                "permalink": "/api/unions"
-              }
-            },
-            {
-              "unversionedId": "api/inputObjects",
-              "id": "api/inputObjects",
-              "isDocsHomePage": false,
-              "title": "Input objects",
-              "description": "bigintcomparisonexp",
-              "source": "@site/docs/api/inputObjects.md",
-              "sourceDirName": "api",
-              "slug": "/api/inputObjects",
-              "permalink": "/api/inputObjects",
-              "version": "current",
-              "sidebarPosition": 7,
-              "frontMatter": {
-                "id": "inputObjects",
-                "title": "Input objects",
-                "slug": "inputObjects",
-                "sidebar_position": 7
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Unions",
-                "permalink": "/api/unions"
-              },
-              "next": {
-                "title": "Scalars",
-                "permalink": "/api/scalars"
-              }
-            },
-            {
-              "unversionedId": "api/interfaces",
-              "id": "api/interfaces",
-              "isDocsHomePage": false,
-              "title": "Interfaces",
-              "description": "",
-              "source": "@site/docs/api/interfaces.md",
-              "sourceDirName": "api",
-              "slug": "/api/interfaces",
-              "permalink": "/api/interfaces",
-              "version": "current",
-              "sidebarPosition": 4,
-              "frontMatter": {
-                "id": "interfaces",
-                "title": "Interfaces",
-                "slug": "interfaces",
-                "sidebar_position": 4
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Objects",
-                "permalink": "/api/objects"
-              },
-              "next": {
-                "title": "Enums",
-                "permalink": "/api/enums"
-              }
-            },
-            {
-              "unversionedId": "api/mutations",
-              "id": "api/mutations",
-              "isDocsHomePage": false,
-              "title": "Mutations",
-              "description": "",
-              "source": "@site/docs/api/mutations.md",
-              "sourceDirName": "api",
-              "slug": "/api/mutations",
-              "permalink": "/api/mutations",
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "id": "mutations",
-                "title": "Mutations",
-                "slug": "mutations",
-                "sidebar_position": 2
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Queries",
-                "permalink": "/api/queries"
-              },
-              "next": {
-                "title": "Objects",
-                "permalink": "/api/objects"
-              }
-            },
-            {
-              "unversionedId": "api/objects",
-              "id": "api/objects",
-              "isDocsHomePage": false,
-              "title": "Objects",
-              "description": "mutation_root",
-              "source": "@site/docs/api/objects.md",
-              "sourceDirName": "api",
-              "slug": "/api/objects",
-              "permalink": "/api/objects",
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "id": "objects",
-                "title": "Objects",
-                "slug": "objects",
-                "sidebar_position": 3
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Mutations",
-                "permalink": "/api/mutations"
-              },
-              "next": {
-                "title": "Interfaces",
-                "permalink": "/api/interfaces"
-              }
-            },
-            {
-              "unversionedId": "api/queries",
-              "id": "api/queries",
-              "isDocsHomePage": false,
-              "title": "Queries",
-              "description": "",
-              "source": "@site/docs/api/queries.md",
-              "sourceDirName": "api",
-              "slug": "/api/queries",
-              "permalink": "/api/queries",
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "id": "queries",
-                "title": "Queries",
-                "slug": "queries",
-                "sidebar_position": 1
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Governance",
-                "permalink": "/tutorial-extras/governance"
-              },
-              "next": {
-                "title": "Mutations",
-                "permalink": "/api/mutations"
-              }
-            },
-            {
-              "unversionedId": "api/scalars",
-              "id": "api/scalars",
-              "isDocsHomePage": false,
-              "title": "Scalars",
-              "description": "bigint",
-              "source": "@site/docs/api/scalars.md",
-              "sourceDirName": "api",
-              "slug": "/api/scalars",
-              "permalink": "/api/scalars",
-              "version": "current",
-              "sidebarPosition": 8,
-              "frontMatter": {
-                "id": "scalars",
-                "title": "Scalars",
-                "slug": "scalars",
-                "sidebar_position": 8
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Input objects",
-                "permalink": "/api/inputObjects"
-              }
-            },
-            {
-              "unversionedId": "api/unions",
-              "id": "api/unions",
-              "isDocsHomePage": false,
-              "title": "Unions",
-              "description": "",
-              "source": "@site/docs/api/unions.md",
-              "sourceDirName": "api",
-              "slug": "/api/unions",
-              "permalink": "/api/unions",
-              "version": "current",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "id": "unions",
-                "title": "Unions",
-                "slug": "unions",
-                "sidebar_position": 6
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "Enums",
-                "permalink": "/api/enums"
-              },
-              "next": {
-                "title": "Input objects",
-                "permalink": "/api/inputObjects"
-              }
-            },
-            {
               "unversionedId": "intro",
               "id": "intro",
               "isDocsHomePage": false,
-              "title": "Welcome to the SalsaDAO Ecosystem Guidebook",
+              "title": "SalsaDAO Ecosystem Guidebook",
               "description": "alt text",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
@@ -488,18 +216,18 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "1.1 Syncing Your Wallet",
-                "permalink": "/spicyswap"
+                "title": "Getting Started on SalsaDAO",
+                "permalink": "/salsadao"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi-live/claiming-rewards",
-              "id": "salsadao-guidebook/matter-defi-live/claiming-rewards",
+              "unversionedId": "mttr-live/claiming-rewards",
+              "id": "mttr-live/claiming-rewards",
               "isDocsHomePage": false,
-              "title": "3.4 Claiming Rewards",
+              "title": "Claiming Rewards",
               "description": "Claiming Rewards",
-              "source": "@site/docs/salsadao-guidebook/matter-defi-live/claiming-rewards.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi-live",
+              "source": "@site/docs/mttr-live/claiming-rewards.md",
+              "sourceDirName": "mttr-live",
               "slug": "/claiming-rewards",
               "permalink": "/claiming-rewards",
               "version": "current",
@@ -510,22 +238,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "3.3 Unstaking",
+                "title": "Unstaking",
                 "permalink": "/unstaking"
               },
               "next": {
-                "title": "3.5 Dashboard",
+                "title": "Dashboard",
                 "permalink": "/dashboard"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi-live/dashboard",
-              "id": "salsadao-guidebook/matter-defi-live/dashboard",
+              "unversionedId": "mttr-live/dashboard",
+              "id": "mttr-live/dashboard",
               "isDocsHomePage": false,
-              "title": "3.5 Dashboard",
+              "title": "Dashboard",
               "description": "Dashboard",
-              "source": "@site/docs/salsadao-guidebook/matter-defi-live/dashboard.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi-live",
+              "source": "@site/docs/mttr-live/dashboard.md",
+              "sourceDirName": "mttr-live",
               "slug": "/dashboard",
               "permalink": "/dashboard",
               "version": "current",
@@ -536,22 +264,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "3.4 Claiming Rewards",
+                "title": "Claiming Rewards",
                 "permalink": "/claiming-rewards"
               },
               "next": {
-                "title": "3.6 Tipping a Farm",
+                "title": "Tipping a Farm",
                 "permalink": "/tipping"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi-live/faas",
-              "id": "salsadao-guidebook/matter-defi-live/faas",
+              "unversionedId": "mttr-live/faas",
+              "id": "mttr-live/faas",
               "isDocsHomePage": false,
-              "title": "3.1 Farm as a Service",
-              "description": "Farm as a Service",
-              "source": "@site/docs/salsadao-guidebook/matter-defi-live/faas.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi-live",
+              "title": "Farm as a Service",
+              "description": "Matter Live is Matter DeFi’s farm-as-a-service (FaaS) tool. With the FaaS tool, people can create their own custom farms with their choice of tokens. For example, if you develop a new project that has its own token & you wish to incentivize providing liquidity for it or if you wish to distribute the token, you can create a farm that emits your project token to people who provide liquidity for it and stake their LP tokens in the farm.",
+              "source": "@site/docs/mttr-live/faas.md",
+              "sourceDirName": "mttr-live",
               "slug": "/faas",
               "permalink": "/faas",
               "version": "current",
@@ -562,22 +290,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.9 Matter DeFi Analytics",
+                "title": "Matter DeFi Analytics",
                 "permalink": "/matter-analytics"
               },
               "next": {
-                "title": "3.2 Staking & Staking Fee",
+                "title": "Staking & Fees",
                 "permalink": "/staking"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi-live/staking",
-              "id": "salsadao-guidebook/matter-defi-live/staking",
+              "unversionedId": "mttr-live/staking",
+              "id": "mttr-live/staking",
               "isDocsHomePage": false,
-              "title": "3.2 Staking & Staking Fee",
+              "title": "Staking & Fees",
               "description": "Getting Started",
-              "source": "@site/docs/salsadao-guidebook/matter-defi-live/staking.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi-live",
+              "source": "@site/docs/mttr-live/staking.md",
+              "sourceDirName": "mttr-live",
               "slug": "/staking",
               "permalink": "/staking",
               "version": "current",
@@ -588,22 +316,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "3.1 Farm as a Service",
+                "title": "Farm as a Service",
                 "permalink": "/faas"
               },
               "next": {
-                "title": "3.3 Unstaking",
+                "title": "Unstaking",
                 "permalink": "/unstaking"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi-live/tipping",
-              "id": "salsadao-guidebook/matter-defi-live/tipping",
+              "unversionedId": "mttr-live/tipping",
+              "id": "mttr-live/tipping",
               "isDocsHomePage": false,
-              "title": "3.6 Tipping a Farm",
+              "title": "Tipping a Farm",
               "description": "Matter Live Tipping",
-              "source": "@site/docs/salsadao-guidebook/matter-defi-live/tipping.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi-live",
+              "source": "@site/docs/mttr-live/tipping.md",
+              "sourceDirName": "mttr-live",
               "slug": "/tipping",
               "permalink": "/tipping",
               "version": "current",
@@ -614,22 +342,18 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "3.5 Dashboard",
+                "title": "Dashboard",
                 "permalink": "/dashboard"
-              },
-              "next": {
-                "title": "4.1 SalsaDAO: Getting Started",
-                "permalink": "/salsadao"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi-live/unstaking",
-              "id": "salsadao-guidebook/matter-defi-live/unstaking",
+              "unversionedId": "mttr-live/unstaking",
+              "id": "mttr-live/unstaking",
               "isDocsHomePage": false,
-              "title": "3.3 Unstaking",
+              "title": "Unstaking",
               "description": "Removing Stake",
-              "source": "@site/docs/salsadao-guidebook/matter-defi-live/unstaking.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi-live",
+              "source": "@site/docs/mttr-live/unstaking.md",
+              "sourceDirName": "mttr-live",
               "slug": "/unstaking",
               "permalink": "/unstaking",
               "version": "current",
@@ -640,22 +364,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "3.2 Staking & Staking Fee",
+                "title": "Staking & Fees",
                 "permalink": "/staking"
               },
               "next": {
-                "title": "3.4 Claiming Rewards",
+                "title": "Claiming Rewards",
                 "permalink": "/claiming-rewards"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/claiming",
-              "id": "salsadao-guidebook/matter-defi/claiming",
+              "unversionedId": "mttr/claiming",
+              "id": "mttr/claiming",
               "isDocsHomePage": false,
-              "title": "2.7 Claiming Rewards",
+              "title": "Claiming Rewards",
               "description": "1. To claim rewards, click the ‘Claim’ button to the right of the farm box.",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/claiming.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/claiming.md",
+              "sourceDirName": "mttr",
               "slug": "/claiming",
               "permalink": "/claiming",
               "version": "current",
@@ -666,22 +390,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.6 Unstaking",
+                "title": "Unstaking",
                 "permalink": "/unstakingcore"
               },
               "next": {
-                "title": "2.8 Compounding Rewards",
+                "title": "Compounding Rewards",
                 "permalink": "/compounding"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/compounding",
-              "id": "salsadao-guidebook/matter-defi/compounding",
+              "unversionedId": "mttr/compounding",
+              "id": "mttr/compounding",
               "isDocsHomePage": false,
-              "title": "2.8 Compounding Rewards",
+              "title": "Compounding Rewards",
               "description": "MTTR-->MTTR Compound Staking",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/compounding.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/compounding.md",
+              "sourceDirName": "mttr",
               "slug": "/compounding",
               "permalink": "/compounding",
               "version": "current",
@@ -692,22 +416,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.7 Claiming Rewards",
+                "title": "Claiming Rewards",
                 "permalink": "/claiming"
               },
               "next": {
-                "title": "2.9 Matter DeFi Analytics",
+                "title": "Matter DeFi Analytics",
                 "permalink": "/matter-analytics"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/matter-analytics",
-              "id": "salsadao-guidebook/matter-defi/matter-analytics",
+              "unversionedId": "mttr/matter-analytics",
+              "id": "mttr/matter-analytics",
               "isDocsHomePage": false,
-              "title": "2.9 Matter DeFi Analytics",
+              "title": "Matter DeFi Analytics",
               "description": "Watch the Burn",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/matter-analytics.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/matter-analytics.md",
+              "sourceDirName": "mttr",
               "slug": "/matter-analytics",
               "permalink": "/matter-analytics",
               "version": "current",
@@ -718,22 +442,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.8 Compounding Rewards",
+                "title": "Compounding Rewards",
                 "permalink": "/compounding"
               },
               "next": {
-                "title": "3.1 Farm as a Service",
+                "title": "Farm as a Service",
                 "permalink": "/faas"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/matter-defi",
-              "id": "salsadao-guidebook/matter-defi/matter-defi",
+              "unversionedId": "mttr/matter-defi",
+              "id": "mttr/matter-defi",
               "isDocsHomePage": false,
-              "title": "2.1 What is Matter DeFi Core?",
-              "description": "What is Matter DeFi Core?",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/matter-defi.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "title": "Introducing Matter DeFi",
+              "description": "Matter DeFi is a yield farming platform aimed to incentivize providing liquidity on Spicyswap DEX. Users may stake SpicySwap LP Tokens to earn the protocol token MTTR.",
+              "source": "@site/docs/mttr/matter-defi.md",
+              "sourceDirName": "mttr",
               "slug": "/matter-defi",
               "permalink": "/matter-defi",
               "version": "current",
@@ -744,22 +468,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.11 Dashboard",
-                "permalink": "/spicydashboard"
+                "title": "SpicyPro SVaults",
+                "permalink": "/svaults"
               },
               "next": {
-                "title": "2.2 Syncing Your Wallet",
+                "title": "Syncing Your Wallet",
                 "permalink": "/syncing-wallet-matter"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/menu-bar",
-              "id": "salsadao-guidebook/matter-defi/menu-bar",
+              "unversionedId": "mttr/menu-bar",
+              "id": "mttr/menu-bar",
               "isDocsHomePage": false,
-              "title": "2.3 Menu Bar & Nodes",
+              "title": "Menu Bar & Nodes",
               "description": "Menu",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/menu-bar.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/menu-bar.md",
+              "sourceDirName": "mttr",
               "slug": "/menu-bar",
               "permalink": "/menu-bar",
               "version": "current",
@@ -770,22 +494,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.2 Syncing Your Wallet",
+                "title": "Syncing Your Wallet",
                 "permalink": "/syncing-wallet-matter"
               },
               "next": {
-                "title": "2.4 Selecting a Theme",
+                "title": "Selecting a Theme",
                 "permalink": "/selecting-theme"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/selecting-theme",
-              "id": "salsadao-guidebook/matter-defi/selecting-theme",
+              "unversionedId": "mttr/selecting-theme",
+              "id": "mttr/selecting-theme",
               "isDocsHomePage": false,
-              "title": "2.4 Selecting a Theme",
+              "title": "Selecting a Theme",
               "description": "Theme Menu",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/selecting-theme.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/selecting-theme.md",
+              "sourceDirName": "mttr",
               "slug": "/selecting-theme",
               "permalink": "/selecting-theme",
               "version": "current",
@@ -796,22 +520,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.3 Menu Bar & Nodes",
+                "title": "Menu Bar & Nodes",
                 "permalink": "/menu-bar"
               },
               "next": {
-                "title": "2.5 Staking",
+                "title": "Staking",
                 "permalink": "/stakingcore"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/stakingcore",
-              "id": "salsadao-guidebook/matter-defi/stakingcore",
+              "unversionedId": "mttr/stakingcore",
+              "id": "mttr/stakingcore",
               "isDocsHomePage": false,
-              "title": "2.5 Staking",
+              "title": "Staking",
               "description": "Active Farms",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/stakingcore.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/stakingcore.md",
+              "sourceDirName": "mttr",
               "slug": "/stakingcore",
               "permalink": "/stakingcore",
               "version": "current",
@@ -822,22 +546,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.4 Selecting a Theme",
+                "title": "Selecting a Theme",
                 "permalink": "/selecting-theme"
               },
               "next": {
-                "title": "2.6 Unstaking",
+                "title": "Unstaking",
                 "permalink": "/unstakingcore"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/syncing-wallet-matter",
-              "id": "salsadao-guidebook/matter-defi/syncing-wallet-matter",
+              "unversionedId": "mttr/syncing-wallet-matter",
+              "id": "mttr/syncing-wallet-matter",
               "isDocsHomePage": false,
-              "title": "2.2 Syncing Your Wallet",
+              "title": "Syncing Your Wallet",
               "description": "Getting Started",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/syncing-wallet-matter.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/syncing-wallet-matter.md",
+              "sourceDirName": "mttr",
               "slug": "/syncing-wallet-matter",
               "permalink": "/syncing-wallet-matter",
               "version": "current",
@@ -848,22 +572,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.1 What is Matter DeFi Core?",
+                "title": "Introducing Matter DeFi",
                 "permalink": "/matter-defi"
               },
               "next": {
-                "title": "2.3 Menu Bar & Nodes",
+                "title": "Menu Bar & Nodes",
                 "permalink": "/menu-bar"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/matter-defi/unstakingcore",
-              "id": "salsadao-guidebook/matter-defi/unstakingcore",
+              "unversionedId": "mttr/unstakingcore",
+              "id": "mttr/unstakingcore",
               "isDocsHomePage": false,
-              "title": "2.6 Unstaking",
+              "title": "Unstaking",
               "description": "Remove Stake",
-              "source": "@site/docs/salsadao-guidebook/matter-defi/unstakingcore.md",
-              "sourceDirName": "salsadao-guidebook/matter-defi",
+              "source": "@site/docs/mttr/unstakingcore.md",
+              "sourceDirName": "mttr",
               "slug": "/unstakingcore",
               "permalink": "/unstakingcore",
               "version": "current",
@@ -874,126 +598,100 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "2.5 Staking",
+                "title": "Staking",
                 "permalink": "/stakingcore"
               },
               "next": {
-                "title": "2.7 Claiming Rewards",
+                "title": "Claiming Rewards",
                 "permalink": "/claiming"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/salsadao/$spi-farms",
-              "id": "salsadao-guidebook/salsadao/$spi-farms",
+              "unversionedId": "sdao/cart-function",
+              "id": "sdao/cart-function",
               "isDocsHomePage": false,
-              "title": "4.2 $SPI Farms",
-              "description": "$SPI Distribution Farms",
-              "source": "@site/docs/salsadao-guidebook/salsadao/$spi-farms.md",
-              "sourceDirName": "salsadao-guidebook/salsadao",
-              "slug": "/$spi-farms",
-              "permalink": "/$spi-farms",
-              "version": "current",
-              "sidebarPosition": 2,
-              "frontMatter": {
-                "sidebar_position": 2,
-                "slug": "/$spi-farms"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "4.1 SalsaDAO: Getting Started",
-                "permalink": "/salsadao"
-              },
-              "next": {
-                "title": "4.3 Cart Function",
-                "permalink": "/cart-function"
-              }
-            },
-            {
-              "unversionedId": "salsadao-guidebook/salsadao/cart-function",
-              "id": "salsadao-guidebook/salsadao/cart-function",
-              "isDocsHomePage": false,
-              "title": "4.3 Cart Function",
+              "title": "Cart Function",
               "description": "Cart Batch Transactions",
-              "source": "@site/docs/salsadao-guidebook/salsadao/cart-function.md",
-              "sourceDirName": "salsadao-guidebook/salsadao",
+              "source": "@site/docs/sdao/cart-function.md",
+              "sourceDirName": "sdao",
               "slug": "/cart-function",
               "permalink": "/cart-function",
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3,
-                "slug": "/cart-function"
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "4.2 $SPI Farms",
-                "permalink": "/$spi-farms"
-              },
-              "next": {
-                "title": "4.4 Gaming Hall",
-                "permalink": "/gaming-hall"
-              }
-            },
-            {
-              "unversionedId": "salsadao-guidebook/salsadao/gaming-hall",
-              "id": "salsadao-guidebook/salsadao/gaming-hall",
-              "isDocsHomePage": false,
-              "title": "4.4 Gaming Hall",
-              "description": "Gaming Hall",
-              "source": "@site/docs/salsadao-guidebook/salsadao/gaming-hall.md",
-              "sourceDirName": "salsadao-guidebook/salsadao",
-              "slug": "/gaming-hall",
-              "permalink": "/gaming-hall",
               "version": "current",
               "sidebarPosition": 4,
               "frontMatter": {
                 "sidebar_position": 4,
+                "slug": "/cart-function"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Governance & Voting",
+                "permalink": "/governance-voting"
+              },
+              "next": {
+                "title": "Welcome to SpicySwap",
+                "permalink": "/spicyswap"
+              }
+            },
+            {
+              "unversionedId": "sdao/gaming-hall",
+              "id": "sdao/gaming-hall",
+              "isDocsHomePage": false,
+              "title": "Gaming Hall",
+              "description": "Gaming Hall",
+              "source": "@site/docs/sdao/gaming-hall.md",
+              "sourceDirName": "sdao",
+              "slug": "/gaming-hall",
+              "permalink": "/gaming-hall",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
                 "slug": "/gaming-hall"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "4.3 Cart Function",
-                "permalink": "/cart-function"
+                "title": "Getting Started on SalsaDAO",
+                "permalink": "/salsadao"
               },
               "next": {
-                "title": "4.5 Governance & Voting",
+                "title": "Governance & Voting",
                 "permalink": "/governance-voting"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/salsadao/governance-voting",
-              "id": "salsadao-guidebook/salsadao/governance-voting",
+              "unversionedId": "sdao/governance-voting",
+              "id": "sdao/governance-voting",
               "isDocsHomePage": false,
-              "title": "4.5 Governance & Voting",
-              "description": "$sDAO is the SalsaDAO governance token, and all Genius Contracts products are governed by $sDAO holders. The governance process starts by taking ideas that consistently come up in informal discord discussions into the salsaDAO governance forum, where the ideas can get discussed in more detail. After relative consensus is reached on the discussion forum, a proposal is drafted and put on the SalsaDAO website voting portal where all active issues up for voting can be viewed.",
-              "source": "@site/docs/salsadao-guidebook/salsadao/governance-voting.md",
-              "sourceDirName": "salsadao-guidebook/salsadao",
+              "title": "Governance & Voting",
+              "description": "sDAO is the SalsaDAO governance token, and all Genius Contracts products are governed by sDAO holders. The governance process starts by taking ideas that consistently come up in informal discord discussions into the salsaDAO governance forum, where the ideas can get discussed in more detail. After relative consensus is reached on the discussion forum, a proposal is drafted and put on the SalsaDAO website voting portal where all active issues up for voting can be viewed.",
+              "source": "@site/docs/sdao/governance-voting.md",
+              "sourceDirName": "sdao",
               "slug": "/governance-voting",
               "permalink": "/governance-voting",
               "version": "current",
-              "sidebarPosition": 5,
+              "sidebarPosition": 3,
               "frontMatter": {
-                "sidebar_position": 5,
+                "sidebar_position": 3,
                 "slug": "/governance-voting"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "4.4 Gaming Hall",
+                "title": "Gaming Hall",
                 "permalink": "/gaming-hall"
               },
               "next": {
-                "title": "Integrations",
-                "permalink": "/tutorial-extras/integrations"
+                "title": "Cart Function",
+                "permalink": "/cart-function"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/salsadao/salsadao",
-              "id": "salsadao-guidebook/salsadao/salsadao",
+              "unversionedId": "sdao/salsadao",
+              "id": "sdao/salsadao",
               "isDocsHomePage": false,
-              "title": "4.1 SalsaDAO: Getting Started",
+              "title": "Getting Started on SalsaDAO",
               "description": "The SalsaDAO.xyz website is the URL hub for accessing various auxiliary dApps of the SalsaDAO ecosystem, such as links to Spicyswap, the famous Taco Shop, Matter DeFi, the governance portal where SalsaDAO governance takes place, farms for the distribution of the Spicyswap utility token, $SPI, and the SalsaDAO gaming hall. Users will also find links to the various SalsaDAO/Genius Contract social media channels.",
-              "source": "@site/docs/salsadao-guidebook/salsadao/salsadao.md",
-              "sourceDirName": "salsadao-guidebook/salsadao",
+              "source": "@site/docs/sdao/salsadao.md",
+              "sourceDirName": "sdao",
               "slug": "/salsadao",
               "permalink": "/salsadao",
               "version": "current",
@@ -1004,48 +702,48 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "3.6 Tipping a Farm",
-                "permalink": "/tipping"
+                "title": "SalsaDAO Ecosystem Guidebook",
+                "permalink": "/"
               },
               "next": {
-                "title": "4.2 $SPI Farms",
-                "permalink": "/$spi-farms"
+                "title": "Gaming Hall",
+                "permalink": "/gaming-hall"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/$spi",
-              "id": "salsadao-guidebook/spicyswap/$spi",
+              "unversionedId": "spi/$spi",
+              "id": "spi/$spi",
               "isDocsHomePage": false,
-              "title": "1.9 $SPI Utility Token & Fee Farming",
-              "description": "alt text",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/$spi.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
-              "slug": "/$spi",
-              "permalink": "/$spi",
+              "title": "SPI Token & Fee Farming",
+              "description": "What is Spice Fee Farming?",
+              "source": "@site/docs/spi/$spi.md",
+              "sourceDirName": "spi",
+              "slug": "/SPI",
+              "permalink": "/SPI",
               "version": "current",
               "sidebarPosition": 9,
               "frontMatter": {
                 "sidebar_position": 9,
-                "slug": "/$spi"
+                "slug": "/SPI"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.8 Creating a New Liquidity Pool",
+                "title": "Creating a New Liquidity Pool",
                 "permalink": "/new-pool"
               },
               "next": {
-                "title": "1.10 Spicyswap Analytics",
+                "title": "SpicySwap Analytics",
                 "permalink": "/analytics"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/addliquidity",
-              "id": "salsadao-guidebook/spicyswap/addliquidity",
+              "unversionedId": "spi/addliquidity",
+              "id": "spi/addliquidity",
               "isDocsHomePage": false,
-              "title": "1.6 Adding Liquidity",
-              "description": "Spicyswap liquidity providers earn 0.2% on swap fees, and another 0.1% can be gained by fee farming with the $SPI utility token (more on this in section 1.10).",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/addliquidity.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "title": "Adding Liquidity",
+              "description": "Spicyswap liquidity providers earn 0.2% on swap fees, and another 0.1% can be gained by fee farming with the SPI utility token (more on this in SPI Token & Fee Farming).",
+              "source": "@site/docs/spi/addliquidity.md",
+              "sourceDirName": "spi",
               "slug": "/addliquidity",
               "permalink": "/addliquidity",
               "version": "current",
@@ -1056,22 +754,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.5.1 Rationale for WTZ",
+                "title": "Rationale for WTZ",
                 "permalink": "/rationale-wtz"
               },
               "next": {
-                "title": "1.7 Removing Liquidity",
+                "title": "Removing Liquidity",
                 "permalink": "/removeliquidity"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/analytics",
-              "id": "salsadao-guidebook/spicyswap/analytics",
+              "unversionedId": "spi/analytics",
+              "id": "spi/analytics",
               "isDocsHomePage": false,
-              "title": "1.10 Spicyswap Analytics",
+              "title": "SpicySwap Analytics",
               "description": "Spicyswap has an analytics page that allows users to view and keep track of certain stats, such as: DEX volume, Total Value Locked in the DEX, stats for each token pair, stats for Spicy Fee Farming, stats for individual tokens, general DEX transaction history, etc.",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/analytics.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/analytics.md",
+              "sourceDirName": "spi",
               "slug": "/analytics",
               "permalink": "/analytics",
               "version": "current",
@@ -1082,22 +780,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.9 $SPI Utility Token & Fee Farming",
-                "permalink": "/$spi"
+                "title": "SPI Token & Fee Farming",
+                "permalink": "/SPI"
               },
               "next": {
-                "title": "1.11 Dashboard",
+                "title": "User Dashboard",
                 "permalink": "/spicydashboard"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/new-pool",
-              "id": "salsadao-guidebook/spicyswap/new-pool",
+              "unversionedId": "spi/new-pool",
+              "id": "spi/new-pool",
               "isDocsHomePage": false,
-              "title": "1.8 Creating a New Liquidity Pool",
+              "title": "Creating a New Liquidity Pool",
               "description": "Custom Pools",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/new-pool.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/new-pool.md",
+              "sourceDirName": "spi",
               "slug": "/new-pool",
               "permalink": "/new-pool",
               "version": "current",
@@ -1108,22 +806,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.7 Removing Liquidity",
+                "title": "Removing Liquidity",
                 "permalink": "/removeliquidity"
               },
               "next": {
-                "title": "1.9 $SPI Utility Token & Fee Farming",
-                "permalink": "/$spi"
+                "title": "SPI Token & Fee Farming",
+                "permalink": "/SPI"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/nodes-indexer",
-              "id": "salsadao-guidebook/spicyswap/nodes-indexer",
+              "unversionedId": "spi/nodes-indexer",
+              "id": "spi/nodes-indexer",
               "isDocsHomePage": false,
-              "title": "1.2 Nodes & Indexer Status",
+              "title": "Nodes & Indexer Status",
               "description": "Changing a Node",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/nodes-indexer.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/nodes-indexer.md",
+              "sourceDirName": "spi",
               "slug": "/nodes-indexer",
               "permalink": "/nodes-indexer",
               "version": "current",
@@ -1134,22 +832,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.1 Syncing Your Wallet",
+                "title": "Welcome to SpicySwap",
                 "permalink": "/spicyswap"
               },
               "next": {
-                "title": "1.3 Selecting a Theme",
+                "title": "Selecting a Theme",
                 "permalink": "/spicy-theme"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/rationale-wtz",
-              "id": "salsadao-guidebook/spicyswap/rationale-wtz",
+              "unversionedId": "spi/rationale-wtz",
+              "id": "spi/rationale-wtz",
               "isDocsHomePage": false,
-              "title": "1.5.1 Rationale for WTZ",
+              "title": "Rationale for WTZ",
               "description": "Why WTZ?",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/rationale-wtz.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/rationale-wtz.md",
+              "sourceDirName": "spi",
               "slug": "/rationale-wtz",
               "permalink": "/rationale-wtz",
               "version": "current",
@@ -1160,22 +858,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.5 XTZ via WTZ",
+                "title": "XTZ via WTZ",
                 "permalink": "/xtz-via-wtz"
               },
               "next": {
-                "title": "1.6 Adding Liquidity",
+                "title": "Adding Liquidity",
                 "permalink": "/addliquidity"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/removeliquidity",
-              "id": "salsadao-guidebook/spicyswap/removeliquidity",
+              "unversionedId": "spi/removeliquidity",
+              "id": "spi/removeliquidity",
               "isDocsHomePage": false,
-              "title": "1.7 Removing Liquidity",
-              "description": "Removing Liquidity",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/removeliquidity.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "title": "Removing Liquidity",
+              "description": "Prepare to Remove Liquidity",
+              "source": "@site/docs/spi/removeliquidity.md",
+              "sourceDirName": "spi",
               "slug": "/removeliquidity",
               "permalink": "/removeliquidity",
               "version": "current",
@@ -1186,22 +884,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.6 Adding Liquidity",
+                "title": "Adding Liquidity",
                 "permalink": "/addliquidity"
               },
               "next": {
-                "title": "1.8 Creating a New Liquidity Pool",
+                "title": "Creating a New Liquidity Pool",
                 "permalink": "/new-pool"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/spicy-theme",
-              "id": "salsadao-guidebook/spicyswap/spicy-theme",
+              "unversionedId": "spi/spicy-theme",
+              "id": "spi/spicy-theme",
               "isDocsHomePage": false,
-              "title": "1.3 Selecting a Theme",
+              "title": "Selecting a Theme",
               "description": "Themes",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/spicy-theme.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/spicy-theme.md",
+              "sourceDirName": "spi",
               "slug": "/spicy-theme",
               "permalink": "/spicy-theme",
               "version": "current",
@@ -1212,22 +910,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.2 Nodes & Indexer Status",
+                "title": "Nodes & Indexer Status",
                 "permalink": "/nodes-indexer"
               },
               "next": {
-                "title": "1.4 Swaps",
+                "title": "Swapping",
                 "permalink": "/swaps"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/spicydashboard",
-              "id": "salsadao-guidebook/spicyswap/spicydashboard",
+              "unversionedId": "spi/spicydashboard",
+              "id": "spi/spicydashboard",
               "isDocsHomePage": false,
-              "title": "1.11 Dashboard",
+              "title": "User Dashboard",
               "description": "Dashboard Home Page",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/spicydashboard.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/spicydashboard.md",
+              "sourceDirName": "spi",
               "slug": "/spicydashboard",
               "permalink": "/spicydashboard",
               "version": "current",
@@ -1238,22 +936,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.10 Spicyswap Analytics",
+                "title": "SpicySwap Analytics",
                 "permalink": "/analytics"
               },
               "next": {
-                "title": "2.1 What is Matter DeFi Core?",
-                "permalink": "/matter-defi"
+                "title": "SpicyPro Recipes",
+                "permalink": "/recipes"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/spicyswap",
-              "id": "salsadao-guidebook/spicyswap/spicyswap",
+              "unversionedId": "spi/spicyswap",
+              "id": "spi/spicyswap",
               "isDocsHomePage": false,
-              "title": "1.1 Syncing Your Wallet",
-              "description": "What is Spicyswap?",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/spicyswap.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "title": "Welcome to SpicySwap",
+              "description": "SpicySwap is a next-generation DEX built by Genius Contracts specifically for token-to-token swaps on Tezos. SpicySwap is governed by SalsaDAO ($sDAO), which is the governance entity for the wider suite of Genius Contracts platforms and products. SpicySwap is heavily inspired by Uniswap, and was built from the ground up for Tezos.",
+              "source": "@site/docs/spi/spicyswap.md",
+              "sourceDirName": "spi",
               "slug": "/spicyswap",
               "permalink": "/spicyswap",
               "version": "current",
@@ -1264,22 +962,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Welcome to the SalsaDAO Ecosystem Guidebook",
-                "permalink": "/"
+                "title": "Cart Function",
+                "permalink": "/cart-function"
               },
               "next": {
-                "title": "1.2 Nodes & Indexer Status",
+                "title": "Nodes & Indexer Status",
                 "permalink": "/nodes-indexer"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/swaps",
-              "id": "salsadao-guidebook/spicyswap/swaps",
+              "unversionedId": "spi/swaps",
+              "id": "spi/swaps",
               "isDocsHomePage": false,
-              "title": "1.4 Swaps",
+              "title": "Swapping",
               "description": "Swaps",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/swaps.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "source": "@site/docs/spi/swaps.md",
+              "sourceDirName": "spi",
               "slug": "/swaps",
               "permalink": "/swaps",
               "version": "current",
@@ -1290,22 +988,22 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.3 Selecting a Theme",
+                "title": "Selecting a Theme",
                 "permalink": "/spicy-theme"
               },
               "next": {
-                "title": "1.5 XTZ via WTZ",
+                "title": "XTZ via WTZ",
                 "permalink": "/xtz-via-wtz"
               }
             },
             {
-              "unversionedId": "salsadao-guidebook/spicyswap/xtz-via-wtz",
-              "id": "salsadao-guidebook/spicyswap/xtz-via-wtz",
+              "unversionedId": "spi/xtz-via-wtz",
+              "id": "spi/xtz-via-wtz",
               "isDocsHomePage": false,
-              "title": "1.5 XTZ via WTZ",
-              "description": "alt text",
-              "source": "@site/docs/salsadao-guidebook/spicyswap/xtz-via-wtz.md",
-              "sourceDirName": "salsadao-guidebook/spicyswap",
+              "title": "XTZ via WTZ",
+              "description": "WTZ",
+              "source": "@site/docs/spi/xtz-via-wtz.md",
+              "sourceDirName": "spi",
               "slug": "/xtz-via-wtz",
               "permalink": "/xtz-via-wtz",
               "version": "current",
@@ -1316,87 +1014,90 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "1.4 Swaps",
+                "title": "Swapping",
                 "permalink": "/swaps"
               },
               "next": {
-                "title": "1.5.1 Rationale for WTZ",
+                "title": "Rationale for WTZ",
                 "permalink": "/rationale-wtz"
               }
             },
             {
-              "unversionedId": "tutorial-extras/api-reference",
-              "id": "tutorial-extras/api-reference",
+              "unversionedId": "spro/limits",
+              "id": "spro/limits",
               "isDocsHomePage": false,
-              "title": "API Reference",
-              "description": "Under Construction!",
-              "source": "@site/docs/tutorial-extras/api-reference.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/api-reference",
-              "permalink": "/tutorial-extras/api-reference",
+              "title": "SpicyPro Limit Orders",
+              "description": "Welcome to Limit Orders!",
+              "source": "@site/docs/spro/limits.md",
+              "sourceDirName": "spro",
+              "slug": "/limits",
+              "permalink": "/limits",
               "version": "current",
-              "sidebarPosition": 3,
+              "sidebarPosition": 2,
               "frontMatter": {
-                "sidebar_position": 3
+                "sidebar_position": 2,
+                "slug": "/limits"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Integrations",
-                "permalink": "/tutorial-extras/integrations"
+                "title": "SpicyPro Recipes",
+                "permalink": "/recipes"
               },
               "next": {
-                "title": "Governance",
-                "permalink": "/tutorial-extras/governance"
+                "title": "SpicyPro SVaults",
+                "permalink": "/svaults"
               }
             },
             {
-              "unversionedId": "tutorial-extras/governance",
-              "id": "tutorial-extras/governance",
+              "unversionedId": "spro/recipes",
+              "id": "spro/recipes",
               "isDocsHomePage": false,
-              "title": "Governance",
-              "description": "Coming soon!",
-              "source": "@site/docs/tutorial-extras/governance.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/governance",
-              "permalink": "/tutorial-extras/governance",
-              "version": "current",
-              "sidebarPosition": 3,
-              "frontMatter": {
-                "sidebar_position": 3
-              },
-              "sidebar": "tutorialSidebar",
-              "previous": {
-                "title": "API Reference",
-                "permalink": "/tutorial-extras/api-reference"
-              },
-              "next": {
-                "title": "Queries",
-                "permalink": "/api/queries"
-              }
-            },
-            {
-              "unversionedId": "tutorial-extras/integrations",
-              "id": "tutorial-extras/integrations",
-              "isDocsHomePage": false,
-              "title": "Integrations",
-              "description": "Under Construction!",
-              "source": "@site/docs/tutorial-extras/integrations.md",
-              "sourceDirName": "tutorial-extras",
-              "slug": "/tutorial-extras/integrations",
-              "permalink": "/tutorial-extras/integrations",
+              "title": "SpicyPro Recipes",
+              "description": "SpicyPro Recipes are custom contracts made to help users execute multi-step actions in 1-click.",
+              "source": "@site/docs/spro/recipes.md",
+              "sourceDirName": "spro",
+              "slug": "/recipes",
+              "permalink": "/recipes",
               "version": "current",
               "sidebarPosition": 1,
               "frontMatter": {
-                "sidebar_position": 1
+                "sidebar_position": 1,
+                "slug": "/recipes"
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "4.5 Governance & Voting",
-                "permalink": "/governance-voting"
+                "title": "User Dashboard",
+                "permalink": "/spicydashboard"
               },
               "next": {
-                "title": "API Reference",
-                "permalink": "/tutorial-extras/api-reference"
+                "title": "SpicyPro Limit Orders",
+                "permalink": "/limits"
+              }
+            },
+            {
+              "unversionedId": "spro/vaults",
+              "id": "spro/vaults",
+              "isDocsHomePage": false,
+              "title": "SpicyPro SVaults",
+              "description": "Welcome to SpicyPro SVaults!",
+              "source": "@site/docs/spro/vaults.md",
+              "sourceDirName": "spro",
+              "slug": "/svaults",
+              "permalink": "/svaults",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "slug": "/svaults"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "SpicyPro Limit Orders",
+                "permalink": "/limits"
+              },
+              "next": {
+                "title": "Introducing Matter DeFi",
+                "permalink": "/matter-defi"
               }
             }
           ]

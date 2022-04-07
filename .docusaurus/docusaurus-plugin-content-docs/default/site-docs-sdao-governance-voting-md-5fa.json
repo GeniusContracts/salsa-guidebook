@@ -1,0 +1,26 @@
+{
+  "unversionedId": "sdao/governance-voting",
+  "id": "sdao/governance-voting",
+  "isDocsHomePage": false,
+  "title": "Governance & Voting",
+  "description": "sDAO is the SalsaDAO governance token, and all Genius Contracts products are governed by sDAO holders. The governance process starts by taking ideas that consistently come up in informal discord discussions into the salsaDAO governance forum, where the ideas can get discussed in more detail. After relative consensus is reached on the discussion forum, a proposal is drafted and put on the SalsaDAO website voting portal where all active issues up for voting can be viewed.",
+  "source": "@site/docs/sdao/governance-voting.md",
+  "sourceDirName": "sdao",
+  "slug": "/governance-voting",
+  "permalink": "/governance-voting",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "slug": "/governance-voting"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Gaming Hall",
+    "permalink": "/gaming-hall"
+  },
+  "next": {
+    "title": "Cart Function",
+    "permalink": "/cart-function"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "sdao/salsadao",
+  "id": "sdao/salsadao",
+  "isDocsHomePage": false,
+  "title": "Getting Started on SalsaDAO",
+  "description": "The SalsaDAO.xyz website is the URL hub for accessing various auxiliary dApps of the SalsaDAO ecosystem, such as links to Spicyswap, the famous Taco Shop, Matter DeFi, the governance portal where SalsaDAO governance takes place, farms for the distribution of the Spicyswap utility token, $SPI, and the SalsaDAO gaming hall. Users will also find links to the various SalsaDAO/Genius Contract social media channels.",
+  "source": "@site/docs/sdao/salsadao.md",
+  "sourceDirName": "sdao",
+  "slug": "/salsadao",
+  "permalink": "/salsadao",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/salsadao"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "SalsaDAO Ecosystem Guidebook",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "Gaming Hall",
+    "permalink": "/gaming-hall"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "spi/new-pool",
+  "id": "spi/new-pool",
+  "isDocsHomePage": false,
+  "title": "Creating a New Liquidity Pool",
+  "description": "Custom Pools",
+  "source": "@site/docs/spi/new-pool.md",
+  "sourceDirName": "spi",
+  "slug": "/new-pool",
+  "permalink": "/new-pool",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8,
+    "slug": "/new-pool"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Removing Liquidity",
+    "permalink": "/removeliquidity"
+  },
+  "next": {
+    "title": "SPI Token & Fee Farming",
+    "permalink": "/SPI"
+  }
+}

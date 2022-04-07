@@ -2,24 +2,25 @@
   "unversionedId": "tutorial-extras/api-reference",
   "id": "tutorial-extras/api-reference",
   "isDocsHomePage": false,
-  "title": "API Reference",
-  "description": "Under Construction!",
+  "title": "SpicyPro Limit Orders",
+  "description": "SpicySwap was built with integrations in mind. There are 3 levels of integrations into the SpicySwap protocol: contract level, token level, or interface level.",
   "source": "@site/docs/tutorial-extras/api-reference.md",
   "sourceDirName": "tutorial-extras",
-  "slug": "/tutorial-extras/api-reference",
-  "permalink": "/tutorial-extras/api-reference",
+  "slug": "/limits",
+  "permalink": "/limits",
   "version": "current",
-  "sidebarPosition": 3,
+  "sidebarPosition": 2,
   "frontMatter": {
-    "sidebar_position": 3
+    "sidebar_position": 2,
+    "slug": "/limits"
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Integrations",
-    "permalink": "/tutorial-extras/integrations"
+    "title": "SpicyPro Recipes",
+    "permalink": "/recipes"
   },
   "next": {
-    "title": "Governance",
-    "permalink": "/tutorial-extras/governance"
+    "title": "SpicyPro SVaults",
+    "permalink": "/svaults"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "unversionedId": "mttr-live/tipping",
+  "id": "mttr-live/tipping",
+  "isDocsHomePage": false,
+  "title": "Tipping a Farm",
+  "description": "Matter Live Tipping",
+  "source": "@site/docs/mttr-live/tipping.md",
+  "sourceDirName": "mttr-live",
+  "slug": "/tipping",
+  "permalink": "/tipping",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "slug": "/tipping"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Dashboard",
+    "permalink": "/dashboard"
+  }
+}

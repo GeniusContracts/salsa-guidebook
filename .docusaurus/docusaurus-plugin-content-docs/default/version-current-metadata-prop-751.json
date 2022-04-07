@@ -8,204 +8,32 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Welcome to the SalsaDAO Ecosystem Guidebook",
+        "label": "SalsaDAO Ecosystem Guidebook",
         "href": "/"
       },
       {
         "type": "category",
-        "label": "SalsaDAO Guidebook",
+        "label": "SalsaDAO",
         "items": [
           {
-            "type": "category",
-            "label": "1 Spicyswap",
-            "items": [
-              {
-                "type": "link",
-                "label": "1.1 Syncing Your Wallet",
-                "href": "/spicyswap"
-              },
-              {
-                "type": "link",
-                "label": "1.2 Nodes & Indexer Status",
-                "href": "/nodes-indexer"
-              },
-              {
-                "type": "link",
-                "label": "1.3 Selecting a Theme",
-                "href": "/spicy-theme"
-              },
-              {
-                "type": "link",
-                "label": "1.4 Swaps",
-                "href": "/swaps"
-              },
-              {
-                "type": "link",
-                "label": "1.5 XTZ via WTZ",
-                "href": "/xtz-via-wtz"
-              },
-              {
-                "type": "link",
-                "label": "1.5.1 Rationale for WTZ",
-                "href": "/rationale-wtz"
-              },
-              {
-                "type": "link",
-                "label": "1.6 Adding Liquidity",
-                "href": "/addliquidity"
-              },
-              {
-                "type": "link",
-                "label": "1.7 Removing Liquidity",
-                "href": "/removeliquidity"
-              },
-              {
-                "type": "link",
-                "label": "1.8 Creating a New Liquidity Pool",
-                "href": "/new-pool"
-              },
-              {
-                "type": "link",
-                "label": "1.9 $SPI Utility Token & Fee Farming",
-                "href": "/$spi"
-              },
-              {
-                "type": "link",
-                "label": "1.10 Spicyswap Analytics",
-                "href": "/analytics"
-              },
-              {
-                "type": "link",
-                "label": "1.11 Dashboard",
-                "href": "/spicydashboard"
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
+            "type": "link",
+            "label": "Getting Started on SalsaDAO",
+            "href": "/salsadao"
           },
           {
-            "type": "category",
-            "label": "2 Matter Defi (Core)",
-            "items": [
-              {
-                "type": "link",
-                "label": "2.1 What is Matter DeFi Core?",
-                "href": "/matter-defi"
-              },
-              {
-                "type": "link",
-                "label": "2.2 Syncing Your Wallet",
-                "href": "/syncing-wallet-matter"
-              },
-              {
-                "type": "link",
-                "label": "2.3 Menu Bar & Nodes",
-                "href": "/menu-bar"
-              },
-              {
-                "type": "link",
-                "label": "2.4 Selecting a Theme",
-                "href": "/selecting-theme"
-              },
-              {
-                "type": "link",
-                "label": "2.5 Staking",
-                "href": "/stakingcore"
-              },
-              {
-                "type": "link",
-                "label": "2.6 Unstaking",
-                "href": "/unstakingcore"
-              },
-              {
-                "type": "link",
-                "label": "2.7 Claiming Rewards",
-                "href": "/claiming"
-              },
-              {
-                "type": "link",
-                "label": "2.8 Compounding Rewards",
-                "href": "/compounding"
-              },
-              {
-                "type": "link",
-                "label": "2.9 Matter DeFi Analytics",
-                "href": "/matter-analytics"
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
+            "type": "link",
+            "label": "Gaming Hall",
+            "href": "/gaming-hall"
           },
           {
-            "type": "category",
-            "label": "3 Matter DeFi (Live)",
-            "items": [
-              {
-                "type": "link",
-                "label": "3.1 Farm as a Service",
-                "href": "/faas"
-              },
-              {
-                "type": "link",
-                "label": "3.2 Staking & Staking Fee",
-                "href": "/staking"
-              },
-              {
-                "type": "link",
-                "label": "3.3 Unstaking",
-                "href": "/unstaking"
-              },
-              {
-                "type": "link",
-                "label": "3.4 Claiming Rewards",
-                "href": "/claiming-rewards"
-              },
-              {
-                "type": "link",
-                "label": "3.5 Dashboard",
-                "href": "/dashboard"
-              },
-              {
-                "type": "link",
-                "label": "3.6 Tipping a Farm",
-                "href": "/tipping"
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
+            "type": "link",
+            "label": "Governance & Voting",
+            "href": "/governance-voting"
           },
           {
-            "type": "category",
-            "label": "4 SalsaDAO",
-            "items": [
-              {
-                "type": "link",
-                "label": "4.1 SalsaDAO: Getting Started",
-                "href": "/salsadao"
-              },
-              {
-                "type": "link",
-                "label": "4.2 $SPI Farms",
-                "href": "/$spi-farms"
-              },
-              {
-                "type": "link",
-                "label": "4.3 Cart Function",
-                "href": "/cart-function"
-              },
-              {
-                "type": "link",
-                "label": "4.4 Gaming Hall",
-                "href": "/gaming-hall"
-              },
-              {
-                "type": "link",
-                "label": "4.5 Governance & Voting",
-                "href": "/governance-voting"
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
+            "type": "link",
+            "label": "Cart Function",
+            "href": "/cart-function"
           }
         ],
         "collapsed": true,
@@ -213,22 +41,67 @@
       },
       {
         "type": "category",
-        "label": "SpicySwap - Advanced",
+        "label": "SpicySwap",
         "items": [
           {
             "type": "link",
-            "label": "Integrations",
-            "href": "/tutorial-extras/integrations"
+            "label": "Welcome to SpicySwap",
+            "href": "/spicyswap"
           },
           {
             "type": "link",
-            "label": "API Reference",
-            "href": "/tutorial-extras/api-reference"
+            "label": "Nodes & Indexer Status",
+            "href": "/nodes-indexer"
           },
           {
             "type": "link",
-            "label": "Governance",
-            "href": "/tutorial-extras/governance"
+            "label": "Selecting a Theme",
+            "href": "/spicy-theme"
+          },
+          {
+            "type": "link",
+            "label": "Swapping",
+            "href": "/swaps"
+          },
+          {
+            "type": "link",
+            "label": "XTZ via WTZ",
+            "href": "/xtz-via-wtz"
+          },
+          {
+            "type": "link",
+            "label": "Rationale for WTZ",
+            "href": "/rationale-wtz"
+          },
+          {
+            "type": "link",
+            "label": "Adding Liquidity",
+            "href": "/addliquidity"
+          },
+          {
+            "type": "link",
+            "label": "Removing Liquidity",
+            "href": "/removeliquidity"
+          },
+          {
+            "type": "link",
+            "label": "Creating a New Liquidity Pool",
+            "href": "/new-pool"
+          },
+          {
+            "type": "link",
+            "label": "SPI Token & Fee Farming",
+            "href": "/SPI"
+          },
+          {
+            "type": "link",
+            "label": "SpicySwap Analytics",
+            "href": "/analytics"
+          },
+          {
+            "type": "link",
+            "label": "User Dashboard",
+            "href": "/spicydashboard"
           }
         ],
         "collapsed": true,
@@ -236,47 +109,113 @@
       },
       {
         "type": "category",
-        "label": "GraphQL Appendix",
+        "label": "SpicyPro (Advanced)",
         "items": [
           {
             "type": "link",
-            "label": "Queries",
-            "href": "/api/queries"
+            "label": "SpicyPro Recipes",
+            "href": "/recipes"
           },
           {
             "type": "link",
-            "label": "Mutations",
-            "href": "/api/mutations"
+            "label": "SpicyPro Limit Orders",
+            "href": "/limits"
           },
           {
             "type": "link",
-            "label": "Objects",
-            "href": "/api/objects"
+            "label": "SpicyPro SVaults",
+            "href": "/svaults"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Matter DeFi",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introducing Matter DeFi",
+            "href": "/matter-defi"
           },
           {
             "type": "link",
-            "label": "Interfaces",
-            "href": "/api/interfaces"
+            "label": "Syncing Your Wallet",
+            "href": "/syncing-wallet-matter"
           },
           {
             "type": "link",
-            "label": "Enums",
-            "href": "/api/enums"
+            "label": "Menu Bar & Nodes",
+            "href": "/menu-bar"
           },
           {
             "type": "link",
-            "label": "Unions",
-            "href": "/api/unions"
+            "label": "Selecting a Theme",
+            "href": "/selecting-theme"
           },
           {
             "type": "link",
-            "label": "Input objects",
-            "href": "/api/inputObjects"
+            "label": "Staking",
+            "href": "/stakingcore"
           },
           {
             "type": "link",
-            "label": "Scalars",
-            "href": "/api/scalars"
+            "label": "Unstaking",
+            "href": "/unstakingcore"
+          },
+          {
+            "type": "link",
+            "label": "Claiming Rewards",
+            "href": "/claiming"
+          },
+          {
+            "type": "link",
+            "label": "Compounding Rewards",
+            "href": "/compounding"
+          },
+          {
+            "type": "link",
+            "label": "Matter DeFi Analytics",
+            "href": "/matter-analytics"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Matter Live",
+        "items": [
+          {
+            "type": "link",
+            "label": "Farm as a Service",
+            "href": "/faas"
+          },
+          {
+            "type": "link",
+            "label": "Staking & Fees",
+            "href": "/staking"
+          },
+          {
+            "type": "link",
+            "label": "Unstaking",
+            "href": "/unstaking"
+          },
+          {
+            "type": "link",
+            "label": "Claiming Rewards",
+            "href": "/claiming-rewards"
+          },
+          {
+            "type": "link",
+            "label": "Dashboard",
+            "href": "/dashboard"
+          },
+          {
+            "type": "link",
+            "label": "Tipping a Farm",
+            "href": "/tipping"
           }
         ],
         "collapsed": true,

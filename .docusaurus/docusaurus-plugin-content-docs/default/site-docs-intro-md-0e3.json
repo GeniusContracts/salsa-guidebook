@@ -2,7 +2,7 @@
   "unversionedId": "intro",
   "id": "intro",
   "isDocsHomePage": false,
-  "title": "Welcome to the SalsaDAO Ecosystem Guidebook",
+  "title": "SalsaDAO Ecosystem Guidebook",
   "description": "alt text",
   "source": "@site/docs/intro.md",
   "sourceDirName": ".",
@@ -16,7 +16,7 @@
   },
   "sidebar": "tutorialSidebar",
   "next": {
-    "title": "1.1 Syncing Your Wallet",
-    "permalink": "/spicyswap"
+    "title": "Getting Started on SalsaDAO",
+    "permalink": "/salsadao"
   }
 }

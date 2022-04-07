@@ -1,0 +1,26 @@
+{
+  "unversionedId": "mttr-live/claiming-rewards",
+  "id": "mttr-live/claiming-rewards",
+  "isDocsHomePage": false,
+  "title": "Claiming Rewards",
+  "description": "Claiming Rewards",
+  "source": "@site/docs/mttr-live/claiming-rewards.md",
+  "sourceDirName": "mttr-live",
+  "slug": "/claiming-rewards",
+  "permalink": "/claiming-rewards",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "slug": "/claiming-rewards"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Unstaking",
+    "permalink": "/unstaking"
+  },
+  "next": {
+    "title": "Dashboard",
+    "permalink": "/dashboard"
+  }
+}
