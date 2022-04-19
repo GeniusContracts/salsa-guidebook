@@ -101,6 +101,6 @@ These are the basic Youves Vault actions that are simply sent to the underlying 
 
 2. Verify that your vault is staying over the 300% Collateralization Ratio limit.
 
-3. Note your Liquidation Price. Adding Leverage is a risky action.
+3. Note your Liquidation Price.
 
-4. Execute by clicking **Add Leverage**.
+4. Execute by clicking **Self-Liquidate**.
