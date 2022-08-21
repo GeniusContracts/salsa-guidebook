@@ -1,9 +1,9 @@
 ---
-sidebar_position: 5
+sidebar_position: 7
 slug: /buy
 ---
 
-# MTTR Atom Buying Guide
+# Dynamic NFT Buying Guide
 
 ## Getting Started
 
@@ -15,6 +15,9 @@ Please follow the [instructions](/salsadao) on syncing your wallet, then navigat
 ## Buy Screen
 
 You made it! Choose your desired rarity and click **Buy** on the NFT you want. If using the [Cart System](/cart-function), the transaction will be queued. Otherwise confirm the transaction in your preferred wallet.
+
+
+As an example we are using the MTTR Atom collection, but the process will be the same for further dynamic collections.
 
 ![alt text](/img/sdao-buy-2.jpg)  
 
