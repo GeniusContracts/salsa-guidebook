@@ -3,13 +3,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'SpicySwap Docs',
+  title: 'SalsaDAO Guidebook',
   tagline: '',
   url: 'https://guide.salsadao.xyz',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/sDAO.png',
+  favicon: '/sdao_neon.png',
   organizationName: '', // Usually your GitHub org/user name.
   projectName: '', // Usually your repo name.
   onBrokenLinks: 'ignore',
@@ -32,6 +32,12 @@ module.exports = {
           docId: 'sdao/salsadao',
           position: 'left',
           label: 'SalsaDAO',
+        },
+        {
+          type: 'doc',
+          docId: 'ad/artdex',
+          position: 'left',
+          label: 'ArtDEX',
         },
         {
           type: 'doc',
