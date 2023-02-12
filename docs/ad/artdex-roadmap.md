@@ -7,10 +7,11 @@ slug: /artdex-roadmap
 
 We are fully focused on ArtDEX! We will be updating this page as we complete our goals.
 
-- Guides: Launching on ArtDEX ⌛
-- Guides: Migrating NFTs to ArtDEX ⌛
+- Guides: Minting on ArtDEX ✅
+- Infrastructure: Private IPFS Relay ✅
+- Feature: Sort & Filter ✅
+- Feature: Bulk Select NFTs ✅
+- Feature: NFT Details ✅
+
 - Guides: ArtDEX Video Walkthrough ⌛
-- Infrastructure: Private IPFS Relay ⌛
-- Feature: Sort & Filter Collections ⌛
-- Feature: Bulk Select NFTs ⌛
-- Feature: NFT Details (w/ properties) ⌛
+- Feature: NFT Properties ⌛

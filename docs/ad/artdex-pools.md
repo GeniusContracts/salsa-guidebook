@@ -5,12 +5,6 @@ slug: /artdex-pools
 
 # Creating Pools
 
-:::caution 
-
-Each ArtDEX pool is it's own contract. We recommend that users only create 1-2 pools in a collection and modify parameters when necessary.
-
-:::
-
 ## What is an ArtDEX Pool?
 
 <p align="center"><img src="/artdex-nft-xtz.png" /></p>
@@ -187,10 +181,10 @@ Congrats! It's now time to create your pool using the ArtDEX Deployer. Click **C
 
 :::tip 
 
-This will create a new smart contract, expect the transaction costs to be around 2-3 XTZ.
+Using Multipool, creation will cost around 0.1xtz. Creating a new smart contract costs around 2-3 XTZ.
 
 :::
 
-Your new pool contract will be automatically added to the ArtDEX interface for other users to trade with.
+Your new pool will be automatically added to the ArtDEX interface for other users to trade with.
 
 Now that you've created a pool, let's learn [how to change its parameters](/artdex-modify).
